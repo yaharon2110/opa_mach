@@ -1,8 +1,8 @@
 // ============================================================================
 // Module Name:  vsb_top
 // Description:  Top-level structural wrapper for the Video Source Board (VSB)
-//               Dual-Tree Clock/Reset Design updated for CrossLink-NX.
-// Target Chip:  Lattice Semiconductor LIFCL-40-7MG121A (Nexus Architecture)
+//               Dual-Tree Clock/Reset Design updated for MachXO3LF.
+// Target Chip:  Lattice Semiconductor LCMXO3LF-1300E-5MG121I (Nexus Architecture)
 // Standards:    Verilog-2001 Standard Baseline
 // ============================================================================
 
