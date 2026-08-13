@@ -65,6 +65,23 @@ module uplink_rx (
         .code_err        (decode_error)
     );
 
+  // ========================================================================
+    // Delay serdes_sync by 2 cycles to time-align it with rx_is_k /
+    // rx_decoded_byte, which lag the live serdes pins by one cycle through
+    // the aligner register and one more through the decoder's output register.
+    // ========================================================================
+    reg serdes_sync_d1, serdes_sync_d2;
+
+    always @(posedge serdes_rbc0 or negedge rx_reset_n) begin
+        if (!rx_reset_n) begin
+            serdes_sync_d1 <= 1'b0;
+            serdes_sync_d2 <= 1'b0;
+        end else begin
+            serdes_sync_d1 <= serdes_sync;      // matches aligned_10b_word's delay
+            serdes_sync_d2 <= serdes_sync_d1;   // matches decoder's extra register stage
+        end
+    end
+
     // ========================================================================
     // 3. Inline Telemetry Extraction & Latching Logic
     // ========================================================================
@@ -72,9 +89,7 @@ module uplink_rx (
         if (!rx_reset_n) begin
             local_gpo <= 8'h00;
         end else begin
-            // When a regular data byte arrives (not a K-character), 
-            // it contains all 8 GPIOs at once. Latch them immediately.
-            if (!rx_is_k && !serdes_sync) begin
+            if (!rx_is_k && !serdes_sync_d2) begin
                 local_gpo <= rx_decoded_byte;
             end
         end
