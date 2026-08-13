@@ -16,7 +16,7 @@ module uplink_rx (
     input  wire        rx_reset_n,     // Synchronized active-low RX reset
 
     // Local System Extracted Telemetry Outputs
-    output wire [7:0]  local_gpo,      // 8-bit Extracted Upstream Control pins
+    output reg [7:0]  local_gpo,      // 8-bit Extracted Upstream Control pins
     output wire        decode_error    // 8b/10b Link Exception alarm flag
 );
 
