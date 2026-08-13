@@ -220,7 +220,7 @@ module vsb_top (
     // 9. Board Diagnostic Status Engine
     // ========================================================================
     board_status_led u_vsb_status_led (
-        .clk_54m         (clk_27m_buf),     
+        .clk_54m         (internal_osc_clk),     
         .reset_n         (hw_reset_n),  
         .pll_locked      (pll_dl_locked),       
         .i2c_init_done   (i2c_init_done),       
