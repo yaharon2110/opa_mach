@@ -1,4 +1,4 @@
 create_clock -name {internal_osc_clk} -period 18.796992 [get_nets {internal_osc_clk}]
-create_clock -name {clk_81m}          -period 12.345679 [get_nets {clk_81m}]
+create_clock -name {clk_81m}     -period 12.345679 [get_pins {u_pll_downlink/PLLInst_0/CLKOP}]
 create_clock -name {clk_27m_buf}      -period 37.037037 [get_nets {clk_27m_buf}]
-create_clock -name {serdes_rbc0}      -period 12.345679 [get_ports {serdes_rbc0}]
+create_clock -name {clk_27m_buf} -period 37.037037 [get_pins {u_pll_downlink/PLLInst_0/CLKOS}]
