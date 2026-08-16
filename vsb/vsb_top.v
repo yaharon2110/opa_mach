@@ -82,9 +82,6 @@ module vsb_top (
         .SEDSTDBY ()                   // unused
     );
 
-
-	assign hw_reset = ~hw_reset_n;
-
     // Main Clock Multiplier (Accepts 27 MHz LLC Input from ADV7182A)
     // Generates the 81 MHz TBI processing clock and a clean 27 MHz fabric buffer
     // Regenerated for the MachXO3LF target (replaces the CrossLink-NX
