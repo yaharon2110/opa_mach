@@ -19,11 +19,7 @@ module vsb_i2c_script_driver (
     output reg  [7:0]  wb_dat_w,
     input  wire [7:0]  wb_dat_r,
     input  wire        wb_ack,
-    
-    // Physical Bidirectional Board I2C Pins (Routed directly to EFB wrapper)
-    inout  wire        i2c_scl,
-    inout  wire        i2c_sda,
-    
+     
     // Status Indication Output Pin
     output reg         i2c_init_done
 );
