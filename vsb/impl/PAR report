@@ -1,0 +1,341 @@
+
+mpartrce -p "opa_vsb_impl1.p2t" -f "opa_vsb_impl1.p3t" -tf "opa_vsb_impl1.pt" "opa_vsb_impl1_map.ncd" "opa_vsb_impl1.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "opa_vsb_impl1_map.ncd"
+Sun Aug 16 15:35:10 2026
+
+PAR: Place And Route Diamond (64-bit) 3.14.0.75.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 opa_vsb_impl1_map.ncd opa_vsb_impl1.dir/5_1.ncd opa_vsb_impl1.prf
+Preference file: opa_vsb_impl1.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file opa_vsb_impl1_map.ncd.
+Design name: vsb_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3LF-1300E
+Package:     CSFBGA121
+Performance: 5
+Loading device for application par from file 'xo3c1300.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.17.
+Performance Hardware Data Status:   Final          Version 37.5.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   50+4(JTAG)/108     50% used
+                  50+4(JTAG)/101     53% bonded
+   IOLOGIC           23/108          21% used
+
+   SLICE            126/640          19% used
+
+   GSR                1/1           100% used
+   OSC                1/1           100% used
+   EBR                4/7            57% used
+   PLL                1/1           100% used
+   EFB                1/1           100% used
+
+
+Number of Signals: 561
+Number of Connections: 1214
+
+Pin Constraint Summary:
+   0 out of 50 pins locked (0% locked).
+
+The following 4 signals are selected to use the primary clock routing resources:
+    clk_81m (driver: u_pll_downlink/PLLInst_0, clk load #: 30)
+    clk_27m_buf (driver: u_pll_downlink/PLLInst_0, clk load #: 15)
+    internal_osc_clk (driver: u_internal_osc, clk load #: 51)
+    serdes_rbc0_c (driver: serdes_rbc0, clk load #: 36)
+
+
+The following 4 signals are selected to use the secondary clock routing resources:
+    tx_reset_n (driver: u_tx_reset_sync/SLICE_49, clk load #: 0, sr load #: 32, ce load #: 0)
+    u_rx_reset_sync/rx_reset_n (driver: u_rx_reset_sync/SLICE_81, clk load #: 0, sr load #: 23, ce load #: 0)
+    pll_dl_locked (driver: u_pll_downlink/PLLInst_0, clk load #: 0, sr load #: 11, ce load #: 0)
+    u_i2c_script_driver/N_226_i (driver: u_i2c_script_driver/SLICE_137, clk load #: 0, sr load #: 0, ce load #: 11)
+
+Signal hw_reset_n_c is selected as Global Set/Reset.
+.
+Starting Placer Phase 0.
+..............
+Finished Placer Phase 0.  REAL time: 7 secs 
+
+Starting Placer Phase 1.
+....................
+Placer score = 52889.
+Finished Placer Phase 1.  REAL time: 18 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  51936
+Finished Placer Phase 2.  REAL time: 18 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 1 out of 8 (12%)
+  PLL        : 1 out of 1 (100%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Global Clocks:
+  PRIMARY "clk_81m" from CLKOP on comp "u_pll_downlink/PLLInst_0" on PLL site "LPLL", clk load = 30
+  PRIMARY "clk_27m_buf" from CLKOS on comp "u_pll_downlink/PLLInst_0" on PLL site "LPLL", clk load = 15
+  PRIMARY "internal_osc_clk" from OSC on comp "u_internal_osc" on site "OSC", clk load = 51
+  PRIMARY "serdes_rbc0_c" from comp "serdes_rbc0" on CLK_PIN site "L6 (PB11A)", clk load = 36
+  SECONDARY "tx_reset_n" from Q0 on comp "u_tx_reset_sync/SLICE_49" on site "R7C12B", clk load = 0, ce load = 0, sr load = 32
+  SECONDARY "u_rx_reset_sync/rx_reset_n" from Q0 on comp "u_rx_reset_sync/SLICE_81" on site "R7C14D", clk load = 0, ce load = 0, sr load = 23
+  SECONDARY "pll_dl_locked" from LOCK on comp "u_pll_downlink/PLLInst_0" on PLL site "LPLL", clk load = 0, ce load = 0, sr load = 11
+  SECONDARY "u_i2c_script_driver/N_226_i" from F0 on comp "u_i2c_script_driver/SLICE_137" on site "R7C12A", clk load = 0, ce load = 11, sr load = 0
+
+  PRIMARY  : 4 out of 8 (50%)
+  SECONDARY: 4 out of 8 (50%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   50 + 4(JTAG) out of 108 (50.0%) PIO sites used.
+   50 + 4(JTAG) out of 101 (53.5%) bonded PIO sites used.
+   Number of PIO comps: 50; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+----------------+------------+-----------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref |
++----------+----------------+------------+-----------+
+| 0        | 17 / 25 ( 68%) | 2.5V       | -         |
+| 1        | 13 / 26 ( 50%) | 2.5V       | -         |
+| 2        | 16 / 26 ( 61%) | 2.5V       | -         |
+| 3        | 4 / 24 ( 16%)  | 2.5V       | -         |
++----------+----------------+------------+-----------+
+
+Total placer CPU time: 12 secs 
+
+Dumping design to file opa_vsb_impl1.dir/5_1.ncd.
+
+0 connections routed; 1214 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 24 secs 
+
+Start NBR router at 15:35:34 08/16/26
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 15:35:34 08/16/26
+
+Start NBR section for initial routing at 15:35:34 08/16/26
+Level 1, iteration 1
+0(0.00%) conflict; 795(65.49%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.136ns/0.000ns; real time: 24 secs 
+Level 2, iteration 1
+0(0.00%) conflict; 795(65.49%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 3.865ns/0.000ns; real time: 24 secs 
+Level 3, iteration 1
+0(0.00%) conflict; 792(65.24%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.153ns/0.000ns; real time: 25 secs 
+Level 4, iteration 1
+19(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.146ns/0.000ns; real time: 25 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 15:35:35 08/16/26
+Level 1, iteration 1
+0(0.00%) conflict; 24(1.98%) untouched conns; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.146ns/0.000ns; real time: 25 secs 
+Level 4, iteration 1
+6(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.146ns/0.000ns; real time: 25 secs 
+Level 4, iteration 2
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.146ns/0.000ns; real time: 25 secs 
+Level 4, iteration 3
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.146ns/0.000ns; real time: 25 secs 
+
+Start NBR section for setup/hold timing optimization with effort level 3 at 15:35:35 08/16/26
+
+Start NBR section for re-routing at 15:35:36 08/16/26
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 4.146ns/0.000ns; real time: 26 secs 
+
+Start NBR section for post-routing at 15:35:36 08/16/26
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : 4.146ns
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 16 secs 
+Total REAL time: 27 secs 
+Completely routed.
+End of route.  1214 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 0 
+
+Dumping design to file opa_vsb_impl1.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 4.146
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.299
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 16 secs 
+Total REAL time to completion: 28 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+trce -f "opa_vsb_impl1.pt" -o "opa_vsb_impl1.twr" "opa_vsb_impl1.ncd" "opa_vsb_impl1.prf"
+trce:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file opa_vsb_impl1.ncd.
+Design name: vsb_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3LF-1300E
+Package:     CSFBGA121
+Performance: 5
+Loading device for application trce from file 'xo3c1300.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.17.
+Performance Hardware Data Status:   Final          Version 37.5.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.14.0.75.2
+Sun Aug 16 15:35:42 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o opa_vsb_impl1.twr -gui opa_vsb_impl1.ncd opa_vsb_impl1.prf 
+Design file:     opa_vsb_impl1.ncd
+Preference file: opa_vsb_impl1.prf
+Device,speed:    LCMXO3LF-1300E,5
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 9763 paths, 5 nets, and 1090 connections (89.79% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.14.0.75.2
+Sun Aug 16 15:35:45 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o opa_vsb_impl1.twr -gui opa_vsb_impl1.ncd opa_vsb_impl1.prf 
+Design file:     opa_vsb_impl1.ncd
+Preference file: opa_vsb_impl1.prf
+Device,speed:    LCMXO3LF-1300E,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 9763 paths, 5 nets, and 1090 connections (89.79% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 1 secs 
+Total REAL Time: 6 secs 
+Peak Memory Usage: 51 MB
+
