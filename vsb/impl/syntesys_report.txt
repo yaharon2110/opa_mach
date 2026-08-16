@@ -3,7 +3,7 @@
 #OS: Windows 10 or later
 #Hostname: OPSL80008034
 
-# Sun Aug 16 12:21:32 2026
+# Sun Aug 16 13:29:30 2026
 
 #Implementation: impl1
 
@@ -55,6 +55,9 @@ Synopsys Verilog Compiler, Version comp202309synp1, Build 349R, Built Sep 17 202
 @I::"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\I2C_VSB.v" (library work)
 @I::"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\vsb_pll_downlink.v" (library work)
 Verilog syntax check successful!
+
+Compiler output is up to date.  No re-compile necessary
+
 Selecting top level module vsb_top
 @N: CG364 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo3lf.v":1759:7:1759:10|Synthesizing module OSCH in library work.
 Running optimization stage 1 on OSCH .......
@@ -184,12 +187,12 @@ For a summary of runtime per design unit, please see file:
 
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:41s; CPU Time elapsed 0h:00m:32s; Memory used current: 96MB peak: 98MB)
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 90MB peak: 91MB)
 
-Process took 0h:00m:41s realtime, 0h:00m:32s cputime
+Process took 0h:00m:03s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Aug 16 12:22:19 2026
+# Sun Aug 16 13:29:35 2026
 
 ###########################################################]
 ###########################################################[
@@ -210,12 +213,12 @@ Synopsys Synopsys Netlist Linker, Version comp202309synp1, Build 349R, Built Sep
 
 @N|Running in 64-bit mode
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 91MB peak: 92MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 91MB peak: 92MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Aug 16 12:22:27 2026
+# Sun Aug 16 13:29:38 2026
 
 ###########################################################]
 
@@ -225,12 +228,12 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:52s; CPU Time elapsed 0h:00m:35s; Memory used current: 22MB peak: 23MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:03s; Memory used current: 22MB peak: 23MB)
 
-Process took 0h:00m:53s realtime, 0h:00m:35s cputime
+Process took 0h:00m:07s realtime, 0h:00m:03s cputime
 
 Process completed successfully.
-# Sun Aug 16 12:22:29 2026
+# Sun Aug 16 13:29:40 2026
 
 ###########################################################]
 ###########################################################[
@@ -250,18 +253,17 @@ Implementation : impl1
 Synopsys Synopsys Netlist Linker, Version comp202309synp1, Build 349R, Built Sep 17 2024 08:16:26, @
 
 @N|Running in 64-bit mode
+File J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl1\synwork\opa_vsb_impl1_comp.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 91MB peak: 92MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Aug 16 12:22:39 2026
+# Sun Aug 16 13:29:47 2026
 
 ###########################################################]
-Premap Report
-
-# Sun Aug 16 12:22:53 2026
+# Sun Aug 16 13:29:52 2026
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -282,7 +284,7 @@ Synopsys Lattice Technology Pre-mapping, Version map202309lat, Build 191R, Built
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 182MB peak: 182MB)
 
 
-Done reading skeleton netlist (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 186MB peak: 197MB)
+Done reading skeleton netlist (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 187MB peak: 197MB)
 
 @A: MF827 |No constraint file specified.
 @L: J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl1\opa_vsb_impl1_scck.rpt 
@@ -291,13 +293,13 @@ See clock summary report "J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 190MB peak: 197MB)
+Design Input Complete (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 190MB peak: 197MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 190MB peak: 197MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:03s; Memory used current: 190MB peak: 197MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 203MB peak: 203MB)
+Start loading timing files (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:04s; Memory used current: 203MB peak: 203MB)
 
 
 Finished loading timing files (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:05s; Memory used current: 204MB peak: 205MB)
@@ -305,7 +307,7 @@ Finished loading timing files (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h
 NConnInternalConnection caching is on
 @W: BN132 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Removing sequential instance u_i2c_script_driver.wb_stb because it is equivalent to instance u_i2c_script_driver.wb_cyc. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
-Starting HSTDM IP insertion (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:06s; Memory used current: 254MB peak: 255MB)
+Starting HSTDM IP insertion (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:06s; Memory used current: 254MB peak: 255MB)
 
 
 Finished HSTDM IP insertion (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:07s; Memory used current: 254MB peak: 255MB)
@@ -333,7 +335,7 @@ original code -> new code
    01100 -> 01000000000000
    01101 -> 10000000000000
 
-Starting clock optimization phase (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:09s; Memory used current: 260MB peak: 260MB)
+Starting clock optimization phase (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:08s; Memory used current: 260MB peak: 260MB)
 
 
 mixed edge conversion for GCC is OFF
@@ -343,17 +345,17 @@ mixed edge conversion for GCC is OFF
 @W: BZ240 :|GCC encountered Inferred Clock constraint on net GCC considers to be data u_pll_downlink.CLKOP; this will likely lead to failure to convert
 @W: BZ240 :|GCC encountered Inferred Clock constraint on net GCC considers to be data u_pll_downlink.CLKOS; this will likely lead to failure to convert
 
-Finished clock optimization phase (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:09s; Memory used current: 260MB peak: 261MB)
+Finished clock optimization phase (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:09s; Memory used current: 260MB peak: 260MB)
 
 
-Starting clock optimization report phase (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:09s; Memory used current: 260MB peak: 261MB)
+Starting clock optimization report phase (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:09s; Memory used current: 260MB peak: 261MB)
 
 
-Finished clock optimization report phase (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:10s; Memory used current: 260MB peak: 261MB)
+Finished clock optimization report phase (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:09s; Memory used current: 260MB peak: 261MB)
 
 @N: FX1184 |Applying syn_allowed_resources blockrams=64 on top level netlist vsb_top 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:10s; Memory used current: 260MB peak: 261MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:09s; Memory used current: 260MB peak: 261MB)
 
 
 
@@ -436,25 +438,23 @@ Summary of user generated gated clocks:
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:21s; CPU Time elapsed 0h:00m:11s; Memory used current: 261MB peak: 261MB)
+Starting constraint checker (Real Time elapsed 0h:00m:21s; CPU Time elapsed 0h:00m:10s; Memory used current: 261MB peak: 261MB)
 
 
 Finished constraint checker preprocessing (Real Time elapsed 0h:00m:21s; CPU Time elapsed 0h:00m:11s; Memory used current: 261MB peak: 262MB)
 
 
-Finished constraint checker (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:12s; Memory used current: 262MB peak: 262MB)
+Finished constraint checker (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:11s; Memory used current: 262MB peak: 262MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:12s; Memory used current: 171MB peak: 263MB)
+At Mapper Exit (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:11s; Memory used current: 171MB peak: 263MB)
 
-Process took 0h:00m:24s realtime, 0h:00m:13s cputime
-# Sun Aug 16 12:23:19 2026
+Process took 0h:00m:25s realtime, 0h:00m:12s cputime
+# Sun Aug 16 13:30:17 2026
 
 ###########################################################]
-Map & Optimize Report
-
-# Sun Aug 16 12:23:24 2026
+# Sun Aug 16 13:30:23 2026
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -478,20 +478,20 @@ Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:0
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 184MB peak: 197MB)
+Design Input Complete (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 184MB peak: 197MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 184MB peak: 197MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 184MB peak: 197MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 198MB peak: 198MB)
+Start loading timing files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 198MB peak: 198MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 199MB peak: 201MB)
+Finished loading timing files (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:05s; Memory used current: 199MB peak: 201MB)
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 252MB peak: 252MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:07s; Memory used current: 252MB peak: 252MB)
 
 @N: BZ173 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_i2c_script_driver.v":75:8:75:11|ROM payload_byte[7:2] (in view: work.vsb_i2c_script_driver(verilog)) mapped in logic.
 @N: BZ173 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_i2c_script_driver.v":75:8:75:11|ROM command_byte[7:4] (in view: work.vsb_i2c_script_driver(verilog)) mapped in logic.
@@ -503,7 +503,7 @@ Starting Optimization and Mapping (Real Time elapsed 0h:00m:06s; CPU Time elapse
 @W: BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":11:7:11:13|Net clk_81m has multiple drivers .
 @W: BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":11:7:11:13|Net clk_27m_buf has multiple drivers .
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 259MB peak: 259MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:08s; Memory used current: 259MB peak: 259MB)
 
 @N: MO231 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_reset_sync.v":31:4:31:9|Found counter in view:work.vsb_reset_sync_1(verilog) instance delay_counter[15:0] 
 @N: MO231 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_reset_sync.v":31:4:31:9|Found counter in view:work.vsb_reset_sync_0(verilog) instance delay_counter[15:0] 
@@ -511,10 +511,10 @@ Finished RTL optimizations (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00
 @N: MO231 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Found counter in view:work.vsb_i2c_script_driver(verilog) instance script_index[4:0] 
 @N: MO231 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\board_status_led.v":34:4:34:9|Found counter in view:work.board_status_led(verilog) instance clk_divider[25:0] 
 
-Starting factoring (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:06s; Memory used current: 260MB peak: 260MB)
+Starting factoring (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:09s; Memory used current: 260MB peak: 260MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:07s; Memory used current: 261MB peak: 261MB)
+Finished factoring (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:10s; Memory used current: 261MB peak: 261MB)
 
 
 Available hyper_sources - for debug and ip models
@@ -558,16 +558,16 @@ NConnInternalConnection caching is on
 @W: BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":11:7:11:13|Net u_rx_reset_sync.N_2 has multiple drivers .
 @W: BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":11:7:11:13|Net u_tx_reset_sync.N_2 has multiple drivers .
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:07s; Memory used current: 261MB peak: 262MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:10s; Memory used current: 261MB peak: 262MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:08s; Memory used current: 261MB peak: 262MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:11s; Memory used current: 261MB peak: 262MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:08s; Memory used current: 261MB peak: 262MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:11s; Memory used current: 261MB peak: 262MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:08s; Memory used current: 261MB peak: 262MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:11s; Memory used current: 261MB peak: 262MB)
 
 @N: BN362 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":61:4:61:9|Removing sequential instance u_downlink_tx.u_tx_payload_mux.mux_byte_o[0] (in view: work.vsb_top(verilog)) because it does not drive other instances.
 @A: BN291 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":61:4:61:9|Boundary register u_downlink_tx.u_tx_payload_mux.mux_byte_o[0] (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
@@ -624,19 +624,19 @@ Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:12s; CP
 @W: BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":11:7:11:13|Net u_i2c_script_driver.timer_counter has multiple drivers .
 @W: BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":11:7:11:13|Net u_i2c_script_driver.script_index has multiple drivers .
 
-Finished preparing to map (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:09s; Memory used current: 262MB peak: 262MB)
+Finished preparing to map (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:12s; Memory used current: 262MB peak: 262MB)
 
 @N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":46:4:46:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.toggle_sync_81m[0] (in view: work.vsb_top(verilog)).
 
-Finished technology mapping (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:09s; Memory used current: 265MB peak: 265MB)
+Finished technology mapping (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:12s; Memory used current: 265MB peak: 265MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:09s		    -0.29ns		 150 /       207
-   2		0h:00m:09s		    -0.29ns		 150 /       207
+   1		0h:00m:12s		    -0.29ns		 150 /       207
+   2		0h:00m:12s		    -0.29ns		 150 /       207
 @N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":46:4:46:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.toggle_sync_81m[0] (in view: work.vsb_top(verilog)).
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:09s; Memory used current: 265MB peak: 266MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:13s; Memory used current: 265MB peak: 266MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 @W: BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":11:7:11:13|Net N_1083 has multiple drivers .
@@ -699,32 +699,32 @@ Finished technology timing optimizations and critical path resynthesis (Real Tim
 
 Only the first 100 messages of id 'BN161' are reported. To see all messages use 'report_messages -log J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl1\synlog\opa_vsb_impl1_fpga_mapper.srr -id BN161' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN161} -count unlimited' in the Tcl shell.
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:10s; Memory used current: 266MB peak: 266MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:21s; CPU Time elapsed 0h:00m:13s; Memory used current: 266MB peak: 266MB)
 
 
-Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:10s; Memory used current: 266MB peak: 267MB)
+Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:00m:21s; CPU Time elapsed 0h:00m:13s; Memory used current: 266MB peak: 267MB)
 
 
-Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:10s; Memory used current: 266MB peak: 267MB)
+Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:00m:22s; CPU Time elapsed 0h:00m:14s; Memory used current: 266MB peak: 267MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:11s; Memory used current: 210MB peak: 267MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:22s; CPU Time elapsed 0h:00m:14s; Memory used current: 212MB peak: 267MB)
 
 Writing Analyst data base J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl1\synwork\opa_vsb_impl1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:22s; CPU Time elapsed 0h:00m:11s; Memory used current: 267MB peak: 267MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:25s; CPU Time elapsed 0h:00m:15s; Memory used current: 267MB peak: 267MB)
 
 Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl1\opa_vsb_impl1.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:25s; CPU Time elapsed 0h:00m:12s; Memory used current: 275MB peak: 275MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:27s; CPU Time elapsed 0h:00m:16s; Memory used current: 275MB peak: 275MB)
 
 
-Finished Writing Netlists (Real Time elapsed 0h:00m:25s; CPU Time elapsed 0h:00m:13s; Memory used current: 275MB peak: 276MB)
+Finished Writing Netlists (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:16s; Memory used current: 274MB peak: 275MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:26s; CPU Time elapsed 0h:00m:13s; Memory used current: 273MB peak: 276MB)
+Start final timing analysis (Real Time elapsed 0h:00m:29s; CPU Time elapsed 0h:00m:17s; Memory used current: 273MB peak: 275MB)
 
 @W: MT246 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\i2c_vsb.v":91:8:91:16|Blackbox EFB is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\vsb_pll_downlink.v":67:12:67:20|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
@@ -735,7 +735,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:26s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Sun Aug 16 12:23:51 2026
+# Timing report written on Sun Aug 16 13:30:52 2026
 #
 
 
@@ -1359,10 +1359,10 @@ u_i2c_vsb.EFBInst_0     EFB      I2C1SCLI     In      0.000     2.676 r     -
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:14s; Memory used current: 274MB peak: 276MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:31s; CPU Time elapsed 0h:00m:18s; Memory used current: 274MB peak: 275MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:14s; Memory used current: 274MB peak: 276MB)
+Finished timing report (Real Time elapsed 0h:00m:31s; CPU Time elapsed 0h:00m:18s; Memory used current: 274MB peak: 275MB)
 
 ---------------------------------------
 Resource Usage Report
@@ -1398,9 +1398,9 @@ VHI:            12
 VLO:            12
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:31s; CPU Time elapsed 0h:00m:14s; Memory used current: 132MB peak: 276MB)
+At Mapper Exit (Real Time elapsed 0h:00m:34s; CPU Time elapsed 0h:00m:18s; Memory used current: 133MB peak: 275MB)
 
-Process took 0h:00m:32s realtime, 0h:00m:15s cputime
-# Sun Aug 16 12:23:57 2026
+Process took 0h:00m:35s realtime, 0h:00m:19s cputime
+# Sun Aug 16 13:30:58 2026
 
 ###########################################################]
