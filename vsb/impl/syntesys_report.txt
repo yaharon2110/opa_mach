@@ -3,7 +3,7 @@
 #OS: Windows 10 or later
 #Hostname: OPSL80008034
 
-# Sun Aug 16 13:29:30 2026
+# Sun Aug 16 13:46:03 2026
 
 #Implementation: impl1
 
@@ -187,12 +187,12 @@ For a summary of runtime per design unit, please see file:
 
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 90MB peak: 91MB)
+At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 90MB peak: 91MB)
 
 Process took 0h:00m:03s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Aug 16 13:29:35 2026
+# Sun Aug 16 13:46:08 2026
 
 ###########################################################]
 ###########################################################[
@@ -213,12 +213,12 @@ Synopsys Synopsys Netlist Linker, Version comp202309synp1, Build 349R, Built Sep
 
 @N|Running in 64-bit mode
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 91MB peak: 92MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 91MB peak: 92MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+Process took 0h:00m:06s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Aug 16 13:29:38 2026
+# Sun Aug 16 13:46:16 2026
 
 ###########################################################]
 
@@ -228,12 +228,12 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:03s; Memory used current: 22MB peak: 23MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:04s; Memory used current: 22MB peak: 23MB)
 
-Process took 0h:00m:07s realtime, 0h:00m:03s cputime
+Process took 0h:00m:15s realtime, 0h:00m:04s cputime
 
 Process completed successfully.
-# Sun Aug 16 13:29:40 2026
+# Sun Aug 16 13:46:21 2026
 
 ###########################################################]
 ###########################################################[
@@ -260,10 +260,12 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; 
 Process took 0h:00m:02s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Aug 16 13:29:47 2026
+# Sun Aug 16 13:46:28 2026
 
 ###########################################################]
-# Sun Aug 16 13:29:52 2026
+Premap Report
+
+# Sun Aug 16 13:46:33 2026
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -284,9 +286,9 @@ Synopsys Lattice Technology Pre-mapping, Version map202309lat, Build 191R, Built
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 182MB peak: 182MB)
 
 
-Done reading skeleton netlist (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 187MB peak: 197MB)
+Done reading skeleton netlist (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 186MB peak: 197MB)
 
-@A: MF827 |No constraint file specified.
+Reading constraint file: J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\opa_vsb.fdc
 @L: J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl1\opa_vsb_impl1_scck.rpt 
 See clock summary report "J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl1\opa_vsb_impl1_scck.rpt"
 @N: MF916 |Option synthesis_strategy=base is enabled. 
@@ -296,27 +298,27 @@ See clock summary report "J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl
 Design Input Complete (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 190MB peak: 197MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:03s; Memory used current: 190MB peak: 197MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 190MB peak: 197MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:04s; Memory used current: 203MB peak: 203MB)
+Start loading timing files (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:05s; Memory used current: 204MB peak: 204MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:05s; Memory used current: 204MB peak: 205MB)
+Finished loading timing files (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:06s; Memory used current: 204MB peak: 206MB)
 
 NConnInternalConnection caching is on
 @W: BN132 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Removing sequential instance u_i2c_script_driver.wb_stb because it is equivalent to instance u_i2c_script_driver.wb_cyc. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
-Starting HSTDM IP insertion (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:06s; Memory used current: 254MB peak: 255MB)
+Starting HSTDM IP insertion (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:07s; Memory used current: 254MB peak: 255MB)
 
 
-Finished HSTDM IP insertion (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:07s; Memory used current: 254MB peak: 255MB)
+Finished HSTDM IP insertion (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:08s; Memory used current: 254MB peak: 255MB)
 
 
-Started DisTri Cleanup (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:08s; Memory used current: 254MB peak: 255MB)
+Started DisTri Cleanup (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:08s; Memory used current: 255MB peak: 255MB)
 
 
-Finished DisTri Cleanup (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:08s; Memory used current: 254MB peak: 255MB)
+Finished DisTri Cleanup (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:09s; Memory used current: 255MB peak: 256MB)
 
 Encoding state machine state[13:0] (in view: work.vsb_i2c_script_driver(verilog))
 original code -> new code
@@ -335,70 +337,62 @@ original code -> new code
    01100 -> 01000000000000
    01101 -> 10000000000000
 
-Starting clock optimization phase (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:08s; Memory used current: 260MB peak: 260MB)
+Starting clock optimization phase (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:09s; Memory used current: 260MB peak: 260MB)
 
 
 mixed edge conversion for GCC is OFF
-@W: BZ204 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":79:32:79:45|GCC unable to propagate clocks through gate u_internal_osc; all outputs will be treated as enables regardless of whether any inputs are clocks
-@W: BZ240 :|GCC encountered Inferred Clock constraint on net GCC considers to be data internal_osc_clk; this will likely lead to failure to convert
-@W: BZ204 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\vsb_pll_downlink.v":67:12:67:20|GCC unable to propagate clocks through gate u_pll_downlink.PLLInst_0; all outputs will be treated as enables regardless of whether any inputs are clocks
-@W: BZ240 :|GCC encountered Inferred Clock constraint on net GCC considers to be data u_pll_downlink.CLKOP; this will likely lead to failure to convert
-@W: BZ240 :|GCC encountered Inferred Clock constraint on net GCC considers to be data u_pll_downlink.CLKOS; this will likely lead to failure to convert
 
-Finished clock optimization phase (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:09s; Memory used current: 260MB peak: 260MB)
+Finished clock optimization phase (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:09s; Memory used current: 260MB peak: 261MB)
 
+@W: Z241 :"j:/work/opsys-sense/opa/fpga design/vsb_mach_comp/opa_vsb.fdc":2:0:2:0|Source for clock clk_81m should be moved to net u_pll_downlink.CLKOP connected to driving cell pin u_pll_downlink.PLLInst_0.CLKOP 
+@W: Z241 :"j:/work/opsys-sense/opa/fpga design/vsb_mach_comp/opa_vsb.fdc":3:0:3:0|Source for clock clk_27m_buf should be moved to net u_pll_downlink.CLKOS connected to driving cell pin u_pll_downlink.PLLInst_0.CLKOS 
 
-Starting clock optimization report phase (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:09s; Memory used current: 260MB peak: 261MB)
+Starting clock optimization report phase (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:10s; Memory used current: 260MB peak: 261MB)
 
 
-Finished clock optimization report phase (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:09s; Memory used current: 260MB peak: 261MB)
+Finished clock optimization report phase (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:10s; Memory used current: 260MB peak: 261MB)
 
 @N: FX1184 |Applying syn_allowed_resources blockrams=64 on top level netlist vsb_top 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:09s; Memory used current: 260MB peak: 261MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:10s; Memory used current: 260MB peak: 261MB)
 
 
 
 Clock Summary
 ******************
 
-          Start                                       Requested     Requested     Clock        Clock               Clock
-Level     Clock                                       Frequency     Period        Type         Group               Load 
-------------------------------------------------------------------------------------------------------------------------
-0 -       System                                      100.0 MHz     10.000        system       system_clkgroup     0    
-                                                                                                                        
-0 -       vsb_top|internal_osc_clk_inferred_clock     53.2 MHz      18.797        inferred     (multiple)          89   
-                                                                                                                        
-0 -       vsb_top|serdes_rbc0                         100.0 MHz     10.000        inferred     (multiple)          51   
-                                                                                                                        
-0 -       vsb_pll_downlink|CLKOP_inferred_clock       100.0 MHz     10.000        inferred     (multiple)          44   
-                                                                                                                        
-0 -       vsb_pll_downlink|CLKOS_inferred_clock       100.0 MHz     10.000        inferred     (multiple)          15   
-========================================================================================================================
+          Start                Requested     Requested     Clock        Clock                Clock
+Level     Clock                Frequency     Period        Type         Group                Load 
+--------------------------------------------------------------------------------------------------
+0 -       internal_osc_clk     53.2 MHz      18.797        declared     default_clkgroup     89   
+                                                                                                  
+0 -       serdes_rbc0          81.0 MHz      12.346        declared     default_clkgroup     51   
+                                                                                                  
+0 -       clk_81m              81.0 MHz      12.346        declared     default_clkgroup     44   
+                                                                                                  
+0 -       clk_27m_buf          27.0 MHz      37.037        declared     default_clkgroup     15   
+                                                                                                  
+0 -       System               100.0 MHz     10.000        system       system_clkgroup      0    
+==================================================================================================
 
 
 
 Clock Load Summary
 ***********************
 
-                                            Clock     Source                                      Clock Pin                                            Non-clock Pin     Non-clock Pin
-Clock                                       Load      Pin                                         Seq Example                                          Seq Example       Comb Example 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                      0         -                                           -                                                    -                 -            
-                                                                                                                                                                                      
-vsb_top|internal_osc_clk_inferred_clock     89        u_internal_osc.OSC(OSCH)                    u_vsb_status_led.clk_divider[25:0].C                 -                 -            
-                                                                                                                                                                                      
-vsb_top|serdes_rbc0                         51        serdes_rbc0(port)                           u_uplink_rx.serdes_sync_d1.C                         -                 -            
-                                                                                                                                                                                      
-vsb_pll_downlink|CLKOP_inferred_clock       44        u_pll_downlink.PLLInst_0.CLKOP(EHXPLLJ)     u_downlink_tx.u_encoder_8b10b.disparity.C            -                 -            
-                                                                                                                                                                                      
-vsb_pll_downlink|CLKOS_inferred_clock       15        u_pll_downlink.PLLInst_0.CLKOS(EHXPLLJ)     u_downlink_tx.u_tx_payload_mux.byte_toggle_27m.C     -                 -            
-======================================================================================================================================================================================
-
-@W: MT529 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Found inferred clock vsb_top|internal_osc_clk_inferred_clock which controls 89 sequential elements including u_i2c_script_driver.state[13]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
-@W: MT529 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_reset_sync.v":31:4:31:9|Found inferred clock vsb_top|serdes_rbc0 which controls 51 sequential elements including u_rx_reset_sync.delay_counter[15:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
-@W: MT529 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_reset_sync.v":31:4:31:9|Found inferred clock vsb_pll_downlink|CLKOP_inferred_clock which controls 44 sequential elements including u_tx_reset_sync.delay_counter[15:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
-@W: MT529 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":26:4:26:9|Found inferred clock vsb_pll_downlink|CLKOS_inferred_clock which controls 15 sequential elements including u_downlink_tx.u_tx_payload_mux.reg_byte1[5:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+                     Clock     Source                                      Clock Pin                                            Non-clock Pin     Non-clock Pin
+Clock                Load      Pin                                         Seq Example                                          Seq Example       Comb Example 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+internal_osc_clk     89        u_internal_osc.OSC(OSCH)                    u_vsb_status_led.clk_divider[25:0].C                 -                 -            
+                                                                                                                                                               
+serdes_rbc0          51        serdes_rbc0(port)                           u_uplink_rx.serdes_sync_d1.C                         -                 -            
+                                                                                                                                                               
+clk_81m              44        u_pll_downlink.PLLInst_0.CLKOP(EHXPLLJ)     u_downlink_tx.u_encoder_8b10b.disparity.C            -                 -            
+                                                                                                                                                               
+clk_27m_buf          15        u_pll_downlink.PLLInst_0.CLKOS(EHXPLLJ)     u_downlink_tx.u_tx_payload_mux.byte_toggle_27m.C     -                 -            
+                                                                                                                                                               
+System               0         -                                           -                                                    -                 -            
+===============================================================================================================================================================
 
 ICG Latch Removal Summary:
 Number of ICG latches removed: 0
@@ -411,22 +405,18 @@ Number of ICG latches not removed:	0
 
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 51 clock pin(s) of sequential element(s)
-3 gated/generated clock tree(s) driving 148 clock pin(s) of sequential element(s)
-0 instances converted, 148 sequential instances remain driven by gated/generated clocks
+4 non-gated/non-generated clock tree(s) driving 199 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
-==================================== Non-Gated/Non-Generated Clocks =====================================
-Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                  
----------------------------------------------------------------------------------------------------------
-@KP:ckid0_2       serdes_rbc0         port                   51         u_uplink_rx.aligned_10b_word[9:0]
-=========================================================================================================
-============================================================================== Gated/Generated Clocks ==============================================================================
-Clock Tree ID     Driving Element                    Drive Element Type     Unconverted Fanout     Sample Instance                                   Explanation                    
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@KP:ckid0_0       u_internal_osc.OSC                 OSCH                   89                     u_vsb_status_led.clk_divider[25:0]                Clock source is invalid for GCC
-@KP:ckid0_4       u_pll_downlink.PLLInst_0.CLKOP     EHXPLLJ                44                     u_tx_reset_sync.delay_counter[15:0]               Clock source is invalid for GCC
-@KP:ckid0_6       u_pll_downlink.PLLInst_0.CLKOS     EHXPLLJ                15                     u_downlink_tx.u_tx_payload_mux.reg_byte1[5:0]     Clock source is invalid for GCC
-====================================================================================================================================================================================
+============================================= Non-Gated/Non-Generated Clocks =============================================
+Clock Tree ID     Driving Element          Drive Element Type     Fanout     Sample Instance                              
+--------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_0       u_internal_osc.OSC       OSCH                   89         u_vsb_status_led.clk_divider[25:0]           
+@KP:ckid0_1       serdes_rbc0              port                   51         u_uplink_rx.aligned_10b_word[9:0]            
+@KP:ckid0_2       u_pll_downlink.CLKOP     vsb_pll_downlink       44         u_tx_reset_sync.delay_counter[15:0]          
+@KP:ckid0_3       u_pll_downlink.CLKOS     vsb_pll_downlink       15         u_downlink_tx.u_tx_payload_mux.reg_byte1[5:0]
+==========================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######
@@ -438,23 +428,26 @@ Summary of user generated gated clocks:
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:21s; CPU Time elapsed 0h:00m:10s; Memory used current: 261MB peak: 261MB)
+Starting constraint checker (Real Time elapsed 0h:00m:22s; CPU Time elapsed 0h:00m:11s; Memory used current: 262MB peak: 262MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:21s; CPU Time elapsed 0h:00m:11s; Memory used current: 261MB peak: 262MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:22s; CPU Time elapsed 0h:00m:11s; Memory used current: 262MB peak: 262MB)
 
+@W: MF511 |Found issues with constraints. Please check constraint checker report "J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl1\opa_vsb_impl1_cck.rpt" .
 
-Finished constraint checker (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:11s; Memory used current: 262MB peak: 262MB)
+Finished constraint checker (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:12s; Memory used current: 262MB peak: 262MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:11s; Memory used current: 171MB peak: 263MB)
+At Mapper Exit (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:12s; Memory used current: 171MB peak: 263MB)
 
-Process took 0h:00m:25s realtime, 0h:00m:12s cputime
-# Sun Aug 16 13:30:17 2026
+Process took 0h:00m:25s realtime, 0h:00m:13s cputime
+# Sun Aug 16 13:46:59 2026
 
 ###########################################################]
-# Sun Aug 16 13:30:23 2026
+Map & Optimize Report
+
+# Sun Aug 16 13:47:06 2026
 
 
 Copyright (C) 1994-2023 Synopsys, Inc.
@@ -478,20 +471,20 @@ Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:0
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 184MB peak: 197MB)
+Design Input Complete (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 184MB peak: 197MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 184MB peak: 197MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:03s; Memory used current: 184MB peak: 197MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 198MB peak: 198MB)
+Start loading timing files (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:04s; Memory used current: 198MB peak: 198MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:05s; Memory used current: 199MB peak: 201MB)
+Finished loading timing files (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:05s; Memory used current: 199MB peak: 201MB)
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:07s; Memory used current: 252MB peak: 252MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:07s; Memory used current: 253MB peak: 253MB)
 
 @N: BZ173 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_i2c_script_driver.v":75:8:75:11|ROM payload_byte[7:2] (in view: work.vsb_i2c_script_driver(verilog)) mapped in logic.
 @N: BZ173 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_i2c_script_driver.v":75:8:75:11|ROM command_byte[7:4] (in view: work.vsb_i2c_script_driver(verilog)) mapped in logic.
@@ -503,7 +496,7 @@ Starting Optimization and Mapping (Real Time elapsed 0h:00m:10s; CPU Time elapse
 @W: BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":11:7:11:13|Net clk_81m has multiple drivers .
 @W: BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":11:7:11:13|Net clk_27m_buf has multiple drivers .
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:08s; Memory used current: 259MB peak: 259MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:08s; Memory used current: 260MB peak: 260MB)
 
 @N: MO231 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_reset_sync.v":31:4:31:9|Found counter in view:work.vsb_reset_sync_1(verilog) instance delay_counter[15:0] 
 @N: MO231 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_reset_sync.v":31:4:31:9|Found counter in view:work.vsb_reset_sync_0(verilog) instance delay_counter[15:0] 
@@ -511,7 +504,7 @@ Finished RTL optimizations (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00
 @N: MO231 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Found counter in view:work.vsb_i2c_script_driver(verilog) instance script_index[4:0] 
 @N: MO231 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\board_status_led.v":34:4:34:9|Found counter in view:work.board_status_led(verilog) instance clk_divider[25:0] 
 
-Starting factoring (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:09s; Memory used current: 260MB peak: 260MB)
+Starting factoring (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:09s; Memory used current: 260MB peak: 261MB)
 
 
 Finished factoring (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:10s; Memory used current: 261MB peak: 261MB)
@@ -558,58 +551,26 @@ NConnInternalConnection caching is on
 @W: BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":11:7:11:13|Net u_rx_reset_sync.N_2 has multiple drivers .
 @W: BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":11:7:11:13|Net u_tx_reset_sync.N_2 has multiple drivers .
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:10s; Memory used current: 261MB peak: 262MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:10s; Memory used current: 261MB peak: 262MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:11s; Memory used current: 261MB peak: 262MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:10s; Memory used current: 262MB peak: 262MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:11s; Memory used current: 261MB peak: 262MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:11s; Memory used current: 262MB peak: 262MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:11s; Memory used current: 261MB peak: 262MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:11s; Memory used current: 262MB peak: 263MB)
 
 @N: BN362 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":61:4:61:9|Removing sequential instance u_downlink_tx.u_tx_payload_mux.mux_byte_o[0] (in view: work.vsb_top(verilog)) because it does not drive other instances.
-@A: BN291 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":61:4:61:9|Boundary register u_downlink_tx.u_tx_payload_mux.mux_byte_o[0] (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 @N: BN362 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":61:4:61:9|Removing sequential instance u_downlink_tx.u_tx_payload_mux.mux_byte_o[1] (in view: work.vsb_top(verilog)) because it does not drive other instances.
-@A: BN291 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":61:4:61:9|Boundary register u_downlink_tx.u_tx_payload_mux.mux_byte_o[1] (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 @N: BN362 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":61:4:61:9|Removing sequential instance u_downlink_tx.u_tx_payload_mux.mux_is_k_o (in view: work.vsb_top(verilog)) because it does not drive other instances.
 @N: BN362 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":61:4:61:9|Removing sequential instance u_downlink_tx.u_tx_payload_mux.mux_byte_o[2] (in view: work.vsb_top(verilog)) because it does not drive other instances.
-@A: BN291 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":61:4:61:9|Boundary register u_downlink_tx.u_tx_payload_mux.mux_byte_o[2] (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 @N: BN362 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":61:4:61:9|Removing sequential instance u_downlink_tx.u_tx_payload_mux.mux_byte_o[3] (in view: work.vsb_top(verilog)) because it does not drive other instances.
-@A: BN291 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":61:4:61:9|Boundary register u_downlink_tx.u_tx_payload_mux.mux_byte_o[3] (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 @N: BN362 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":61:4:61:9|Removing sequential instance u_downlink_tx.u_tx_payload_mux.mux_byte_o[4] (in view: work.vsb_top(verilog)) because it does not drive other instances.
-@A: BN291 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":61:4:61:9|Boundary register u_downlink_tx.u_tx_payload_mux.mux_byte_o[4] (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 @N: BN362 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":61:4:61:9|Removing sequential instance u_downlink_tx.u_tx_payload_mux.mux_byte_o[5] (in view: work.vsb_top(verilog)) because it does not drive other instances.
-@A: BN291 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":61:4:61:9|Boundary register u_downlink_tx.u_tx_payload_mux.mux_byte_o[5] (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 @N: BN362 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":61:4:61:9|Removing sequential instance u_downlink_tx.u_tx_payload_mux.mux_byte_o[6] (in view: work.vsb_top(verilog)) because it does not drive other instances.
-@A: BN291 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":61:4:61:9|Boundary register u_downlink_tx.u_tx_payload_mux.mux_byte_o[6] (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 @N: BN362 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":61:4:61:9|Removing sequential instance u_downlink_tx.u_tx_payload_mux.mux_byte_o[7] (in view: work.vsb_top(verilog)) because it does not drive other instances.
-@A: BN291 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":61:4:61:9|Boundary register u_downlink_tx.u_tx_payload_mux.mux_byte_o[7] (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :|Boundary register G_241 (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :|Boundary register G_242 (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :|Boundary register G_243 (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :|Boundary register G_244 (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :|Boundary register G_245 (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :|Boundary register G_246 (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :|Boundary register G_247 (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :|Boundary register G_248 (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :|Boundary register G_261 (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :|Boundary register G_262 (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :|Boundary register G_263 (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :|Boundary register G_264 (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :|Boundary register G_265 (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :|Boundary register G_266 (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :|Boundary register G_267 (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :|Boundary register G_268 (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :|Boundary register G_281 (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :|Boundary register G_282 (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :|Boundary register G_283 (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :|Boundary register G_284 (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :|Boundary register G_285 (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :|Boundary register G_286 (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :|Boundary register G_287 (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :|Boundary register G_288 (in view: work.vsb_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 @N: FX211 |Packed ROM u_uplink_rx.u_decoder_8b10b.lut_kin_0[8:0] (10 input, 9 output) to Block SelectRAM 
 @N: FX211 |Packed ROM u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0[20:0] (9 input, 21 output) to Block SelectRAM 
 @N: FX211 |Packed ROM u_uplink_rx.u_decoder_8b10b.lut_valid_0[2:0] (10 input, 3 output) to Block SelectRAM 
@@ -624,19 +585,16 @@ Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:16s; CP
 @W: BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":11:7:11:13|Net u_i2c_script_driver.timer_counter has multiple drivers .
 @W: BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":11:7:11:13|Net u_i2c_script_driver.script_index has multiple drivers .
 
-Finished preparing to map (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:12s; Memory used current: 262MB peak: 262MB)
+Finished preparing to map (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:12s; Memory used current: 263MB peak: 263MB)
 
-@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":46:4:46:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.toggle_sync_81m[0] (in view: work.vsb_top(verilog)).
 
-Finished technology mapping (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:12s; Memory used current: 265MB peak: 265MB)
+Finished technology mapping (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:12s; Memory used current: 265MB peak: 265MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:12s		    -0.29ns		 150 /       207
-   2		0h:00m:12s		    -0.29ns		 150 /       207
-@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":46:4:46:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.toggle_sync_81m[0] (in view: work.vsb_top(verilog)).
+   1		0h:00m:12s		     1.88ns		 149 /       207
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:13s; Memory used current: 265MB peak: 266MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:20s; CPU Time elapsed 0h:00m:13s; Memory used current: 265MB peak: 266MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 @W: BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":11:7:11:13|Net N_1083 has multiple drivers .
@@ -699,51 +657,52 @@ Finished technology timing optimizations and critical path resynthesis (Real Tim
 
 Only the first 100 messages of id 'BN161' are reported. To see all messages use 'report_messages -log J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl1\synlog\opa_vsb_impl1_fpga_mapper.srr -id BN161' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN161} -count unlimited' in the Tcl shell.
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:21s; CPU Time elapsed 0h:00m:13s; Memory used current: 266MB peak: 266MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:22s; CPU Time elapsed 0h:00m:13s; Memory used current: 266MB peak: 266MB)
 
 
-Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:00m:21s; CPU Time elapsed 0h:00m:13s; Memory used current: 266MB peak: 267MB)
+Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:00m:22s; CPU Time elapsed 0h:00m:13s; Memory used current: 266MB peak: 267MB)
 
 
-Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:00m:22s; CPU Time elapsed 0h:00m:14s; Memory used current: 266MB peak: 267MB)
+Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:14s; Memory used current: 266MB peak: 267MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:22s; CPU Time elapsed 0h:00m:14s; Memory used current: 212MB peak: 267MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:14s; Memory used current: 210MB peak: 267MB)
 
 Writing Analyst data base J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl1\synwork\opa_vsb_impl1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:25s; CPU Time elapsed 0h:00m:15s; Memory used current: 267MB peak: 267MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:26s; CPU Time elapsed 0h:00m:15s; Memory used current: 266MB peak: 267MB)
 
 Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl1\opa_vsb_impl1.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:27s; CPU Time elapsed 0h:00m:16s; Memory used current: 275MB peak: 275MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:29s; CPU Time elapsed 0h:00m:16s; Memory used current: 275MB peak: 275MB)
 
 
-Finished Writing Netlists (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:16s; Memory used current: 274MB peak: 275MB)
+Finished Writing Netlists (Real Time elapsed 0h:00m:29s; CPU Time elapsed 0h:00m:16s; Memory used current: 275MB peak: 276MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:29s; CPU Time elapsed 0h:00m:17s; Memory used current: 273MB peak: 275MB)
+Start final timing analysis (Real Time elapsed 0h:00m:31s; CPU Time elapsed 0h:00m:17s; Memory used current: 273MB peak: 276MB)
 
 @W: MT246 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\i2c_vsb.v":91:8:91:16|Blackbox EFB is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\vsb_pll_downlink.v":67:12:67:20|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT420 |Found inferred clock vsb_top|internal_osc_clk_inferred_clock with period 18.80ns. Please declare a user-defined clock on net internal_osc_clk.
-@W: MT420 |Found inferred clock vsb_top|serdes_rbc0 with period 10.00ns. Please declare a user-defined clock on port serdes_rbc0.
-@W: MT420 |Found inferred clock vsb_pll_downlink|CLKOP_inferred_clock with period 10.00ns. Please declare a user-defined clock on net u_pll_downlink.clk_81m.
-@W: MT420 |Found inferred clock vsb_pll_downlink|CLKOS_inferred_clock with period 10.00ns. Please declare a user-defined clock on net u_pll_downlink.clk_27m_buf.
+@N: MT615 |Found clock internal_osc_clk with period 18.80ns 
+@N: MT615 |Found clock clk_81m with period 12.35ns 
+@N: MT615 |Found clock clk_27m_buf with period 37.04ns 
+@N: MT615 |Found clock serdes_rbc0 with period 12.35ns 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Sun Aug 16 13:30:52 2026
+# Timing report written on Sun Aug 16 13:47:40 2026
 #
 
 
 Top view:               vsb_top
-Requested Frequency:    53.2 MHz
+Requested Frequency:    27.0 MHz
 Wire load mode:         top
 Paths requested:        5
-Constraint File(s):    
+Constraint File(s):    J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\opa_vsb.fdc
+                       
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
 
 @N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
@@ -754,17 +713,17 @@ Performance Summary
 *******************
 
 
-Worst slack in design: -0.389
+Worst slack in design: 1.884
 
-                                            Requested     Estimated     Requested     Estimated                Clock        Clock          
-Starting Clock                              Frequency     Frequency     Period        Period        Slack      Type         Group          
--------------------------------------------------------------------------------------------------------------------------------------------
-vsb_pll_downlink|CLKOP_inferred_clock       100.0 MHz     120.2 MHz     10.000        8.318         1.682      inferred     (multiple)     
-vsb_pll_downlink|CLKOS_inferred_clock       100.0 MHz     582.3 MHz     10.000        1.717         8.283      inferred     (multiple)     
-vsb_top|internal_osc_clk_inferred_clock     53.2 MHz      82.3 MHz      18.797        12.149        6.648      inferred     (multiple)     
-vsb_top|serdes_rbc0                         100.0 MHz     96.3 MHz      10.000        10.389        -0.389     inferred     (multiple)     
-System                                      100.0 MHz     373.6 MHz     10.000        2.676         7.324      system       system_clkgroup
-===========================================================================================================================================
+                     Requested     Estimated     Requested     Estimated               Clock        Clock           
+Starting Clock       Frequency     Frequency     Period        Period        Slack     Type         Group           
+--------------------------------------------------------------------------------------------------------------------
+clk_27m_buf          27.0 MHz      107.4 MHz     37.037        9.309         9.243     declared     default_clkgroup
+clk_81m              81.0 MHz      120.2 MHz     12.346        8.318         4.028     declared     default_clkgroup
+internal_osc_clk     53.2 MHz      82.3 MHz      18.797        12.149        6.648     declared     default_clkgroup
+serdes_rbc0          81.0 MHz      95.6 MHz      12.346        10.461        1.884     declared     default_clkgroup
+System               100.0 MHz     373.6 MHz     10.000        2.676         7.324     system       system_clkgroup 
+====================================================================================================================
 
 
 
@@ -773,19 +732,19 @@ System                                      100.0 MHz     373.6 MHz     10.000  
 Clock Relationships
 *******************
 
-Clocks                                                                            |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Starting                                 Ending                                   |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                   System                                   |  10.000      7.324   |  No paths    -      |  No paths    -      |  No paths    -    
-System                                   vsb_top|internal_osc_clk_inferred_clock  |  18.797      17.053  |  No paths    -      |  No paths    -      |  No paths    -    
-vsb_top|internal_osc_clk_inferred_clock  System                                   |  18.797      17.753  |  No paths    -      |  No paths    -      |  No paths    -    
-vsb_top|internal_osc_clk_inferred_clock  vsb_top|internal_osc_clk_inferred_clock  |  18.797      6.648   |  No paths    -      |  No paths    -      |  No paths    -    
-vsb_top|serdes_rbc0                      vsb_top|serdes_rbc0                      |  10.000      -0.389  |  No paths    -      |  No paths    -      |  No paths    -    
-vsb_pll_downlink|CLKOP_inferred_clock    vsb_pll_downlink|CLKOP_inferred_clock    |  10.000      1.682   |  No paths    -      |  No paths    -      |  No paths    -    
-vsb_pll_downlink|CLKOS_inferred_clock    vsb_pll_downlink|CLKOP_inferred_clock    |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
-vsb_pll_downlink|CLKOS_inferred_clock    vsb_pll_downlink|CLKOS_inferred_clock    |  10.000      8.283   |  No paths    -      |  No paths    -      |  No paths    -    
-=========================================================================================================================================================================
+Clocks                              |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------------------------
+Starting          Ending            |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------------------------
+System            System            |  10.000      7.324   |  No paths    -      |  No paths    -      |  No paths    -    
+System            internal_osc_clk  |  18.797      17.053  |  No paths    -      |  No paths    -      |  No paths    -    
+internal_osc_clk  System            |  18.797      17.753  |  No paths    -      |  No paths    -      |  No paths    -    
+internal_osc_clk  internal_osc_clk  |  18.797      6.648   |  No paths    -      |  No paths    -      |  No paths    -    
+clk_81m           clk_81m           |  12.346      4.028   |  No paths    -      |  No paths    -      |  No paths    -    
+clk_27m_buf       clk_81m           |  12.346      9.243   |  No paths    -      |  No paths    -      |  No paths    -    
+clk_27m_buf       clk_27m_buf       |  37.037      35.320  |  No paths    -      |  No paths    -      |  No paths    -    
+serdes_rbc0       serdes_rbc0       |  12.346      1.884   |  No paths    -      |  No paths    -      |  No paths    -    
+===========================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -799,7 +758,7 @@ No IO constraint found
 
 
 ====================================
-Detailed Report for Clock: vsb_pll_downlink|CLKOP_inferred_clock
+Detailed Report for Clock: clk_27m_buf
 ====================================
 
 
@@ -807,41 +766,41 @@ Detailed Report for Clock: vsb_pll_downlink|CLKOP_inferred_clock
 Starting Points with Worst Slack
 ********************************
 
-                                                 Starting                                                                             Arrival          
-Instance                                         Reference                                 Type        Pin     Net                    Time        Slack
-                                                 Clock                                                                                                 
--------------------------------------------------------------------------------------------------------------------------------------------------------
-u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     vsb_pll_downlink|CLKOP_inferred_clock     PDPW8KC     DO0     cw_rd_plus_0_0_DO0     8.212       1.682
-u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     vsb_pll_downlink|CLKOP_inferred_clock     PDPW8KC     DO1     cw_rd_plus_0_0_DO1     8.212       1.682
-u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     vsb_pll_downlink|CLKOP_inferred_clock     PDPW8KC     DO2     cw_rd_plus_0_0_DO2     8.212       1.682
-u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     vsb_pll_downlink|CLKOP_inferred_clock     PDPW8KC     DO3     cw_rd_plus_0_0_DO3     8.212       1.682
-u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     vsb_pll_downlink|CLKOP_inferred_clock     PDPW8KC     DO4     cw_rd_plus_0_0_DO4     8.212       1.682
-u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     vsb_pll_downlink|CLKOP_inferred_clock     PDPW8KC     DO5     cw_rd_plus_0_0_DO5     8.212       1.682
-u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     vsb_pll_downlink|CLKOP_inferred_clock     PDPW8KC     DO6     cw_rd_plus_0_0_DO6     8.212       1.682
-u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     vsb_pll_downlink|CLKOP_inferred_clock     PDPW8KC     DO7     cw_rd_plus_0_0_DO7     8.212       1.682
-u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     vsb_pll_downlink|CLKOP_inferred_clock     PDPW8KC     DO8     cw_rd_plus_0_0_DO8     8.212       1.682
-u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     vsb_pll_downlink|CLKOP_inferred_clock     PDPW8KC     DO9     cw_rd_plus_0_0_DO9     8.212       1.682
-=======================================================================================================================================================
+                                                  Starting                                                                             Arrival          
+Instance                                          Reference       Type         Pin     Net                                             Time        Slack
+                                                  Clock                                                                                                 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+u_downlink_tx_u_tx_payload_mux_reg_byte0io[0]     clk_27m_buf     IFS1P3DX     Q       u_downlink_tx.u_tx_payload_mux.reg_byte0[0]     0.972       9.243
+u_downlink_tx_u_tx_payload_mux_reg_byte0io[1]     clk_27m_buf     IFS1P3DX     Q       u_downlink_tx.u_tx_payload_mux.reg_byte0[1]     0.972       9.243
+u_downlink_tx_u_tx_payload_mux_reg_byte0io[2]     clk_27m_buf     IFS1P3DX     Q       u_downlink_tx.u_tx_payload_mux.reg_byte0[2]     0.972       9.243
+u_downlink_tx_u_tx_payload_mux_reg_byte0io[3]     clk_27m_buf     IFS1P3DX     Q       u_downlink_tx.u_tx_payload_mux.reg_byte0[3]     0.972       9.243
+u_downlink_tx_u_tx_payload_mux_reg_byte0io[4]     clk_27m_buf     IFS1P3DX     Q       u_downlink_tx.u_tx_payload_mux.reg_byte0[4]     0.972       9.243
+u_downlink_tx_u_tx_payload_mux_reg_byte0io[5]     clk_27m_buf     IFS1P3DX     Q       u_downlink_tx.u_tx_payload_mux.reg_byte0[5]     0.972       9.243
+u_downlink_tx_u_tx_payload_mux_reg_byte0io[6]     clk_27m_buf     IFS1P3DX     Q       u_downlink_tx.u_tx_payload_mux.reg_byte0[6]     0.972       9.243
+u_downlink_tx_u_tx_payload_mux_reg_byte0io[7]     clk_27m_buf     IFS1P3DX     Q       u_downlink_tx.u_tx_payload_mux.reg_byte0[7]     0.972       9.243
+u_downlink_tx_u_tx_payload_mux_reg_byte1io[0]     clk_27m_buf     IFS1P3DX     Q       u_downlink_tx.u_tx_payload_mux.reg_byte1[0]     0.972       9.243
+u_downlink_tx_u_tx_payload_mux_reg_byte1io[1]     clk_27m_buf     IFS1P3DX     Q       u_downlink_tx.u_tx_payload_mux.reg_byte1[1]     0.972       9.243
+========================================================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                                       Starting                                                                              Required          
-Instance                                               Reference                                 Type        Pin     Net                     Time         Slack
-                                                       Clock                                                                                                   
----------------------------------------------------------------------------------------------------------------------------------------------------------------
-u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_dreg[0]     vsb_pll_downlink|CLKOP_inferred_clock     FD1S3DX     D       cw_rd_plus_0_0_DO9      9.894        1.682
-u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_dreg[1]     vsb_pll_downlink|CLKOP_inferred_clock     FD1S3DX     D       cw_rd_plus_0_0_DO10     9.894        1.682
-u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_dreg[2]     vsb_pll_downlink|CLKOP_inferred_clock     FD1S3DX     D       cw_rd_plus_0_0_DO11     9.894        1.682
-u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_dreg[3]     vsb_pll_downlink|CLKOP_inferred_clock     FD1S3DX     D       cw_rd_plus_0_0_DO12     9.894        1.682
-u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_dreg[4]     vsb_pll_downlink|CLKOP_inferred_clock     FD1S3DX     D       cw_rd_plus_0_0_DO13     9.894        1.682
-u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_dreg[5]     vsb_pll_downlink|CLKOP_inferred_clock     FD1S3DX     D       cw_rd_plus_0_0_DO14     9.894        1.682
-u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_dreg[6]     vsb_pll_downlink|CLKOP_inferred_clock     FD1S3DX     D       cw_rd_plus_0_0_DO15     9.894        1.682
-u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_dreg[7]     vsb_pll_downlink|CLKOP_inferred_clock     FD1S3DX     D       cw_rd_plus_0_0_DO16     9.894        1.682
-u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_dreg[8]     vsb_pll_downlink|CLKOP_inferred_clock     FD1S3DX     D       cw_rd_plus_0_0_DO17     9.894        1.682
-u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_dreg[9]     vsb_pll_downlink|CLKOP_inferred_clock     FD1S3DX     D       cw_rd_plus_0_0_DO0      9.894        1.682
-===============================================================================================================================================================
+                                                 Starting                                                  Required          
+Instance                                         Reference       Type        Pin       Net                 Time         Slack
+                                                 Clock                                                                       
+-----------------------------------------------------------------------------------------------------------------------------
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     clk_27m_buf     PDPW8KC     ADR4      mux_byte_o_4[0]     10.663       9.243
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     clk_27m_buf     PDPW8KC     ADR5      mux_byte_o_4[1]     10.663       9.243
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     clk_27m_buf     PDPW8KC     ADR6      N_52                10.663       9.243
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     clk_27m_buf     PDPW8KC     ADR7      N_51                10.663       9.243
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     clk_27m_buf     PDPW8KC     ADR8      N_50                10.663       9.243
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     clk_27m_buf     PDPW8KC     ADR9      N_43                10.663       9.243
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     clk_27m_buf     PDPW8KC     ADR10     mux_byte_o_4[6]     10.663       9.243
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     clk_27m_buf     PDPW8KC     ADR11     mux_byte_o_4[7]     10.663       9.243
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_1     clk_27m_buf     PDPW8KC     ADR4      mux_byte_o_4[0]     10.663       9.243
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_1     clk_27m_buf     PDPW8KC     ADR5      mux_byte_o_4[1]     10.663       9.243
+=============================================================================================================================
 
 
 
@@ -850,20 +809,101 @@ Worst Path Information
 
 
 Path information for path number 1: 
-      Requested Period:                      10.000
+      Requested Period:                      12.346
+    - Setup time:                            1.682
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         10.663
+
+    - Propagation time:                      1.421
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 9.243
+
+    Number of logic level(s):                1
+    Starting point:                          u_downlink_tx_u_tx_payload_mux_reg_byte0io[0] / Q
+    Ending point:                            u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0 / ADR4
+    The start point is clocked by            clk_27m_buf [rising] (rise=0.000 fall=18.518 period=37.037) on pin SCLK
+    The end   point is clocked by            clk_81m [rising] (rise=0.000 fall=6.173 period=12.346) on pin CLKR
+
+Instance / Net                                                       Pin      Pin               Arrival     No. of    
+Name                                                    Type         Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------
+u_downlink_tx_u_tx_payload_mux_reg_byte0io[0]           IFS1P3DX     Q        Out     0.972     0.972 r     -         
+u_downlink_tx.u_tx_payload_mux.reg_byte0[0]             Net          -        -       -         -           1         
+u_downlink_tx.u_tx_payload_mux.mux_byte_o_4_1_a2[0]     ORCALUT4     C        In      0.000     0.972 r     -         
+u_downlink_tx.u_tx_payload_mux.mux_byte_o_4_1_a2[0]     ORCALUT4     Z        Out     0.449     1.421 r     -         
+mux_byte_o_4[0]                                         Net          -        -       -         -           2         
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0            PDPW8KC      ADR4     In      0.000     1.421 r     -         
+======================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: clk_81m
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                 Starting                                                 Arrival          
+Instance                                         Reference     Type        Pin     Net                    Time        Slack
+                                                 Clock                                                                     
+---------------------------------------------------------------------------------------------------------------------------
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     clk_81m       PDPW8KC     DO0     cw_rd_plus_0_0_DO0     8.212       4.028
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     clk_81m       PDPW8KC     DO1     cw_rd_plus_0_0_DO1     8.212       4.028
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     clk_81m       PDPW8KC     DO2     cw_rd_plus_0_0_DO2     8.212       4.028
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     clk_81m       PDPW8KC     DO3     cw_rd_plus_0_0_DO3     8.212       4.028
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     clk_81m       PDPW8KC     DO4     cw_rd_plus_0_0_DO4     8.212       4.028
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     clk_81m       PDPW8KC     DO5     cw_rd_plus_0_0_DO5     8.212       4.028
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     clk_81m       PDPW8KC     DO6     cw_rd_plus_0_0_DO6     8.212       4.028
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     clk_81m       PDPW8KC     DO7     cw_rd_plus_0_0_DO7     8.212       4.028
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     clk_81m       PDPW8KC     DO8     cw_rd_plus_0_0_DO8     8.212       4.028
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0     clk_81m       PDPW8KC     DO9     cw_rd_plus_0_0_DO9     8.212       4.028
+===========================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                       Starting                                                  Required          
+Instance                                               Reference     Type        Pin     Net                     Time         Slack
+                                                       Clock                                                                       
+-----------------------------------------------------------------------------------------------------------------------------------
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_dreg[0]     clk_81m       FD1S3DX     D       cw_rd_plus_0_0_DO9      12.240       4.028
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_dreg[1]     clk_81m       FD1S3DX     D       cw_rd_plus_0_0_DO10     12.240       4.028
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_dreg[2]     clk_81m       FD1S3DX     D       cw_rd_plus_0_0_DO11     12.240       4.028
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_dreg[3]     clk_81m       FD1S3DX     D       cw_rd_plus_0_0_DO12     12.240       4.028
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_dreg[4]     clk_81m       FD1S3DX     D       cw_rd_plus_0_0_DO13     12.240       4.028
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_dreg[5]     clk_81m       FD1S3DX     D       cw_rd_plus_0_0_DO14     12.240       4.028
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_dreg[6]     clk_81m       FD1S3DX     D       cw_rd_plus_0_0_DO15     12.240       4.028
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_dreg[7]     clk_81m       FD1S3DX     D       cw_rd_plus_0_0_DO16     12.240       4.028
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_dreg[8]     clk_81m       FD1S3DX     D       cw_rd_plus_0_0_DO17     12.240       4.028
+u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_dreg[9]     clk_81m       FD1S3DX     D       cw_rd_plus_0_0_DO0      12.240       4.028
+===================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      12.346
     - Setup time:                            0.106
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.894
+    = Required time:                         12.240
 
     - Propagation time:                      8.212
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 1.682
+    = Slack (non-critical) :                 4.028
 
     Number of logic level(s):                0
     Starting point:                          u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_0 / DO0
     Ending point:                            u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_dreg[9] / D
-    The start point is clocked by            vsb_pll_downlink|CLKOP_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLKR
-    The end   point is clocked by            vsb_pll_downlink|CLKOP_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CK
+    The start point is clocked by            clk_81m [rising] (rise=0.000 fall=6.173 period=12.346) on pin CLKR
+    The end   point is clocked by            clk_81m [rising] (rise=0.000 fall=6.173 period=12.346) on pin CK
 
 Instance / Net                                                     Pin      Pin               Arrival     No. of    
 Name                                                   Type        Name     Dir     Delay     Time        Fan Out(s)
@@ -877,7 +917,7 @@ u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0_dreg[9]     FD1S3DX     D        In  
 
 
 ====================================
-Detailed Report for Clock: vsb_pll_downlink|CLKOS_inferred_clock
+Detailed Report for Clock: internal_osc_clk
 ====================================
 
 
@@ -885,104 +925,41 @@ Detailed Report for Clock: vsb_pll_downlink|CLKOS_inferred_clock
 Starting Points with Worst Slack
 ********************************
 
-                                                   Starting                                                                          Arrival          
-Instance                                           Reference                                 Type        Pin     Net                 Time        Slack
-                                                   Clock                                                                                              
-------------------------------------------------------------------------------------------------------------------------------------------------------
-u_downlink_tx.u_tx_payload_mux.byte_toggle_27m     vsb_pll_downlink|CLKOS_inferred_clock     FD1S3DX     Q       byte_toggle_27m     1.044       8.283
-======================================================================================================================================================
+                                          Starting                                                       Arrival          
+Instance                                  Reference            Type        Pin     Net                   Time        Slack
+                                          Clock                                                                           
+--------------------------------------------------------------------------------------------------------------------------
+u_i2c_script_driver.timer_counter[5]      internal_osc_clk     FD1P3DX     Q       timer_counter[5]      1.108       6.648
+u_i2c_script_driver.timer_counter[4]      internal_osc_clk     FD1P3DX     Q       timer_counter[4]      1.044       6.712
+u_i2c_script_driver.timer_counter[9]      internal_osc_clk     FD1P3DX     Q       timer_counter[9]      1.044       7.657
+u_i2c_script_driver.timer_counter[10]     internal_osc_clk     FD1P3DX     Q       timer_counter[10]     1.044       7.657
+u_i2c_script_driver.timer_counter[11]     internal_osc_clk     FD1P3DX     Q       timer_counter[11]     1.044       7.657
+u_i2c_script_driver.timer_counter[6]      internal_osc_clk     FD1P3DX     Q       timer_counter[6]      1.108       7.665
+u_i2c_script_driver.timer_counter[7]      internal_osc_clk     FD1P3DX     Q       timer_counter[7]      1.108       7.665
+u_i2c_script_driver.timer_counter[8]      internal_osc_clk     FD1P3DX     Q       timer_counter[8]      1.108       7.665
+u_i2c_script_driver.timer_counter[16]     internal_osc_clk     FD1P3DX     Q       timer_counter[16]     1.044       8.674
+u_i2c_script_driver.timer_counter[17]     internal_osc_clk     FD1P3DX     Q       timer_counter[17]     1.044       8.674
+==========================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                                   Starting                                                                            Required          
-Instance                                           Reference                                 Type        Pin     Net                   Time         Slack
-                                                   Clock                                                                                                 
----------------------------------------------------------------------------------------------------------------------------------------------------------
-u_downlink_tx.u_tx_payload_mux.byte_toggle_27m     vsb_pll_downlink|CLKOS_inferred_clock     FD1S3DX     D       byte_toggle_27m_i     9.894        8.283
-=========================================================================================================================================================
-
-
-
-Worst Path Information
-***********************
-
-
-Path information for path number 1: 
-      Requested Period:                      10.000
-    - Setup time:                            0.106
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.894
-
-    - Propagation time:                      1.612
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 8.283
-
-    Number of logic level(s):                1
-    Starting point:                          u_downlink_tx.u_tx_payload_mux.byte_toggle_27m / Q
-    Ending point:                            u_downlink_tx.u_tx_payload_mux.byte_toggle_27m / D
-    The start point is clocked by            vsb_pll_downlink|CLKOS_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CK
-    The end   point is clocked by            vsb_pll_downlink|CLKOS_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CK
-
-Instance / Net                                                     Pin      Pin               Arrival     No. of    
-Name                                                   Type        Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------------------------
-u_downlink_tx.u_tx_payload_mux.byte_toggle_27m         FD1S3DX     Q        Out     1.044     1.044 r     -         
-byte_toggle_27m                                        Net         -        -       -         -           2         
-u_downlink_tx.u_tx_payload_mux.byte_toggle_27m_RNO     INV         A        In      0.000     1.044 r     -         
-u_downlink_tx.u_tx_payload_mux.byte_toggle_27m_RNO     INV         Z        Out     0.568     1.612 f     -         
-byte_toggle_27m_i                                      Net         -        -       -         -           1         
-u_downlink_tx.u_tx_payload_mux.byte_toggle_27m         FD1S3DX     D        In      0.000     1.612 f     -         
-====================================================================================================================
-
-
-
-
-====================================
-Detailed Report for Clock: vsb_top|internal_osc_clk_inferred_clock
-====================================
-
-
-
-Starting Points with Worst Slack
-********************************
-
-                                          Starting                                                                              Arrival          
-Instance                                  Reference                                   Type        Pin     Net                   Time        Slack
-                                          Clock                                                                                                  
--------------------------------------------------------------------------------------------------------------------------------------------------
-u_i2c_script_driver.timer_counter[5]      vsb_top|internal_osc_clk_inferred_clock     FD1P3DX     Q       timer_counter[5]      1.108       6.648
-u_i2c_script_driver.timer_counter[4]      vsb_top|internal_osc_clk_inferred_clock     FD1P3DX     Q       timer_counter[4]      1.044       6.712
-u_i2c_script_driver.timer_counter[9]      vsb_top|internal_osc_clk_inferred_clock     FD1P3DX     Q       timer_counter[9]      1.044       7.657
-u_i2c_script_driver.timer_counter[10]     vsb_top|internal_osc_clk_inferred_clock     FD1P3DX     Q       timer_counter[10]     1.044       7.657
-u_i2c_script_driver.timer_counter[11]     vsb_top|internal_osc_clk_inferred_clock     FD1P3DX     Q       timer_counter[11]     1.044       7.657
-u_i2c_script_driver.timer_counter[6]      vsb_top|internal_osc_clk_inferred_clock     FD1P3DX     Q       timer_counter[6]      1.108       7.665
-u_i2c_script_driver.timer_counter[7]      vsb_top|internal_osc_clk_inferred_clock     FD1P3DX     Q       timer_counter[7]      1.108       7.665
-u_i2c_script_driver.timer_counter[8]      vsb_top|internal_osc_clk_inferred_clock     FD1P3DX     Q       timer_counter[8]      1.108       7.665
-u_i2c_script_driver.timer_counter[16]     vsb_top|internal_osc_clk_inferred_clock     FD1P3DX     Q       timer_counter[16]     1.044       8.674
-u_i2c_script_driver.timer_counter[17]     vsb_top|internal_osc_clk_inferred_clock     FD1P3DX     Q       timer_counter[17]     1.044       8.674
-=================================================================================================================================================
-
-
-Ending Points with Worst Slack
-******************************
-
-                                          Starting                                                                                Required          
-Instance                                  Reference                                   Type        Pin     Net                     Time         Slack
-                                          Clock                                                                                                     
-----------------------------------------------------------------------------------------------------------------------------------------------------
-u_i2c_script_driver.timer_counter[19]     vsb_top|internal_osc_clk_inferred_clock     FD1P3DX     D       timer_counter_s[19]     18.691       6.648
-u_i2c_script_driver.timer_counter[17]     vsb_top|internal_osc_clk_inferred_clock     FD1P3DX     D       timer_counter_s[17]     18.691       6.791
-u_i2c_script_driver.timer_counter[18]     vsb_top|internal_osc_clk_inferred_clock     FD1P3DX     D       timer_counter_s[18]     18.691       6.791
-u_i2c_script_driver.timer_counter[15]     vsb_top|internal_osc_clk_inferred_clock     FD1P3DX     D       timer_counter_s[15]     18.691       6.934
-u_i2c_script_driver.timer_counter[16]     vsb_top|internal_osc_clk_inferred_clock     FD1P3DX     D       timer_counter_s[16]     18.691       6.934
-u_i2c_script_driver.timer_counter[13]     vsb_top|internal_osc_clk_inferred_clock     FD1P3DX     D       timer_counter_s[13]     18.691       7.076
-u_i2c_script_driver.timer_counter[14]     vsb_top|internal_osc_clk_inferred_clock     FD1P3DX     D       timer_counter_s[14]     18.691       7.076
-u_i2c_script_driver.timer_counter[11]     vsb_top|internal_osc_clk_inferred_clock     FD1P3DX     D       timer_counter_s[11]     18.691       7.219
-u_i2c_script_driver.timer_counter[12]     vsb_top|internal_osc_clk_inferred_clock     FD1P3DX     D       timer_counter_s[12]     18.691       7.219
-u_i2c_script_driver.timer_counter[9]      vsb_top|internal_osc_clk_inferred_clock     FD1P3DX     D       timer_counter_s[9]      18.691       7.362
-====================================================================================================================================================
+                                          Starting                                                         Required          
+Instance                                  Reference            Type        Pin     Net                     Time         Slack
+                                          Clock                                                                              
+-----------------------------------------------------------------------------------------------------------------------------
+u_i2c_script_driver.timer_counter[19]     internal_osc_clk     FD1P3DX     D       timer_counter_s[19]     18.691       6.648
+u_i2c_script_driver.timer_counter[17]     internal_osc_clk     FD1P3DX     D       timer_counter_s[17]     18.691       6.791
+u_i2c_script_driver.timer_counter[18]     internal_osc_clk     FD1P3DX     D       timer_counter_s[18]     18.691       6.791
+u_i2c_script_driver.timer_counter[15]     internal_osc_clk     FD1P3DX     D       timer_counter_s[15]     18.691       6.934
+u_i2c_script_driver.timer_counter[16]     internal_osc_clk     FD1P3DX     D       timer_counter_s[16]     18.691       6.934
+u_i2c_script_driver.timer_counter[13]     internal_osc_clk     FD1P3DX     D       timer_counter_s[13]     18.691       7.076
+u_i2c_script_driver.timer_counter[14]     internal_osc_clk     FD1P3DX     D       timer_counter_s[14]     18.691       7.076
+u_i2c_script_driver.timer_counter[11]     internal_osc_clk     FD1P3DX     D       timer_counter_s[11]     18.691       7.219
+u_i2c_script_driver.timer_counter[12]     internal_osc_clk     FD1P3DX     D       timer_counter_s[12]     18.691       7.219
+u_i2c_script_driver.timer_counter[9]      internal_osc_clk     FD1P3DX     D       timer_counter_s[9]      18.691       7.362
+=============================================================================================================================
 
 
 
@@ -1003,8 +980,8 @@ Path information for path number 1:
     Number of logic level(s):                17
     Starting point:                          u_i2c_script_driver.timer_counter[5] / Q
     Ending point:                            u_i2c_script_driver.timer_counter[19] / D
-    The start point is clocked by            vsb_top|internal_osc_clk_inferred_clock [rising] (rise=0.000 fall=9.398 period=18.797) on pin CK
-    The end   point is clocked by            vsb_top|internal_osc_clk_inferred_clock [rising] (rise=0.000 fall=9.398 period=18.797) on pin CK
+    The start point is clocked by            internal_osc_clk [rising] (rise=0.000 fall=9.398 period=18.797) on pin CK
+    The end   point is clocked by            internal_osc_clk [rising] (rise=0.000 fall=9.398 period=18.797) on pin CK
 
 Instance / Net                                                  Pin      Pin               Arrival      No. of    
 Name                                               Type         Name     Dir     Delay     Time         Fan Out(s)
@@ -1069,7 +1046,7 @@ u_i2c_script_driver.timer_counter[19]              FD1P3DX      D        In     
 
 
 ====================================
-Detailed Report for Clock: vsb_top|serdes_rbc0
+Detailed Report for Clock: serdes_rbc0
 ====================================
 
 
@@ -1077,41 +1054,41 @@ Detailed Report for Clock: vsb_top|serdes_rbc0
 Starting Points with Worst Slack
 ********************************
 
-                                              Starting                                                        Arrival           
-Instance                                      Reference               Type      Pin     Net                   Time        Slack 
-                                              Clock                                                                             
---------------------------------------------------------------------------------------------------------------------------------
-u_uplink_rx.u_decoder_8b10b.lut_valid_0_0     vsb_top|serdes_rbc0     SP8KC     DO0     lut_valid_0_0_DO0     8.284       -0.389
-u_uplink_rx.u_decoder_8b10b.lut_valid_0_0     vsb_top|serdes_rbc0     SP8KC     DO2     lut_valid_0_0_DO2     8.284       -0.389
-u_uplink_rx.u_decoder_8b10b.lut_valid_0_0     vsb_top|serdes_rbc0     SP8KC     DO1     lut_valid_0_0_DO1     8.348       0.107 
-u_uplink_rx.u_decoder_8b10b.lut_kin_0_0       vsb_top|serdes_rbc0     SP8KC     DO0     lut_kin_0_0_DO0       8.212       1.682 
-u_uplink_rx.u_decoder_8b10b.lut_kin_0_0       vsb_top|serdes_rbc0     SP8KC     DO1     lut_kin_0_0_DO1       8.212       1.682 
-u_uplink_rx.u_decoder_8b10b.lut_kin_0_0       vsb_top|serdes_rbc0     SP8KC     DO2     lut_kin_0_0_DO2       8.212       1.682 
-u_uplink_rx.u_decoder_8b10b.lut_kin_0_0       vsb_top|serdes_rbc0     SP8KC     DO3     lut_kin_0_0_DO3       8.212       1.682 
-u_uplink_rx.u_decoder_8b10b.lut_kin_0_0       vsb_top|serdes_rbc0     SP8KC     DO4     lut_kin_0_0_DO4       8.212       1.682 
-u_uplink_rx.u_decoder_8b10b.lut_kin_0_0       vsb_top|serdes_rbc0     SP8KC     DO5     lut_kin_0_0_DO5       8.212       1.682 
-u_uplink_rx.u_decoder_8b10b.lut_kin_0_0       vsb_top|serdes_rbc0     SP8KC     DO6     lut_kin_0_0_DO6       8.212       1.682 
-================================================================================================================================
+                                              Starting                                                Arrival          
+Instance                                      Reference       Type      Pin     Net                   Time        Slack
+                                              Clock                                                                    
+-----------------------------------------------------------------------------------------------------------------------
+u_uplink_rx.u_decoder_8b10b.lut_valid_0_0     serdes_rbc0     SP8KC     DO1     lut_valid_0_0_DO1     8.284       1.884
+u_uplink_rx.u_decoder_8b10b.lut_valid_0_0     serdes_rbc0     SP8KC     DO0     lut_valid_0_0_DO0     8.212       1.956
+u_uplink_rx.u_decoder_8b10b.lut_valid_0_0     serdes_rbc0     SP8KC     DO2     lut_valid_0_0_DO2     8.284       2.973
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_0       serdes_rbc0     SP8KC     DO0     lut_kin_0_0_DO0       8.212       4.028
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_0       serdes_rbc0     SP8KC     DO1     lut_kin_0_0_DO1       8.212       4.028
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_0       serdes_rbc0     SP8KC     DO2     lut_kin_0_0_DO2       8.212       4.028
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_0       serdes_rbc0     SP8KC     DO3     lut_kin_0_0_DO3       8.212       4.028
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_0       serdes_rbc0     SP8KC     DO4     lut_kin_0_0_DO4       8.212       4.028
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_0       serdes_rbc0     SP8KC     DO5     lut_kin_0_0_DO5       8.212       4.028
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_0       serdes_rbc0     SP8KC     DO6     lut_kin_0_0_DO6       8.212       4.028
+=======================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                                  Starting                                                        Required           
-Instance                                          Reference               Type        Pin     Net                 Time         Slack 
-                                                  Clock                                                                              
--------------------------------------------------------------------------------------------------------------------------------------
-u_uplink_rx.u_decoder_8b10b.disparity             vsb_top|serdes_rbc0     FD1P3DX     SP      N_6                 9.528        -0.389
-u_uplink_rx.u_decoder_8b10b.code_err              vsb_top|serdes_rbc0     FD1S3DX     D       N_6_i               10.089       0.107 
-u_uplink_rx.u_decoder_8b10b.disparity             vsb_top|serdes_rbc0     FD1P3DX     D       N_4_i               10.089       1.124 
-u_uplink_rx.u_decoder_8b10b.lut_kin_0_dreg[0]     vsb_top|serdes_rbc0     FD1S3DX     D       lut_kin_0_0_DO0     9.894        1.682 
-u_uplink_rx.u_decoder_8b10b.lut_kin_0_dreg[1]     vsb_top|serdes_rbc0     FD1S3DX     D       lut_kin_0_0_DO1     9.894        1.682 
-u_uplink_rx.u_decoder_8b10b.lut_kin_0_dreg[2]     vsb_top|serdes_rbc0     FD1S3DX     D       lut_kin_0_0_DO2     9.894        1.682 
-u_uplink_rx.u_decoder_8b10b.lut_kin_0_dreg[3]     vsb_top|serdes_rbc0     FD1S3DX     D       lut_kin_0_0_DO3     9.894        1.682 
-u_uplink_rx.u_decoder_8b10b.lut_kin_0_dreg[4]     vsb_top|serdes_rbc0     FD1S3DX     D       lut_kin_0_0_DO4     9.894        1.682 
-u_uplink_rx.u_decoder_8b10b.lut_kin_0_dreg[5]     vsb_top|serdes_rbc0     FD1S3DX     D       lut_kin_0_0_DO5     9.894        1.682 
-u_uplink_rx.u_decoder_8b10b.lut_kin_0_dreg[6]     vsb_top|serdes_rbc0     FD1S3DX     D       lut_kin_0_0_DO6     9.894        1.682 
-=====================================================================================================================================
+                                                  Starting                                                Required          
+Instance                                          Reference       Type        Pin     Net                 Time         Slack
+                                                  Clock                                                                     
+----------------------------------------------------------------------------------------------------------------------------
+u_uplink_rx.u_decoder_8b10b.disparity             serdes_rbc0     FD1P3DX     SP      N_6                 11.874       1.884
+u_uplink_rx.u_decoder_8b10b.code_err              serdes_rbc0     FD1S3DX     D       N_6_i               12.434       2.445
+u_uplink_rx.u_decoder_8b10b.disparity             serdes_rbc0     FD1P3DX     D       N_4_i               12.434       3.534
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_dreg[0]     serdes_rbc0     FD1S3DX     D       lut_kin_0_0_DO0     12.240       4.028
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_dreg[1]     serdes_rbc0     FD1S3DX     D       lut_kin_0_0_DO1     12.240       4.028
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_dreg[2]     serdes_rbc0     FD1S3DX     D       lut_kin_0_0_DO2     12.240       4.028
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_dreg[3]     serdes_rbc0     FD1S3DX     D       lut_kin_0_0_DO3     12.240       4.028
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_dreg[4]     serdes_rbc0     FD1S3DX     D       lut_kin_0_0_DO4     12.240       4.028
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_dreg[5]     serdes_rbc0     FD1S3DX     D       lut_kin_0_0_DO5     12.240       4.028
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_dreg[6]     serdes_rbc0     FD1S3DX     D       lut_kin_0_0_DO6     12.240       4.028
+============================================================================================================================
 
 
 
@@ -1120,155 +1097,34 @@ Worst Path Information
 
 
 Path information for path number 1: 
-      Requested Period:                      10.000
+      Requested Period:                      12.346
     - Setup time:                            0.472
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.528
+    = Required time:                         11.874
 
-    - Propagation time:                      9.918
+    - Propagation time:                      9.990
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -0.389
-
-    Number of logic level(s):                2
-    Starting point:                          u_uplink_rx.u_decoder_8b10b.lut_valid_0_0 / DO0
-    Ending point:                            u_uplink_rx.u_decoder_8b10b.disparity / SP
-    The start point is clocked by            vsb_top|serdes_rbc0 [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK
-    The end   point is clocked by            vsb_top|serdes_rbc0 [rising] (rise=0.000 fall=5.000 period=10.000) on pin CK
-
-Instance / Net                                               Pin      Pin               Arrival     No. of    
-Name                                            Type         Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------------------
-u_uplink_rx.u_decoder_8b10b.lut_valid_0_0       SP8KC        DO0      Out     8.284     8.284 r     -         
-lut_valid_0_0_DO0                               Net          -        -       -         -           2         
-u_uplink_rx.u_decoder_8b10b.disparity_RNO_1     ORCALUT4     A        In      0.000     8.284 r     -         
-u_uplink_rx.u_decoder_8b10b.disparity_RNO_1     ORCALUT4     Z        Out     1.017     9.301 r     -         
-N_11_i_li                                       Net          -        -       -         -           1         
-u_uplink_rx.u_decoder_8b10b.disparity_RNO_0     ORCALUT4     A        In      0.000     9.301 r     -         
-u_uplink_rx.u_decoder_8b10b.disparity_RNO_0     ORCALUT4     Z        Out     0.617     9.918 f     -         
-N_6                                             Net          -        -       -         -           1         
-u_uplink_rx.u_decoder_8b10b.disparity           FD1P3DX      SP       In      0.000     9.918 f     -         
-==============================================================================================================
-
-
-Path information for path number 2: 
-      Requested Period:                      10.000
-    - Setup time:                            0.472
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.528
-
-    - Propagation time:                      9.918
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -0.389
-
-    Number of logic level(s):                2
-    Starting point:                          u_uplink_rx.u_decoder_8b10b.lut_valid_0_0 / DO2
-    Ending point:                            u_uplink_rx.u_decoder_8b10b.disparity / SP
-    The start point is clocked by            vsb_top|serdes_rbc0 [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK
-    The end   point is clocked by            vsb_top|serdes_rbc0 [rising] (rise=0.000 fall=5.000 period=10.000) on pin CK
-
-Instance / Net                                               Pin      Pin               Arrival     No. of    
-Name                                            Type         Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------------------
-u_uplink_rx.u_decoder_8b10b.lut_valid_0_0       SP8KC        DO2      Out     8.284     8.284 r     -         
-lut_valid_0_0_DO2                               Net          -        -       -         -           2         
-u_uplink_rx.u_decoder_8b10b.disparity_RNO_2     ORCALUT4     B        In      0.000     8.284 r     -         
-u_uplink_rx.u_decoder_8b10b.disparity_RNO_2     ORCALUT4     Z        Out     1.017     9.301 f     -         
-g1_i_0                                          Net          -        -       -         -           1         
-u_uplink_rx.u_decoder_8b10b.disparity_RNO_0     ORCALUT4     C        In      0.000     9.301 f     -         
-u_uplink_rx.u_decoder_8b10b.disparity_RNO_0     ORCALUT4     Z        Out     0.617     9.918 r     -         
-N_6                                             Net          -        -       -         -           1         
-u_uplink_rx.u_decoder_8b10b.disparity           FD1P3DX      SP       In      0.000     9.918 r     -         
-==============================================================================================================
-
-
-Path information for path number 3: 
-      Requested Period:                      10.000
-    - Setup time:                            -0.089
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         10.089
-
-    - Propagation time:                      9.982
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 0.107
+    = Slack (critical) :                     1.884
 
     Number of logic level(s):                2
     Starting point:                          u_uplink_rx.u_decoder_8b10b.lut_valid_0_0 / DO1
-    Ending point:                            u_uplink_rx.u_decoder_8b10b.code_err / D
-    The start point is clocked by            vsb_top|serdes_rbc0 [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK
-    The end   point is clocked by            vsb_top|serdes_rbc0 [rising] (rise=0.000 fall=5.000 period=10.000) on pin CK
+    Ending point:                            u_uplink_rx.u_decoder_8b10b.disparity / SP
+    The start point is clocked by            serdes_rbc0 [rising] (rise=0.000 fall=6.173 period=12.346) on pin CLK
+    The end   point is clocked by            serdes_rbc0 [rising] (rise=0.000 fall=6.173 period=12.346) on pin CK
 
 Instance / Net                                                       Pin      Pin               Arrival     No. of    
 Name                                                    Type         Name     Dir     Delay     Time        Fan Out(s)
 ----------------------------------------------------------------------------------------------------------------------
-u_uplink_rx.u_decoder_8b10b.lut_valid_0_0               SP8KC        DO1      Out     8.348     8.348 r     -         
-lut_valid_0_0_DO1                                       Net          -        -       -         -           3         
-u_uplink_rx.u_decoder_8b10b.disparity_2_sqmuxa_i_o2     ORCALUT4     C        In      0.000     8.348 r     -         
-u_uplink_rx.u_decoder_8b10b.disparity_2_sqmuxa_i_o2     ORCALUT4     Z        Out     1.017     9.365 f     -         
-N_9                                                     Net          -        -       -         -           1         
-u_uplink_rx.u_decoder_8b10b.code_err_RNO                ORCALUT4     A        In      0.000     9.365 f     -         
-u_uplink_rx.u_decoder_8b10b.code_err_RNO                ORCALUT4     Z        Out     0.617     9.982 r     -         
-N_6_i                                                   Net          -        -       -         -           1         
-u_uplink_rx.u_decoder_8b10b.code_err                    FD1S3DX      D        In      0.000     9.982 r     -         
+u_uplink_rx.u_decoder_8b10b.lut_valid_0_0               SP8KC        DO1      Out     8.284     8.284 r     -         
+lut_valid_0_0_DO1                                       Net          -        -       -         -           2         
+u_uplink_rx.u_decoder_8b10b.disparity_2_sqmuxa_i_o2     ORCALUT4     C        In      0.000     8.284 r     -         
+u_uplink_rx.u_decoder_8b10b.disparity_2_sqmuxa_i_o2     ORCALUT4     Z        Out     1.089     9.373 f     -         
+N_9                                                     Net          -        -       -         -           2         
+u_uplink_rx.u_decoder_8b10b.disparity_2_sqmuxa_i_0      ORCALUT4     A        In      0.000     9.373 f     -         
+u_uplink_rx.u_decoder_8b10b.disparity_2_sqmuxa_i_0      ORCALUT4     Z        Out     0.617     9.990 f     -         
+N_6                                                     Net          -        -       -         -           1         
+u_uplink_rx.u_decoder_8b10b.disparity                   FD1P3DX      SP       In      0.000     9.990 f     -         
 ======================================================================================================================
-
-
-Path information for path number 4: 
-      Requested Period:                      10.000
-    - Setup time:                            -0.089
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         10.089
-
-    - Propagation time:                      9.918
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 0.171
-
-    Number of logic level(s):                2
-    Starting point:                          u_uplink_rx.u_decoder_8b10b.lut_valid_0_0 / DO0
-    Ending point:                            u_uplink_rx.u_decoder_8b10b.code_err / D
-    The start point is clocked by            vsb_top|serdes_rbc0 [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK
-    The end   point is clocked by            vsb_top|serdes_rbc0 [rising] (rise=0.000 fall=5.000 period=10.000) on pin CK
-
-Instance / Net                                                       Pin      Pin               Arrival     No. of    
-Name                                                    Type         Name     Dir     Delay     Time        Fan Out(s)
-----------------------------------------------------------------------------------------------------------------------
-u_uplink_rx.u_decoder_8b10b.lut_valid_0_0               SP8KC        DO0      Out     8.284     8.284 r     -         
-lut_valid_0_0_DO0                                       Net          -        -       -         -           2         
-u_uplink_rx.u_decoder_8b10b.disparity_2_sqmuxa_i_o2     ORCALUT4     B        In      0.000     8.284 r     -         
-u_uplink_rx.u_decoder_8b10b.disparity_2_sqmuxa_i_o2     ORCALUT4     Z        Out     1.017     9.301 r     -         
-N_9                                                     Net          -        -       -         -           1         
-u_uplink_rx.u_decoder_8b10b.code_err_RNO                ORCALUT4     A        In      0.000     9.301 r     -         
-u_uplink_rx.u_decoder_8b10b.code_err_RNO                ORCALUT4     Z        Out     0.617     9.918 f     -         
-N_6_i                                                   Net          -        -       -         -           1         
-u_uplink_rx.u_decoder_8b10b.code_err                    FD1S3DX      D        In      0.000     9.918 f     -         
-======================================================================================================================
-
-
-Path information for path number 5: 
-      Requested Period:                      10.000
-    - Setup time:                            0.472
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.528
-
-    - Propagation time:                      8.965
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 0.564
-
-    Number of logic level(s):                1
-    Starting point:                          u_uplink_rx.u_decoder_8b10b.lut_valid_0_0 / DO1
-    Ending point:                            u_uplink_rx.u_decoder_8b10b.disparity / SP
-    The start point is clocked by            vsb_top|serdes_rbc0 [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK
-    The end   point is clocked by            vsb_top|serdes_rbc0 [rising] (rise=0.000 fall=5.000 period=10.000) on pin CK
-
-Instance / Net                                               Pin      Pin               Arrival     No. of    
-Name                                            Type         Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------------------
-u_uplink_rx.u_decoder_8b10b.lut_valid_0_0       SP8KC        DO1      Out     8.348     8.348 r     -         
-lut_valid_0_0_DO1                               Net          -        -       -         -           3         
-u_uplink_rx.u_decoder_8b10b.disparity_RNO_0     ORCALUT4     B        In      0.000     8.348 r     -         
-u_uplink_rx.u_decoder_8b10b.disparity_RNO_0     ORCALUT4     Z        Out     0.617     8.965 f     -         
-N_6                                             Net          -        -       -         -           1         
-u_uplink_rx.u_decoder_8b10b.disparity           FD1P3DX      SP       In      0.000     8.965 f     -         
-==============================================================================================================
 
 
 
@@ -1282,21 +1138,21 @@ Detailed Report for Clock: System
 Starting Points with Worst Slack
 ********************************
 
-                        Starting                                               Arrival           
-Instance                Reference     Type     Pin          Net                Time        Slack 
-                        Clock                                                                    
--------------------------------------------------------------------------------------------------
-u_i2c_vsb.EFBInst_0     System        EFB      I2C1SCLO     i2c1_sclo          0.000       7.324 
-u_i2c_vsb.EFBInst_0     System        EFB      I2C1SDAO     i2c1_sdao          0.000       7.324 
-u_i2c_vsb.EFBInst_0     System        EFB      WBACKO       wb_ack_i2c         0.000       17.052
-u_i2c_vsb.EFBInst_0     System        EFB      WBDATO0      wb_rdat_i2c[0]     0.000       18.691
-u_i2c_vsb.EFBInst_0     System        EFB      WBDATO1      wb_rdat_i2c[1]     0.000       18.691
-u_i2c_vsb.EFBInst_0     System        EFB      WBDATO2      wb_rdat_i2c[2]     0.000       18.691
-u_i2c_vsb.EFBInst_0     System        EFB      WBDATO3      wb_rdat_i2c[3]     0.000       18.691
-u_i2c_vsb.EFBInst_0     System        EFB      WBDATO4      wb_rdat_i2c[4]     0.000       18.691
-u_i2c_vsb.EFBInst_0     System        EFB      WBDATO5      wb_rdat_i2c[5]     0.000       18.691
-u_i2c_vsb.EFBInst_0     System        EFB      WBDATO6      wb_rdat_i2c[6]     0.000       18.691
-=================================================================================================
+                             Starting                                                  Arrival           
+Instance                     Reference     Type        Pin          Net                Time        Slack 
+                             Clock                                                                       
+---------------------------------------------------------------------------------------------------------
+u_i2c_vsb.EFBInst_0          System        EFB         I2C1SCLO     i2c1_sclo          0.000       7.324 
+u_i2c_vsb.EFBInst_0          System        EFB         I2C1SDAO     i2c1_sdao          0.000       7.324 
+u_pll_downlink.PLLInst_0     System        EHXPLLJ     CLKOP        clk_81m_i          0.000       10.000
+u_i2c_vsb.EFBInst_0          System        EFB         WBACKO       wb_ack_i2c         0.000       17.052
+u_i2c_vsb.EFBInst_0          System        EFB         WBDATO0      wb_rdat_i2c[0]     0.000       18.691
+u_i2c_vsb.EFBInst_0          System        EFB         WBDATO1      wb_rdat_i2c[1]     0.000       18.691
+u_i2c_vsb.EFBInst_0          System        EFB         WBDATO2      wb_rdat_i2c[2]     0.000       18.691
+u_i2c_vsb.EFBInst_0          System        EFB         WBDATO3      wb_rdat_i2c[3]     0.000       18.691
+u_i2c_vsb.EFBInst_0          System        EFB         WBDATO4      wb_rdat_i2c[4]     0.000       18.691
+u_i2c_vsb.EFBInst_0          System        EFB         WBDATO5      wb_rdat_i2c[5]     0.000       18.691
+=========================================================================================================
 
 
 Ending Points with Worst Slack
@@ -1308,6 +1164,7 @@ Instance                                  Reference     Type        Pin         
 ------------------------------------------------------------------------------------------------------------------
 u_i2c_vsb.EFBInst_0                       System        EFB         I2C1SCLI     i2c1_scli     10.000       7.324 
 u_i2c_vsb.EFBInst_0                       System        EFB         I2C1SDAI     i2c1_sdai     10.000       7.324 
+u_pll_downlink.PLLInst_0                  System        EHXPLLJ     CLKFB        clk_81m_i     10.000       10.000
 u_i2c_script_driver.read_data_byte[0]     System        FD1P3DX     SP           N_163_i       18.325       17.052
 u_i2c_script_driver.read_data_byte[1]     System        FD1P3DX     SP           N_163_i       18.325       17.052
 u_i2c_script_driver.read_data_byte[2]     System        FD1P3DX     SP           N_163_i       18.325       17.052
@@ -1315,7 +1172,6 @@ u_i2c_script_driver.read_data_byte[3]     System        FD1P3DX     SP          
 u_i2c_script_driver.read_data_byte[4]     System        FD1P3DX     SP           N_163_i       18.325       17.052
 u_i2c_script_driver.read_data_byte[5]     System        FD1P3DX     SP           N_163_i       18.325       17.052
 u_i2c_script_driver.read_data_byte[6]     System        FD1P3DX     SP           N_163_i       18.325       17.052
-u_i2c_script_driver.read_data_byte[7]     System        FD1P3DX     SP           N_163_i       18.325       17.052
 ==================================================================================================================
 
 
@@ -1359,10 +1215,10 @@ u_i2c_vsb.EFBInst_0     EFB      I2C1SCLI     In      0.000     2.676 r     -
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:31s; CPU Time elapsed 0h:00m:18s; Memory used current: 274MB peak: 275MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:36s; CPU Time elapsed 0h:00m:17s; Memory used current: 274MB peak: 276MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:31s; CPU Time elapsed 0h:00m:18s; Memory used current: 274MB peak: 275MB)
+Finished timing report (Real Time elapsed 0h:00m:36s; CPU Time elapsed 0h:00m:18s; Memory used current: 274MB peak: 276MB)
 
 ---------------------------------------
 Resource Usage Report
@@ -1388,7 +1244,7 @@ IFS1P3DX:       15
 INV:            7
 OB:             20
 OFS1P3DX:       8
-ORCALUT4:       149
+ORCALUT4:       144
 OSCH:           1
 PDPW8KC:        2
 PFUMX:          2
@@ -1398,9 +1254,9 @@ VHI:            12
 VLO:            12
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:34s; CPU Time elapsed 0h:00m:18s; Memory used current: 133MB peak: 275MB)
+At Mapper Exit (Real Time elapsed 0h:00m:40s; CPU Time elapsed 0h:00m:18s; Memory used current: 133MB peak: 276MB)
 
-Process took 0h:00m:35s realtime, 0h:00m:19s cputime
-# Sun Aug 16 13:30:58 2026
+Process took 0h:00m:41s realtime, 0h:00m:19s cputime
+# Sun Aug 16 13:47:48 2026
 
 ###########################################################]
