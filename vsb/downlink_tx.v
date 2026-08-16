@@ -1,4 +1,4 @@
-/ ============================================================================
+// ============================================================================
 // Module Name:  downlink_tx
 // Description:  Downlink Transmitter Core for the Video Source Board (VSB).
 //               Aggregates video data, encodes via 8b/10b, and drives the TBI bus.
