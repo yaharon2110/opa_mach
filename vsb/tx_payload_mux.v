@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module tx_payload_mux (
     input  wire        clk_81m,
     input  wire        clk_27m,
