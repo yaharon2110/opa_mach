@@ -74,23 +74,30 @@ module vsb_top (
     // 4. CrossLink-NX On-Chip Hardware Hard IP Primitive Instantiations
     // ========================================================================
     
-    // CrossLink-NX Native Hardened Internal High-Frequency Ring Oscillator
-    // Replaces the legacy MachXO3 OSCH macro cell to drive MCU/Config state tracks.
-	SYSOSC u_system_osc (
-        .hf_out_en_i 	(1'b1),             // Explicitly enable the clock output buffer
-        .hf_clk_out_o	(internal_osc_clk)
-	);
+    // Native OSCH primitive (no IPexpress needed). 53.2 MHz is a
+    // standard discrete tap per MachXO3 Data Sheet Table 2-13, ±5.5% accuracy.
+    OSCH #( .NOM_FREQ("53.2") ) u_internal_osc (
+        .STDBY    (1'b0),              // 0 = oscillator enabled
+        .OSC      (internal_osc_clk),
+        .SEDSTDBY ()                   // unused
+    );
+
+
+	assign hw_reset = ~hw_reset_n;
 
     // Main Clock Multiplier (Accepts 27 MHz LLC Input from ADV7182A)
     // Generates the 81 MHz TBI processing clock and a clean 27 MHz fabric buffer
-    vsb_pll_downlink_nx u_pll_downlink (
-        .clki_i		(dec_llc_27m),        // 27.000 MHz input source
-        .rstn_i     (hw_reset_n),         // Clean active-low external board reset
-        .clkop_o   	(clk_81m),            // Output Channel 0: 81.000 MHz TX primary clock
-        .clkos_o   	(clk_27m_buf),        // Output Channel 1: 27.000 MHz phase-aligned fabric clock
-        .lock_o    	(pll_dl_locked)       // Stabilized lock tracking flag
+    // Regenerated for the MachXO3LF target (replaces the CrossLink-NX
+    // "vsb_pll_downlink_nx" artifact); divider values verified for
+    // CLKOP=81.000000 MHz / CLKOS=27.000000 MHz exact (VCO=486 MHz).
+    vsb_pll_downlink u_pll_downlink (
+        .CLKI   (dec_llc_27m),        // 27.000 MHz input source
+        .RST    (hw_reset),           // RST is active-HIGH per Lattice EHXPLLL spec
+        .CLKOP  (clk_81m),            // 81.000 MHz TX primary clock
+        .CLKOS  (clk_27m_buf),        // 27.000 MHz phase-aligned fabric clock
+        .LOCK   (pll_dl_locked)       // Stabilized lock tracking flag
     );
-
+	
     // ========================================================================
     // 5. Reset Tree Synchronizer
     // ========================================================================
@@ -166,58 +173,32 @@ module vsb_top (
         .wb_dat_r       (wb_rdat_i2c),
         .wb_ack         (wb_ack_i2c),
         
-        // Pin Pass-Through Interfaces
-        .i2c_scl        (i2c_scl),            
-        .i2c_sda        (i2c_sda),            
-        
         // Success Status System Indication Flag
         .i2c_init_done  (i2c_init_done)
     );
 
 	// ========================================================================
-    // 9. CrossLink-NX Hardened Peripheral I2C Architecture Instance
+    // 9. MachXO3 EFB Hardened I2C Peripheral (IPexpress-generated for
+    //    LCMXO3LF-1300E-5MG121I, Wishbone interface, WISHBONE Clock = 53.20 MHz
+    //    -- must match internal_osc_clk and vsb_i2c_script_driver.v's clk_53m)
     // ========================================================================
-    // Replaces legacy MachXO3 EFB hardware macro with standard CrossLink-NX
-    // LMMI-based hardware engine wrapper. Maps Wishbone cleanly to LMMI.
-    
-    wire lmmi_rdata_valid;
-    wire i2c_bus_busy;
-    wire i2c_ready;
-
-    // Connect the script driver's Wishbone output handshake back to LMMI ready signal
-    assign wb_ack_i2c = i2c_ready;
-
-    I2C_VSB u_efb_hardware_macro (
-        // Physical Open-Drain Board Level Pins (IO Buffers Included inside IP)
-        .scl_io             (i2c_scl),            
-        .sda_io             (i2c_sda),            
-        
-        // System Clock and Reset Line Inputs
-        .clk_i              (internal_osc_clk),   // Driven synchronously at 56.00 MHz
-        .reset_n_i          (hw_reset_n),         // Native active-low reset link
-        .i2clsrrstn_i       (hw_reset_n),         // Tie low-speed reset to global line
-        
-        // Wishbone-to-LMMI Protocol Bridge Adaptations
-        .lmmi_request_i     (wb_cyc_i2c && wb_stb_i2c), // Request is high when cycle & strobe are active
-        .lmmi_wr_rdn_i      (wb_we_i2c),          // 1 = Write transaction, 0 = Read transaction
-        .lmmi_offset_i      (wb_adr_i2c[5:0]),    // LMMI takes lower 6 bits of your I2C address register
-        .lmmi_wdata_i       (wb_wdat_i2c),        // 8-bit parallel write data bus
-        .lmmi_rdata_o       (wb_rdat_i2c),        // 8-bit parallel read data bus
-        .lmmi_ready_o       (i2c_ready),          // Handshake cycle complete strobe
-        .lmmi_rdata_valid_o (lmmi_rdata_valid),   // Read byte valid qualification tracking
-        
-        // Unused Peripheral Interface Flags (Left Floating safely in Master Mode)
-        .int_o              (),                   // Interrupt line output
-        .busbusy_o          (i2c_bus_busy),       // Real-time bus status monitoring flag
-        .insleep_o          (),                   // Core sleep status register flag
-        .mrdcmpl_o          (),                   // Master read complete cycle flag
-        .slvaddrmatch_o     (),                   // Slave address tracking detection
-        .slvaddrmatchscl_o  (),                   // Slave match SCL status line flag
-        .srdwr_o            ()                    // Slave read/write direction flag
+    I2C_VSB u_i2c_vsb (
+        .wb_clk_i   (internal_osc_clk),   // Same clock as vsb_i2c_script_driver.v's clk_53m
+        .wb_rst_i   (hw_reset),           // wb_rst_i is active-HIGH per Lattice EFB spec
+        .wb_cyc_i   (wb_cyc_i2c),
+        .wb_stb_i   (wb_stb_i2c),
+        .wb_we_i    (wb_we_i2c),
+        .wb_adr_i   (wb_adr_i2c),
+        .wb_dat_i   (wb_wdat_i2c),        // write data INTO the EFB (from the script driver)
+        .wb_dat_o   (wb_rdat_i2c),        // read data OUT of the EFB (to the script driver)
+        .wb_ack_o   (wb_ack_i2c),         // drives wb_ack_i2c directly now -- no glue needed
+        .i2c1_scl   (i2c_scl),
+        .i2c1_sda   (i2c_sda),
+        .i2c1_irqo  ()                    // unused -- script driver polls SR, no interrupt needed
     );
-
+	
     // ========================================================================
-    // 9. Board Diagnostic Status Engine
+    // 10. Board Diagnostic Status Engine
     // ========================================================================
     board_status_led u_vsb_status_led (
         .clk_54m         (internal_osc_clk),     
