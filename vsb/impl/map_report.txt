@@ -1,0 +1,194 @@
+
+edif2ngd  -l "MachXO3LF" -d LCMXO3LF-1300E -path "J:/work/Opsys-sense/OPA/FPGA design/vsb_mach_comp/impl1" -path "J:/work/Opsys-sense/OPA/FPGA design/vsb_mach_comp"   "J:/work/Opsys-sense/OPA/FPGA design/vsb_mach_comp/impl1/opa_vsb_impl1.edi" "opa_vsb_impl1.ngo"   
+edif2ngd:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Writing the design to opa_vsb_impl1.ngo...
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 12 MB
+
+
+ngdbuild  -a "MachXO3LF" -d LCMXO3LF-1300E  -p "C:/lscc/diamond/3.14/ispfpga/xo3c00f/data"  -p "J:/work/Opsys-sense/OPA/FPGA design/vsb_mach_comp/impl1" -p "J:/work/Opsys-sense/OPA/FPGA design/vsb_mach_comp"  "opa_vsb_impl1.ngo" "opa_vsb_impl1.ngd"  	
+ngdbuild:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Reading 'opa_vsb_impl1.ngo' ...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_uplink_rx/u_decoder_8b10b/lut_valid_0_0_DO3" arg2="u_uplink_rx/u_decoder_8b10b/lut_valid_0_0_DO3"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_uplink_rx/u_decoder_8b10b/lut_valid_0_0_DO4" arg2="u_uplink_rx/u_decoder_8b10b/lut_valid_0_0_DO4"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_uplink_rx/u_decoder_8b10b/lut_valid_0_0_DO5" arg2="u_uplink_rx/u_decoder_8b10b/lut_valid_0_0_DO5"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_uplink_rx/u_decoder_8b10b/lut_valid_0_0_DO6" arg2="u_uplink_rx/u_decoder_8b10b/lut_valid_0_0_DO6"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_uplink_rx/u_decoder_8b10b/lut_valid_0_0_DO7" arg2="u_uplink_rx/u_decoder_8b10b/lut_valid_0_0_DO7"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_uplink_rx/u_decoder_8b10b/lut_valid_0_0_DO8" arg2="u_uplink_rx/u_decoder_8b10b/lut_valid_0_0_DO8"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO0" arg2="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO0"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO1" arg2="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO1"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO2" arg2="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO2"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO3" arg2="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO3"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO4" arg2="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO4"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO5" arg2="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO5"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO6" arg2="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO6"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO7" arg2="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO7"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO8" arg2="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO8"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO12" arg2="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO12"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO13" arg2="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO13"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO14" arg2="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO14"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO15" arg2="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO15"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO16" arg2="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO16"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO17" arg2="u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO17"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="u_internal_osc_SEDSTDBY" arg2="u_internal_osc_SEDSTDBY"  />
+    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="22"  />
+
+Design Results:
+    488 blocks expanded
+Complete the first expansion.
+Writing 'opa_vsb_impl1.ngd' ...
+Total CPU Time: 0 secs 
+Total REAL Time: 2 secs 
+Peak Memory Usage: 19 MB
+
+
+map -a "MachXO3LF" -p LCMXO3LF-1300E -t CSFBGA121 -s 5 -oc Industrial   "opa_vsb_impl1.ngd" -o "opa_vsb_impl1_map.ncd" -pr "opa_vsb_impl1.prf" -mp "opa_vsb_impl1.mrp" -lpf "J:/work/Opsys-sense/OPA/FPGA design/vsb_mach_comp/impl1/opa_vsb_impl1_synplify.lpf" -lpf "J:/work/Opsys-sense/OPA/FPGA design/vsb_mach_comp/opa_vsb.lpf"  -c 0           
+map:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: opa_vsb_impl1.ngd
+   Picdevice="LCMXO3LF-1300E"
+
+   Pictype="CSFBGA121"
+
+   Picspeed=5
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO3LF-1300ECSFBGA121, Performance used: 5.
+
+    <postMsg mid="1104084" type="Warning" dynamic="3" navigation="0" arg0="" arg1="FREQUENCY NET &quot;internal_osc_clk&quot; 53.200000 MHz ;&#xA;" arg2="FREQUENCY NET &quot;internal_osc_clk&quot; 53.200000 MHz ;&#xA;"  />
+    <postMsg mid="1104084" type="Warning" dynamic="3" navigation="0" arg0="" arg1="FREQUENCY NET &quot;clk_81m&quot; 81.000000 MHz ;&#xA;" arg2="FREQUENCY NET &quot;clk_81m&quot; 81.000000 MHz ;&#xA;"  />
+    <postMsg mid="1104084" type="Warning" dynamic="3" navigation="0" arg0="" arg1="FREQUENCY NET &quot;clk_27m_buf&quot; 27.000000 MHz ;&#xA;" arg2="FREQUENCY NET &quot;clk_27m_buf&quot; 27.000000 MHz ;&#xA;"  />
+    <postMsg mid="1104084" type="Warning" dynamic="3" navigation="0" arg0="" arg1="FREQUENCY PORT &quot;serdes_rbc0&quot; 81.000000 MHz ;&#xA;" arg2="FREQUENCY PORT &quot;serdes_rbc0&quot; 81.000000 MHz ;&#xA;"  />
+Loading device for application map from file 'xo3c1300.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.17.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+1 CCU2 constant inputs absorbed.
+
+    <postMsg mid="51001030" type="Warning" dynamic="1" navigation="0" arg0="hw_reset_n_c"  />
+
+
+
+Design Summary:
+   Number of registers:    207 out of  1583 (13%)
+      PFU registers:          184 out of  1280 (14%)
+      PIO registers:           23 out of   303 (8%)
+   Number of SLICEs:       126 out of   640 (20%)
+      SLICEs as Logic/ROM:    126 out of   640 (20%)
+      SLICEs as RAM:            0 out of   480 (0%)
+      SLICEs as Carry:         46 out of   640 (7%)
+   Number of LUT4s:        244 out of  1280 (19%)
+      Number used as logic LUTs:        152
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       92
+      Number used as shift registers:     0
+   Number of PIO sites used: 50 + 4(JTAG) out of 101 (53%)
+   Number of block RAMs:  4 out of 7 (57%)
+   Number of GSRs:        1 out of 1 (100%)
+   EFB used :        Yes
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : Yes
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  1 out of 1 (100%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  6
+     Net internal_osc_clk: 51 loads, 51 rising, 0 falling (Driver: u_internal_osc )
+     Net serdes_rbc0_c: 36 loads, 36 rising, 0 falling (Driver: PIO serdes_rbc0 )
+     Net clk_27m_buf: 15 loads, 15 rising, 0 falling (Driver: u_pll_downlink/PLLInst_0 )
+     Net u_i2c_vsb/i2c1_scli: 1 loads, 1 rising, 0 falling (Driver: PIO i2c_scl )
+     Net clk_81m: 31 loads, 31 rising, 0 falling (Driver: u_pll_downlink/PLLInst_0 )
+     Net dec_llc_27m_c: 1 loads, 1 rising, 0 falling (Driver: PIO dec_llc_27m )
+   Number of Clock Enables:  13
+     Net u_uplink_rx.local_gpo4: 8 loads, 0 LSLICEs
+     Net u_i2c_script_driver/script_indexe: 3 loads, 3 LSLICEs
+     Net u_i2c_script_driver/N_226_i: 11 loads, 11 LSLICEs
+     Net u_i2c_script_driver/un21_0_o3: 1 loads, 1 LSLICEs
+     Net u_i2c_script_driver/i2c_init_done13: 5 loads, 5 LSLICEs
+     Net u_i2c_script_driver/N_176_i: 1 loads, 1 LSLICEs
+     Net u_i2c_script_driver/N_178_i: 1 loads, 1 LSLICEs
+     Net u_i2c_script_driver/N_158_i: 1 loads, 1 LSLICEs
+     Net u_i2c_script_driver/N_163_i: 4 loads, 4 LSLICEs
+     Net u_i2c_script_driver/N_225_i: 1 loads, 1 LSLICEs
+     Net u_uplink_rx/u_decoder_8b10b/N_6: 1 loads, 1 LSLICEs
+     Net u_rx_reset_sync/delay_counter_1_sqmuxa_i: 9 loads, 9 LSLICEs
+     Net u_tx_reset_sync/delay_counter_1_sqmuxa_i: 9 loads, 9 LSLICEs
+   Number of local set/reset loads for net hw_reset_n_c merged into GSR:  108
+   Number of LSRs:  5
+     Net hw_reset_n_c: 1 loads, 0 LSLICEs
+     Net pll_dl_locked: 11 loads, 11 LSLICEs
+     Net tx_reset_n: 32 loads, 18 LSLICEs
+     Net hw_reset_n_c_i: 1 loads, 0 LSLICEs
+     Net u_rx_reset_sync/rx_reset_n: 23 loads, 14 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net tx_reset_n: 33 loads
+     Net u_rx_reset_sync/rx_reset_n: 23 loads
+     Net u_i2c_script_driver/timer_counter: 21 loads
+     Net u_rx_reset_sync/sync_reg[1]: 18 loads
+     Net u_tx_reset_sync/sync_reg[1]: 18 loads
+     Net pll_dl_locked: 13 loads
+     Net u_i2c_script_driver/script_index[4]: 13 loads
+     Net u_i2c_script_driver/state[1]: 13 loads
+     Net serdes_sync_c: 12 loads
+     Net u_downlink_tx/mux_count[1]: 12 loads
+ 
+
+   Number of warnings:  5
+   Number of errors:    0
+
+
+
+Total CPU Time: 1 secs  
+Total REAL Time: 20 secs  
+Peak Memory Usage: 35 MB
+
+Dumping design to file opa_vsb_impl1_map.ncd.
