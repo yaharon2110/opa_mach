@@ -2,298 +2,6 @@ Starting: "prj_run Map -impl impl1"
 
 
 ************************************************************
-**  Synplify Pro                                          **
-************************************************************
-
-synpwrap -msg -prj "opa_vsb_impl1_synplify.tcl" -log "opa_vsb_impl1.srf"
-Copyright (C) 1992-2024 Lattice Semiconductor Corporation. All rights reserved.
-Lattice Diamond Version 3.14.0.75.2
-INFO - Synplify synthesis engine is launched.
-
-==contents of opa_vsb_impl1.srf
-#Build: Synplify Pro (R) V-2023.09L-2, Build 349R, Sep 17 2024
-#install: C:\lscc\diamond\3.14\synpbase
-#OS: Windows 10 or later
-#Hostname: OPSL80008034
-
-# Thu Oct  1 17:38:19 2026
-
-#Implementation: impl1
-
-
-Copyright (C) 1994-2023 Synopsys, Inc.
-This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
-and may only be used pursuant to the terms and conditions of a written license agreement
-with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
-Synopsys software or the associated documentation is strictly prohibited.
-Tool: Synplify Pro (R)
-Build: V-2023.09L-2
-Install: C:\lscc\diamond\3.14\synpbase
-OS: Windows 10 or later
-Hostname: OPSL80008034
-
-Implementation : impl1
-Synopsys HDL Compiler, Version comp202309synp1, Build 349R, Built Sep 17 2024 08:16:26, @
-
-@N|Running in 64-bit mode
-###########################################################[
-
-Copyright (C) 1994-2023 Synopsys, Inc.
-This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
-and may only be used pursuant to the terms and conditions of a written license agreement
-with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
-Synopsys software or the associated documentation is strictly prohibited.
-Tool: Synplify Pro (R)
-Build: V-2023.09L-2
-Install: C:\lscc\diamond\3.14\synpbase
-OS: Windows 10 or later
-Hostname: OPSL80008034
-
-Implementation : impl1
-Synopsys Verilog Compiler, Version comp202309synp1, Build 349R, Built Sep 17 2024 08:16:26, @
-
-@N|Running in 64-bit mode
-@I::"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo3lf.v" (library work)
-@I::"C:\lscc\diamond\3.14\synpbase\lib\lucent\pmi_def.v" (library work)
-@I::"C:\lscc\diamond\3.14\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
-@I::"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\board_status_led.v" (library work)
-@I::"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\decoder_8b10b.v" (library work)
-@I::"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\downlink_tx.v" (library work)
-@I::"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\encoder_8b10b.v" (library work)
-@I::"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\tx_payload_mux.v" (library work)
-@I::"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\uplink_rx.v" (library work)
-@I::"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v" (library work)
-@I::"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_reset_sync.v" (library work)
-@I::"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_top.v" (library work)
-@I::"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\tx_elastic_fifo.v" (library work)
-@I::"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\I2C_VSB.v" (library work)
-@I::"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\vsb_pll_downlink.v" (library work)
-Verilog syntax check successful!
-
-Compiler output is up to date.  No re-compile necessary
-
-Selecting top level module vsb_top
-@N: CG364 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo3lf.v":1759:7:1759:10|Synthesizing module OSCH in library work.
-Running optimization stage 1 on OSCH .......
-Finished optimization stage 1 on OSCH (CPU Time 0h:00m:01s, Memory Used current: 92MB peak: 93MB)
-@N: CG364 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo3lf.v":1124:7:1124:9|Synthesizing module VLO in library work.
-Running optimization stage 1 on VLO .......
-Finished optimization stage 1 on VLO (CPU Time 0h:00m:01s, Memory Used current: 92MB peak: 93MB)
-@N: CG364 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo3lf.v":1696:7:1696:13|Synthesizing module EHXPLLJ in library work.
-Running optimization stage 1 on EHXPLLJ .......
-Finished optimization stage 1 on EHXPLLJ (CPU Time 0h:00m:01s, Memory Used current: 92MB peak: 93MB)
-@N: CG364 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\vsb_pll_downlink.v":8:7:8:22|Synthesizing module vsb_pll_downlink in library work.
-Running optimization stage 1 on vsb_pll_downlink .......
-Finished optimization stage 1 on vsb_pll_downlink (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 93MB)
-@N: CG364 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_reset_sync.v":9:7:9:20|Synthesizing module vsb_reset_sync in library work.
-@N: CG179 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_reset_sync.v":43:37:43:49|Removing redundant assignment.
-Running optimization stage 1 on vsb_reset_sync .......
-Finished optimization stage 1 on vsb_reset_sync (CPU Time 0h:00m:00s, Memory Used current: 93MB peak: 94MB)
-@N: CG364 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\tx_elastic_fifo.v":47:7:47:21|Synthesizing module tx_elastic_fifo in library work.
-
-	DATA_WIDTH=32'b00000000000000000000000000010000
-	ADDR_WIDTH=32'b00000000000000000000000000000111
-	DEPTH=32'b00000000000000000000000010000000
-   Generated name = tx_elastic_fifo_16s_7s_128s
-Running optimization stage 1 on tx_elastic_fifo_16s_7s_128s .......
-@N: CL134 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\tx_elastic_fifo.v":99:4:99:9|Found RAM mem, depth=128, width=16
-WARNING - CL260 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\tx_elastic_fifo.v":85:4:85:9|Pruning register bit 7 of wr_ptr_gray[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-WARNING - CL260 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\tx_elastic_fifo.v":114:4:114:9|Pruning register bit 7 of rd_ptr_gray[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-Finished optimization stage 1 on tx_elastic_fifo_16s_7s_128s (CPU Time 0h:00m:00s, Memory Used current: 94MB peak: 95MB)
-@N: CG364 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\tx_payload_mux.v":41:7:41:20|Synthesizing module tx_payload_mux in library work.
-Running optimization stage 1 on tx_payload_mux .......
-Finished optimization stage 1 on tx_payload_mux (CPU Time 0h:00m:00s, Memory Used current: 95MB peak: 96MB)
-@N: CG364 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\encoder_8b10b.v":19:7:19:19|Synthesizing module encoder_8b10b in library work.
-Running optimization stage 1 on encoder_8b10b .......
-Finished optimization stage 1 on encoder_8b10b (CPU Time 0h:00m:00s, Memory Used current: 96MB peak: 97MB)
-@N: CG364 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\downlink_tx.v":23:7:23:17|Synthesizing module downlink_tx in library work.
-Running optimization stage 1 on downlink_tx .......
-Finished optimization stage 1 on downlink_tx (CPU Time 0h:00m:00s, Memory Used current: 96MB peak: 97MB)
-@N: CG364 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\decoder_8b10b.v":17:7:17:19|Synthesizing module decoder_8b10b in library work.
-@N: CG179 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\decoder_8b10b.v":527:90:527:98|Removing redundant assignment.
-Running optimization stage 1 on decoder_8b10b .......
-Finished optimization stage 1 on decoder_8b10b (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 98MB)
-@N: CG364 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\uplink_rx.v":11:7:11:15|Synthesizing module uplink_rx in library work.
-Running optimization stage 1 on uplink_rx .......
-Finished optimization stage 1 on uplink_rx (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 98MB)
-@N: CG364 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":10:7:10:27|Synthesizing module vsb_i2c_script_driver in library work.
-Running optimization stage 1 on vsb_i2c_script_driver .......
-WARNING - CL271 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Pruning unused bits 7 to 5 of sr_latch[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-WARNING - CL271 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Pruning unused bits 3 to 2 of sr_latch[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-WARNING - CL265 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Removing unused bit 0 of sr_latch[7:0]. Either assign all bits or reduce the width of the signal.
-WARNING - CL190 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Optimizing register bit wb_adr[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-WARNING - CL190 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Optimizing register bit wb_adr[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-WARNING - CL190 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Optimizing register bit wb_adr[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-WARNING - CL190 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Optimizing register bit wb_adr[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-WARNING - CL190 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Optimizing register bit wb_adr[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-WARNING - CL260 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Pruning register bit 7 of wb_adr[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-WARNING - CL279 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Pruning register bits 5 to 2 of wb_adr[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-Finished optimization stage 1 on vsb_i2c_script_driver (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 99MB)
-@N: CG364 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo3lf.v":1120:7:1120:9|Synthesizing module VHI in library work.
-Running optimization stage 1 on VHI .......
-Finished optimization stage 1 on VHI (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 99MB)
-@N: CG364 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo3lf.v":82:7:82:8|Synthesizing module BB in library work.
-Running optimization stage 1 on BB .......
-Finished optimization stage 1 on BB (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 99MB)
-@N: CG364 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo3lf.v":1766:7:1766:9|Synthesizing module EFB in library work.
-Running optimization stage 1 on EFB .......
-Finished optimization stage 1 on EFB (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 99MB)
-@N: CG364 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\I2C_VSB.v":8:7:8:13|Synthesizing module I2C_VSB in library work.
-Running optimization stage 1 on I2C_VSB .......
-Finished optimization stage 1 on I2C_VSB (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 99MB)
-@N: CG364 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\board_status_led.v":34:7:34:22|Synthesizing module board_status_led in library work.
-Running optimization stage 1 on board_status_led .......
-Finished optimization stage 1 on board_status_led (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 99MB)
-@N: CG364 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_top.v":22:7:22:13|Synthesizing module vsb_top in library work.
-Running optimization stage 1 on vsb_top .......
-Finished optimization stage 1 on vsb_top (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 99MB)
-Running optimization stage 2 on vsb_top .......
-Finished optimization stage 2 on vsb_top (CPU Time 0h:00m:00s, Memory Used current: 96MB peak: 99MB)
-Running optimization stage 2 on board_status_led .......
-Finished optimization stage 2 on board_status_led (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 99MB)
-Running optimization stage 2 on I2C_VSB .......
-Finished optimization stage 2 on I2C_VSB (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 99MB)
-Running optimization stage 2 on EFB .......
-Finished optimization stage 2 on EFB (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 99MB)
-Running optimization stage 2 on BB .......
-Finished optimization stage 2 on BB (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 99MB)
-Running optimization stage 2 on VHI .......
-Finished optimization stage 2 on VHI (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 99MB)
-Running optimization stage 2 on vsb_i2c_script_driver .......
-WARNING - CL190 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Optimizing register bit timer_counter[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-WARNING - CL190 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Optimizing register bit timer_counter[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-WARNING - CL190 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Optimizing register bit timer_counter[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-WARNING - CL190 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Optimizing register bit timer_counter[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-WARNING - CL279 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Pruning register bits 23 to 20 of timer_counter[23:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@N: CL201 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Trying to extract state machine for register state.
-Extracted state machine for register state
-State machine has 14 reachable states with original encodings of:
-   00000
-   00001
-   00010
-   00011
-   00100
-   00101
-   00110
-   00111
-   01000
-   01001
-   01010
-   01011
-   01100
-   01101
-Finished optimization stage 2 on vsb_i2c_script_driver (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 99MB)
-Running optimization stage 2 on uplink_rx .......
-Finished optimization stage 2 on uplink_rx (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 99MB)
-Running optimization stage 2 on decoder_8b10b .......
-Finished optimization stage 2 on decoder_8b10b (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 99MB)
-Running optimization stage 2 on downlink_tx .......
-Finished optimization stage 2 on downlink_tx (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 99MB)
-Running optimization stage 2 on encoder_8b10b .......
-Finished optimization stage 2 on encoder_8b10b (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 99MB)
-Running optimization stage 2 on tx_payload_mux .......
-@N: CL201 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\tx_payload_mux.v":151:4:151:9|Trying to extract state machine for register mux_state.
-Extracted state machine for register mux_state
-State machine has 3 reachable states with original encodings of:
-   00
-   01
-   10
-Finished optimization stage 2 on tx_payload_mux (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 99MB)
-Running optimization stage 2 on tx_elastic_fifo_16s_7s_128s .......
-Finished optimization stage 2 on tx_elastic_fifo_16s_7s_128s (CPU Time 0h:00m:00s, Memory Used current: 99MB peak: 104MB)
-Running optimization stage 2 on vsb_reset_sync .......
-Finished optimization stage 2 on vsb_reset_sync (CPU Time 0h:00m:00s, Memory Used current: 99MB peak: 104MB)
-Running optimization stage 2 on vsb_pll_downlink .......
-Finished optimization stage 2 on vsb_pll_downlink (CPU Time 0h:00m:00s, Memory Used current: 99MB peak: 104MB)
-Running optimization stage 2 on EHXPLLJ .......
-Finished optimization stage 2 on EHXPLLJ (CPU Time 0h:00m:00s, Memory Used current: 99MB peak: 104MB)
-Running optimization stage 2 on VLO .......
-Finished optimization stage 2 on VLO (CPU Time 0h:00m:00s, Memory Used current: 99MB peak: 104MB)
-Running optimization stage 2 on OSCH .......
-Finished optimization stage 2 on OSCH (CPU Time 0h:00m:00s, Memory Used current: 99MB peak: 104MB)
-
-For a summary of runtime per design unit, please see file:
-==========================================================
-@L: J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl1\synwork\layer0.duruntime
-
-
-
-At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 91MB peak: 92MB)
-
-Process took 0h:00m:03s realtime, 0h:00m:01s cputime
-
-Process completed successfully.
-# Thu Oct  1 17:38:25 2026
-
-###########################################################]
-###########################################################[
-
-Copyright (C) 1994-2023 Synopsys, Inc.
-This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
-and may only be used pursuant to the terms and conditions of a written license agreement
-with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
-Synopsys software or the associated documentation is strictly prohibited.
-Tool: Synplify Pro (R)
-Build: V-2023.09L-2
-Install: C:\lscc\diamond\3.14\synpbase
-OS: Windows 10 or later
-Hostname: OPSL80008034
-
-Implementation : impl1
-Synopsys Synopsys Netlist Linker, Version comp202309synp1, Build 349R, Built Sep 17 2024 08:16:26, @
-
-@N|Running in 64-bit mode
-
-Linker output is up to date. No re-linking necessary
-
-
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 87MB peak: 88MB)
-
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-
-Process completed successfully.
-# Thu Oct  1 17:38:28 2026
-
-###########################################################]
-
-For a summary of runtime and memory usage for all design units, please see file:
-==========================================================
-@L: J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl1\synwork\opa_vsb_impl1_comp.rt.csv
-
-@END
-
-At c_hdl Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 22MB peak: 23MB)
-
-Process took 0h:00m:06s realtime, 0h:00m:02s cputime
-
-Process completed successfully.
-# Thu Oct  1 17:38:30 2026
-
-###########################################################]
-
-@A: multi_srs_gen output is up to date. No run necessary.
-To force a re-synthesis, select [Resynthesize All] in menu [Run].
-Click link to view previous log file.
-Multi-srs Generator Report
-@R:"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl1\synlog\opa_vsb_impl1_multi_srs_gen.srr"
-
-@A: premap output is up to date. No run necessary.
-To force a re-synthesis, select [Resynthesize All] in menu [Run].
-Click link to view previous log file.
-Premap Report
-@R:"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl1\synlog\opa_vsb_impl1_premap.srr"
-
-@A: fpga_mapper output is up to date. No run necessary.
-To force a re-synthesis, select [Resynthesize All] in menu [Run].
-Click link to view previous log file.
-Map & Optimize Report
-@R:"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl1\synlog\opa_vsb_impl1_fpga_mapper.srr"
-
-
-Synthesis exit by 0.
-Done: completed successfully
-
-************************************************************
 **  Translate Design                                      **
 ************************************************************
 
@@ -342,7 +50,7 @@ WARNING - Unsupported property ADDR_WIDTH found - ignoring...
 Writing the design to opa_vsb_impl1.ngo...
 
 Total CPU Time: 0 secs  
-Total REAL Time: 0 secs  
+Total REAL Time: 3 secs  
 Peak Memory Usage: 13 MB
 
 
@@ -396,7 +104,7 @@ Design Results:
 Complete the first expansion.
 Writing 'opa_vsb_impl1.ngd' ...
 Total CPU Time: 0 secs 
-Total REAL Time: 3 secs 
+Total REAL Time: 2 secs 
 Peak Memory Usage: 20 MB
 
 Done: completed successfully
@@ -426,9 +134,11 @@ Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
 
 Part used: LCMXO3LF-1300ECSFBGA121, Performance used: 5.
 
-WARNING - J:/work/Opsys-sense/OPA/FPGA design/vsb_mach_comp/opa_vsb.lpf(4): Semantic error in "FREQUENCY NET "clk_81m" 81.000000 MHz ;": clk_81m matches no clock nets in the design.  This preference has been disabled.
 WARNING - Pref conflicts. Ignoring FREQUENCY NET "internal_osc_clk" 53.200000 MHz ;
    Keeping FREQUENCY NET "internal_osc_clk" 53.200000 MHz ;
+.
+WARNING - Pref conflicts. Ignoring FREQUENCY PORT "osc_81m" 81.000000 MHz ;
+   Keeping FREQUENCY PORT "osc_81m" 81.000000 MHz ;
 .
 WARNING - Pref conflicts. Ignoring FREQUENCY NET "clk_27m_buf" 27.000000 MHz ;
    Keeping FREQUENCY NET "clk_27m_buf" 27.000000 MHz ;
@@ -543,7 +253,7 @@ WARNING - In "LOCATE COMP "i2c_sda" SITE "B5" ;": Current SYS_CONFIG setting pro
 
 
 Total CPU Time: 1 secs  
-Total REAL Time: 18 secs  
+Total REAL Time: 17 secs  
 Peak Memory Usage: 46 MB
 
 Dumping design to file opa_vsb_impl1_map.ncd.
