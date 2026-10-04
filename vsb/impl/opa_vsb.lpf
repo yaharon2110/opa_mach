@@ -1,6 +1,117 @@
 BLOCK RESETPATHS;
 BLOCK ASYNCPATHS;
 FREQUENCY NET "internal_osc_clk" 53.200000 MHz;
-FREQUENCY NET "clk_81m" 81.000000 MHz;
+FREQUENCY PORT "osc_81m" 81.000000 MHz;
 FREQUENCY NET "clk_27m_buf" 27.000000 MHz;
 FREQUENCY PORT "serdes_rbc0" 81.000000 MHz;
+
+    // ------------------------------------------------------------------
+    // VSB Pinout Assignment -- LCMXO3LF-1300E-5MG121I  (rev. 3, 2026-08-16)
+    // Bank voltage plan: Bank0/Bank3 = 3.3V (I2C1/JTAG + ADV7182A bus +
+    //                    local ctrl/status)  --  top-left corner (PT/PL)
+    //                    Bank1/Bank2 = 2.5V (SERDES/TLK1221 side)
+    //                    -- bottom-right corner (PR/PB)
+    // serdes_rbc0 moved F1(PCLKC1_0)->F2(PCLKT1_0): must be on the True
+    // primary-clock pin, not the Comp pin, per Diamond PAR clock warning.
+    // ------------------------------------------------------------------
+    LOCATE COMP "dec_data[0]" SITE "K11" ;
+    LOCATE COMP "dec_data[1]" SITE "J11" ;
+    LOCATE COMP "dec_data[2]" SITE "H11" ;
+    LOCATE COMP "dec_data[3]" SITE "G11" ;
+    LOCATE COMP "dec_data[4]" SITE "F11" ;
+    LOCATE COMP "dec_data[5]" SITE "E11" ;
+    LOCATE COMP "dec_data[6]" SITE "D11" ;
+    LOCATE COMP "dec_data[7]" SITE "C11" ;
+    LOCATE COMP "dec_hsync" SITE "C10" ;
+    LOCATE COMP "dec_llc_27m" SITE "B10" ;
+    LOCATE COMP "dec_vsync" SITE "D10" ; 
+    LOCATE COMP "hw_reset_n" SITE "A2" ;
+    LOCATE COMP "i2c_scl" SITE "A5" ;
+    LOCATE COMP "i2c_sda" SITE "B5" ;
+    LOCATE COMP "local_gpi[0]" SITE "B8" ; //FC_UART_RX
+    LOCATE COMP "local_gpi[1]" SITE "A3" ; //DWNLNK0
+    LOCATE COMP "local_gpi[2]" SITE "A7" ; //AUX_UART_RX
+    LOCATE COMP "local_gpi[3]" SITE "H10" ; //SPARE_GPI
+    LOCATE COMP "local_gpo[0]" SITE "B9" ; //AUX_UART_TX
+    LOCATE COMP "local_gpo[1]" SITE "B7" ; //FC_UART_TX
+    LOCATE COMP "local_gpo[2]" SITE "A6" ; //UPLNK0
+    LOCATE COMP "local_gpo[3]" SITE "A4" ; //PWM_UP0
+    LOCATE COMP "local_gpo[4]" SITE "B4" ; //UPLNK1
+    LOCATE COMP "local_gpo[5]" SITE "B2" ; //PWM_UP1
+    LOCATE COMP "local_gpo[6]" SITE "J10" ; //SPARE_GPO0
+    LOCATE COMP "local_gpo[7]" SITE "B11" ; //SPARE_GPO1
+    LOCATE COMP "serdes_rbc0" SITE "F2" ;
+    LOCATE COMP "serdes_rd[0]" SITE "K7" ;
+    LOCATE COMP "serdes_rd[1]" SITE "L5" ;
+    LOCATE COMP "serdes_rd[2]" SITE "L4" ;
+    LOCATE COMP "serdes_rd[3]" SITE "L3" ;
+    LOCATE COMP "serdes_rd[4]" SITE "K2" ;
+    LOCATE COMP "serdes_rd[5]" SITE "K4" ;
+    LOCATE COMP "serdes_rd[6]" SITE "J3" ;
+    LOCATE COMP "serdes_rd[7]" SITE "H2" ;
+    LOCATE COMP "serdes_rd[8]" SITE "G3" ; 
+    LOCATE COMP "serdes_rd[9]" SITE "E2" ; 
+    LOCATE COMP "osc_81m" SITE "L6" ;
+    LOCATE COMP "serdes_sync" SITE "L7" ; 
+    LOCATE COMP "serdes_td[0]" SITE "L2" ;
+    LOCATE COMP "serdes_td[1]" SITE "K1" ;
+    LOCATE COMP "serdes_td[2]" SITE "J1" ;
+    LOCATE COMP "serdes_td[3]" SITE "H1" ;
+    LOCATE COMP "serdes_td[4]" SITE "G1" ;
+    LOCATE COMP "serdes_td[5]" SITE "F1" ;
+    LOCATE COMP "serdes_td[6]" SITE "E1" ;
+    LOCATE COMP "serdes_td[7]" SITE "D1" ; 
+    LOCATE COMP "serdes_td[8]" SITE "C1" ; 
+    LOCATE COMP "serdes_td[9]" SITE "B1" ; 
+    LOCATE COMP "vsb_status_led" SITE "A10" ;
+
+    IOBUF PORT "dec_data[0]" IO_TYPE=LVCMOS33 ;
+    IOBUF PORT "dec_data[1]" IO_TYPE=LVCMOS33 ;
+    IOBUF PORT "dec_data[2]" IO_TYPE=LVCMOS33 ;
+    IOBUF PORT "dec_data[3]" IO_TYPE=LVCMOS33 ;
+    IOBUF PORT "dec_data[4]" IO_TYPE=LVCMOS33 ;
+    IOBUF PORT "dec_data[5]" IO_TYPE=LVCMOS33 ;
+    IOBUF PORT "dec_data[6]" IO_TYPE=LVCMOS33 ;
+    IOBUF PORT "dec_data[7]" IO_TYPE=LVCMOS33 ;
+    IOBUF PORT "dec_hsync" IO_TYPE=LVCMOS33 ;
+    IOBUF PORT "dec_llc_27m" IO_TYPE=LVCMOS33 ;
+    IOBUF PORT "dec_vsync" IO_TYPE=LVCMOS33 ;
+    IOBUF PORT "hw_reset_n" IO_TYPE=LVCMOS33 ;
+    IOBUF PORT "i2c_scl" IO_TYPE=LVCMOS33 OPENDRAIN=ON ;
+    IOBUF PORT "i2c_sda" IO_TYPE=LVCMOS33 OPENDRAIN=ON ;
+    IOBUF PORT "local_gpi[0]" IO_TYPE=LVCMOS33 ;
+    IOBUF PORT "local_gpi[1]" IO_TYPE=LVCMOS33 ;
+    IOBUF PORT "local_gpi[2]" IO_TYPE=LVCMOS33 ;
+    IOBUF PORT "local_gpi[3]" IO_TYPE=LVCMOS33 ;
+    IOBUF PORT "local_gpo[0]" IO_TYPE=LVCMOS33 ;
+    IOBUF PORT "local_gpo[1]" IO_TYPE=LVCMOS33 ;
+    IOBUF PORT "local_gpo[2]" IO_TYPE=LVCMOS33 ;
+    IOBUF PORT "local_gpo[3]" IO_TYPE=LVCMOS33 ;
+    IOBUF PORT "local_gpo[4]" IO_TYPE=LVCMOS33 ;
+    IOBUF PORT "local_gpo[5]" IO_TYPE=LVCMOS33 ;
+    IOBUF PORT "local_gpo[6]" IO_TYPE=LVCMOS33 ;
+    IOBUF PORT "local_gpo[7]" IO_TYPE=LVCMOS33 ;
+    IOBUF PORT "serdes_rbc0" IO_TYPE=LVCMOS25 ;
+    IOBUF PORT "serdes_rd[0]" IO_TYPE=LVCMOS25 ;
+    IOBUF PORT "serdes_rd[1]" IO_TYPE=LVCMOS25 ;
+    IOBUF PORT "serdes_rd[2]" IO_TYPE=LVCMOS25 ;
+    IOBUF PORT "serdes_rd[3]" IO_TYPE=LVCMOS25 ;
+    IOBUF PORT "serdes_rd[4]" IO_TYPE=LVCMOS25 ;
+    IOBUF PORT "serdes_rd[5]" IO_TYPE=LVCMOS25 ;
+    IOBUF PORT "serdes_rd[6]" IO_TYPE=LVCMOS25 ;
+    IOBUF PORT "serdes_rd[7]" IO_TYPE=LVCMOS25 ;
+    IOBUF PORT "serdes_rd[8]" IO_TYPE=LVCMOS25 ;
+    IOBUF PORT "serdes_rd[9]" IO_TYPE=LVCMOS25 ;
+    IOBUF PORT "osc_81m" IO_TYPE=LVCMOS25 ;
+    IOBUF PORT "serdes_sync" IO_TYPE=LVCMOS25 ;
+    IOBUF PORT "serdes_td[0]" IO_TYPE=LVCMOS25 ;
+    IOBUF PORT "serdes_td[1]" IO_TYPE=LVCMOS25 ;
+    IOBUF PORT "serdes_td[2]" IO_TYPE=LVCMOS25 ;
+    IOBUF PORT "serdes_td[3]" IO_TYPE=LVCMOS25 ;
+    IOBUF PORT "serdes_td[4]" IO_TYPE=LVCMOS25 ;
+    IOBUF PORT "serdes_td[5]" IO_TYPE=LVCMOS25 ;
+    IOBUF PORT "serdes_td[6]" IO_TYPE=LVCMOS25 ;
+    IOBUF PORT "serdes_td[7]" IO_TYPE=LVCMOS25 ;
+    IOBUF PORT "serdes_td[8]" IO_TYPE=LVCMOS25 ;
+    IOBUF PORT "serdes_td[9]" IO_TYPE=LVCMOS25 ;
+    IOBUF PORT "vsb_status_led" IO_TYPE=LVCMOS33 ;
