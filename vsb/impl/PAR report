@@ -1,5 +1,1767 @@
-Starting: "prj_run PAR -impl impl1 -forceOne"
+Starting: "prj_run PAR -impl impl1 -forceAll"
 
+
+************************************************************
+**  Synplify Pro                                          **
+************************************************************
+
+synpwrap -msg -prj "opa_vsb_impl1_synplify.tcl" -log "opa_vsb_impl1.srf"
+Copyright (C) 1992-2024 Lattice Semiconductor Corporation. All rights reserved.
+Lattice Diamond Version 3.14.0.75.2
+INFO - Synplify synthesis engine is launched.
+
+==contents of opa_vsb_impl1.srf
+#Build: Synplify Pro (R) V-2023.09L-2, Build 349R, Sep 17 2024
+#install: C:\lscc\diamond\3.14\synpbase
+#OS: Windows 10 or later
+#Hostname: OPSL80008034
+
+# Sun Oct  4 11:48:24 2026
+
+#Implementation: impl1
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09L-2
+Install: C:\lscc\diamond\3.14\synpbase
+OS: Windows 10 or later
+Hostname: OPSL80008034
+
+Implementation : impl1
+Synopsys HDL Compiler, Version comp202309synp1, Build 349R, Built Sep 17 2024 08:16:26, @
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09L-2
+Install: C:\lscc\diamond\3.14\synpbase
+OS: Windows 10 or later
+Hostname: OPSL80008034
+
+Implementation : impl1
+Synopsys Verilog Compiler, Version comp202309synp1, Build 349R, Built Sep 17 2024 08:16:26, @
+
+@N|Running in 64-bit mode
+@I::"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo3lf.v" (library work)
+@I::"C:\lscc\diamond\3.14\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\lscc\diamond\3.14\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\board_status_led.v" (library work)
+@I::"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\decoder_8b10b.v" (library work)
+@I::"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\downlink_tx.v" (library work)
+@I::"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\encoder_8b10b.v" (library work)
+@I::"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\tx_payload_mux.v" (library work)
+@I::"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\uplink_rx.v" (library work)
+@I::"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v" (library work)
+@I::"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_reset_sync.v" (library work)
+@I::"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_top.v" (library work)
+@I::"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\tx_elastic_fifo.v" (library work)
+@I::"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\I2C_VSB.v" (library work)
+@I::"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\vsb_pll_downlink.v" (library work)
+Verilog syntax check successful!
+
+Compiler output is up to date.  No re-compile necessary
+
+Selecting top level module vsb_top
+@N: CG364 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo3lf.v":1759:7:1759:10|Synthesizing module OSCH in library work.
+Running optimization stage 1 on OSCH .......
+Finished optimization stage 1 on OSCH (CPU Time 0h:00m:01s, Memory Used current: 92MB peak: 93MB)
+@N: CG364 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo3lf.v":1124:7:1124:9|Synthesizing module VLO in library work.
+Running optimization stage 1 on VLO .......
+Finished optimization stage 1 on VLO (CPU Time 0h:00m:01s, Memory Used current: 92MB peak: 93MB)
+@N: CG364 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo3lf.v":1696:7:1696:13|Synthesizing module EHXPLLJ in library work.
+Running optimization stage 1 on EHXPLLJ .......
+Finished optimization stage 1 on EHXPLLJ (CPU Time 0h:00m:01s, Memory Used current: 92MB peak: 93MB)
+@N: CG364 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\vsb_pll_downlink.v":8:7:8:22|Synthesizing module vsb_pll_downlink in library work.
+Running optimization stage 1 on vsb_pll_downlink .......
+Finished optimization stage 1 on vsb_pll_downlink (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 93MB)
+@N: CG364 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_reset_sync.v":9:7:9:20|Synthesizing module vsb_reset_sync in library work.
+@N: CG179 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_reset_sync.v":43:37:43:49|Removing redundant assignment.
+Running optimization stage 1 on vsb_reset_sync .......
+Finished optimization stage 1 on vsb_reset_sync (CPU Time 0h:00m:00s, Memory Used current: 93MB peak: 94MB)
+@N: CG364 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\tx_elastic_fifo.v":47:7:47:21|Synthesizing module tx_elastic_fifo in library work.
+
+	DATA_WIDTH=32'b00000000000000000000000000010000
+	ADDR_WIDTH=32'b00000000000000000000000000000111
+	DEPTH=32'b00000000000000000000000010000000
+   Generated name = tx_elastic_fifo_16s_7s_128s
+Running optimization stage 1 on tx_elastic_fifo_16s_7s_128s .......
+@N: CL134 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\tx_elastic_fifo.v":99:4:99:9|Found RAM mem, depth=128, width=16
+WARNING - CL260 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\tx_elastic_fifo.v":85:4:85:9|Pruning register bit 7 of wr_ptr_gray[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+WARNING - CL260 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\tx_elastic_fifo.v":114:4:114:9|Pruning register bit 7 of rd_ptr_gray[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+Finished optimization stage 1 on tx_elastic_fifo_16s_7s_128s (CPU Time 0h:00m:00s, Memory Used current: 94MB peak: 95MB)
+@N: CG364 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\tx_payload_mux.v":41:7:41:20|Synthesizing module tx_payload_mux in library work.
+Running optimization stage 1 on tx_payload_mux .......
+Finished optimization stage 1 on tx_payload_mux (CPU Time 0h:00m:00s, Memory Used current: 95MB peak: 96MB)
+@N: CG364 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\encoder_8b10b.v":19:7:19:19|Synthesizing module encoder_8b10b in library work.
+Running optimization stage 1 on encoder_8b10b .......
+Finished optimization stage 1 on encoder_8b10b (CPU Time 0h:00m:00s, Memory Used current: 96MB peak: 97MB)
+@N: CG364 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\downlink_tx.v":23:7:23:17|Synthesizing module downlink_tx in library work.
+Running optimization stage 1 on downlink_tx .......
+Finished optimization stage 1 on downlink_tx (CPU Time 0h:00m:00s, Memory Used current: 96MB peak: 97MB)
+@N: CG364 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\decoder_8b10b.v":17:7:17:19|Synthesizing module decoder_8b10b in library work.
+@N: CG179 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\decoder_8b10b.v":527:90:527:98|Removing redundant assignment.
+Running optimization stage 1 on decoder_8b10b .......
+Finished optimization stage 1 on decoder_8b10b (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 98MB)
+@N: CG364 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\uplink_rx.v":11:7:11:15|Synthesizing module uplink_rx in library work.
+Running optimization stage 1 on uplink_rx .......
+Finished optimization stage 1 on uplink_rx (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 98MB)
+@N: CG364 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":10:7:10:27|Synthesizing module vsb_i2c_script_driver in library work.
+Running optimization stage 1 on vsb_i2c_script_driver .......
+WARNING - CL271 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Pruning unused bits 7 to 5 of sr_latch[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+WARNING - CL271 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Pruning unused bits 3 to 2 of sr_latch[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+WARNING - CL265 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Removing unused bit 0 of sr_latch[7:0]. Either assign all bits or reduce the width of the signal.
+WARNING - CL190 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Optimizing register bit wb_adr[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+WARNING - CL190 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Optimizing register bit wb_adr[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+WARNING - CL190 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Optimizing register bit wb_adr[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+WARNING - CL190 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Optimizing register bit wb_adr[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+WARNING - CL190 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Optimizing register bit wb_adr[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+WARNING - CL260 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Pruning register bit 7 of wb_adr[7:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+WARNING - CL279 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Pruning register bits 5 to 2 of wb_adr[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Finished optimization stage 1 on vsb_i2c_script_driver (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 99MB)
+@N: CG364 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo3lf.v":1120:7:1120:9|Synthesizing module VHI in library work.
+Running optimization stage 1 on VHI .......
+Finished optimization stage 1 on VHI (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 99MB)
+@N: CG364 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo3lf.v":82:7:82:8|Synthesizing module BB in library work.
+Running optimization stage 1 on BB .......
+Finished optimization stage 1 on BB (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 99MB)
+@N: CG364 :"C:\lscc\diamond\3.14\synpbase\lib\lucent\machxo3lf.v":1766:7:1766:9|Synthesizing module EFB in library work.
+Running optimization stage 1 on EFB .......
+Finished optimization stage 1 on EFB (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 99MB)
+@N: CG364 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\I2C_VSB.v":8:7:8:13|Synthesizing module I2C_VSB in library work.
+Running optimization stage 1 on I2C_VSB .......
+Finished optimization stage 1 on I2C_VSB (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 99MB)
+@N: CG364 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\board_status_led.v":34:7:34:22|Synthesizing module board_status_led in library work.
+Running optimization stage 1 on board_status_led .......
+Finished optimization stage 1 on board_status_led (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 99MB)
+@N: CG364 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_top.v":22:7:22:13|Synthesizing module vsb_top in library work.
+Running optimization stage 1 on vsb_top .......
+Finished optimization stage 1 on vsb_top (CPU Time 0h:00m:00s, Memory Used current: 98MB peak: 99MB)
+Running optimization stage 2 on vsb_top .......
+Finished optimization stage 2 on vsb_top (CPU Time 0h:00m:00s, Memory Used current: 96MB peak: 99MB)
+Running optimization stage 2 on board_status_led .......
+Finished optimization stage 2 on board_status_led (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 99MB)
+Running optimization stage 2 on I2C_VSB .......
+Finished optimization stage 2 on I2C_VSB (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 99MB)
+Running optimization stage 2 on EFB .......
+Finished optimization stage 2 on EFB (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 99MB)
+Running optimization stage 2 on BB .......
+Finished optimization stage 2 on BB (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 99MB)
+Running optimization stage 2 on VHI .......
+Finished optimization stage 2 on VHI (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 99MB)
+Running optimization stage 2 on vsb_i2c_script_driver .......
+WARNING - CL190 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Optimizing register bit timer_counter[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+WARNING - CL190 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Optimizing register bit timer_counter[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+WARNING - CL190 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Optimizing register bit timer_counter[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+WARNING - CL190 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Optimizing register bit timer_counter[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+WARNING - CL279 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Pruning register bits 23 to 20 of timer_counter[23:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 14 reachable states with original encodings of:
+   00000
+   00001
+   00010
+   00011
+   00100
+   00101
+   00110
+   00111
+   01000
+   01001
+   01010
+   01011
+   01100
+   01101
+Finished optimization stage 2 on vsb_i2c_script_driver (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 99MB)
+Running optimization stage 2 on uplink_rx .......
+Finished optimization stage 2 on uplink_rx (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 99MB)
+Running optimization stage 2 on decoder_8b10b .......
+Finished optimization stage 2 on decoder_8b10b (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 99MB)
+Running optimization stage 2 on downlink_tx .......
+Finished optimization stage 2 on downlink_tx (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 99MB)
+Running optimization stage 2 on encoder_8b10b .......
+Finished optimization stage 2 on encoder_8b10b (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 99MB)
+Running optimization stage 2 on tx_payload_mux .......
+@N: CL201 :"J:\work\Opsys-sense\OPA\FPGA design\vsb_mach\source\tx_payload_mux.v":151:4:151:9|Trying to extract state machine for register mux_state.
+Extracted state machine for register mux_state
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+Finished optimization stage 2 on tx_payload_mux (CPU Time 0h:00m:00s, Memory Used current: 97MB peak: 99MB)
+Running optimization stage 2 on tx_elastic_fifo_16s_7s_128s .......
+Finished optimization stage 2 on tx_elastic_fifo_16s_7s_128s (CPU Time 0h:00m:00s, Memory Used current: 99MB peak: 104MB)
+Running optimization stage 2 on vsb_reset_sync .......
+Finished optimization stage 2 on vsb_reset_sync (CPU Time 0h:00m:00s, Memory Used current: 99MB peak: 104MB)
+Running optimization stage 2 on vsb_pll_downlink .......
+Finished optimization stage 2 on vsb_pll_downlink (CPU Time 0h:00m:00s, Memory Used current: 99MB peak: 104MB)
+Running optimization stage 2 on EHXPLLJ .......
+Finished optimization stage 2 on EHXPLLJ (CPU Time 0h:00m:00s, Memory Used current: 99MB peak: 104MB)
+Running optimization stage 2 on VLO .......
+Finished optimization stage 2 on VLO (CPU Time 0h:00m:00s, Memory Used current: 99MB peak: 104MB)
+Running optimization stage 2 on OSCH .......
+Finished optimization stage 2 on OSCH (CPU Time 0h:00m:00s, Memory Used current: 99MB peak: 104MB)
+
+For a summary of runtime per design unit, please see file:
+==========================================================
+@L: J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl1\synwork\layer0.duruntime
+
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 91MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Oct  4 11:48:29 2026
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09L-2
+Install: C:\lscc\diamond\3.14\synpbase
+OS: Windows 10 or later
+Hostname: OPSL80008034
+
+Implementation : impl1
+Synopsys Synopsys Netlist Linker, Version comp202309synp1, Build 349R, Built Sep 17 2024 08:16:26, @
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 92MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Oct  4 11:48:31 2026
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl1\synwork\opa_vsb_impl1_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 22MB peak: 23MB)
+
+Process took 0h:00m:06s realtime, 0h:00m:02s cputime
+
+Process completed successfully.
+# Sun Oct  4 11:48:32 2026
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09L-2
+Install: C:\lscc\diamond\3.14\synpbase
+OS: Windows 10 or later
+Hostname: OPSL80008034
+
+Implementation : impl1
+Synopsys Synopsys Netlist Linker, Version comp202309synp1, Build 349R, Built Sep 17 2024 08:16:26, @
+
+@N|Running in 64-bit mode
+File J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl1\synwork\opa_vsb_impl1_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 92MB peak: 92MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Oct  4 11:48:36 2026
+
+###########################################################]
+# Sun Oct  4 11:48:39 2026
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09L-2
+Install: C:\lscc\diamond\3.14\synpbase
+OS: Windows 10 or later
+Hostname: OPSL80008034
+
+Implementation : impl1
+Synopsys Lattice Technology Pre-mapping, Version map202309lat, Build 191R, Built Sep 17 2024 10:38:50, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 182MB peak: 182MB)
+
+
+Done reading skeleton netlist (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 186MB peak: 197MB)
+
+Reading constraint file: J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\opa_vsb.fdc
+@L: J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl1\opa_vsb_impl1_scck.rpt 
+See clock summary report "J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl1\opa_vsb_impl1_scck.rpt"
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 190MB peak: 197MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 190MB peak: 197MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 204MB peak: 204MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 204MB peak: 206MB)
+
+NConnInternalConnection caching is on
+WARNING - BN132 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Removing sequential instance u_i2c_script_driver.wb_stb because it is equivalent to instance u_i2c_script_driver.wb_cyc. To keep the instance, apply constraint syn_preserve=1 on the instance.
+
+Starting HSTDM IP insertion (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 254MB peak: 255MB)
+
+
+Finished HSTDM IP insertion (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 254MB peak: 255MB)
+
+
+Started DisTri Cleanup (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 255MB peak: 255MB)
+
+
+Finished DisTri Cleanup (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:07s; Memory used current: 255MB peak: 256MB)
+
+Encoding state machine mux_state[2:0] (in view: work.tx_payload_mux(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine state[13:0] (in view: work.vsb_i2c_script_driver(verilog))
+original code -> new code
+   00000 -> 00000000000001
+   00001 -> 00000000000010
+   00010 -> 00000000000100
+   00011 -> 00000000001000
+   00100 -> 00000000010000
+   00101 -> 00000000100000
+   00110 -> 00000001000000
+   00111 -> 00000010000000
+   01000 -> 00000100000000
+   01001 -> 00001000000000
+   01010 -> 00010000000000
+   01011 -> 00100000000000
+   01100 -> 01000000000000
+   01101 -> 10000000000000
+
+Starting clock optimization phase (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 260MB peak: 260MB)
+
+
+mixed edge conversion for GCC is OFF
+
+Finished clock optimization phase (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 260MB peak: 261MB)
+
+WARNING - Z241 :"j:/work/opsys-sense/opa/fpga design/vsb_mach_comp/opa_vsb.fdc":3:0:3:0|Source for clock clk_27m_buf should be moved to net u_pll_downlink.CLKOS connected to driving cell pin u_pll_downlink.PLLInst_0.CLKOS
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:08s; Memory used current: 261MB peak: 261MB)
+
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:08s; Memory used current: 261MB peak: 261MB)
+
+@N: FX1184 |Applying syn_allowed_resources blockrams=64 on top level netlist vsb_top 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 261MB peak: 261MB)
+
+
+
+Clock Summary
+******************
+
+          Start                Requested     Requested     Clock        Clock                Clock
+Level     Clock                Frequency     Period        Type         Group                Load 
+--------------------------------------------------------------------------------------------------
+0 -       clk_81m              81.0 MHz      12.346        declared     group_19_6_1         103  
+                                                                                                  
+0 -       internal_osc_clk     53.2 MHz      18.797        declared     default_clkgroup     89   
+                                                                                                  
+0 -       clk_27m_buf          27.0 MHz      37.037        declared     group_19_6_2         64   
+                                                                                                  
+0 -       serdes_rbc0          81.0 MHz      12.346        declared     default_clkgroup     51   
+                                                                                                  
+0 -       System               100.0 MHz     10.000        system       system_clkgroup      0    
+==================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                     Clock     Source                                      Clock Pin                                                                     Non-clock Pin     Non-clock Pin
+Clock                Load      Pin                                         Seq Example                                                                   Seq Example       Comb Example 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+clk_81m              103       osc_81m(port)                               u_downlink_tx.u_encoder_8b10b.disparity.C                                     -                 -            
+                                                                                                                                                                                        
+internal_osc_clk     89        u_internal_osc.OSC(OSCH)                    u_vsb_status_led.clk_divider[25:0].C                                          -                 -            
+                                                                                                                                                                                        
+clk_27m_buf          64        u_pll_downlink.PLLInst_0.CLKOS(EHXPLLJ)     u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync2[7:0].C     -                 -            
+                                                                                                                                                                                        
+serdes_rbc0          51        serdes_rbc0(port)                           u_uplink_rx.serdes_sync_d1.C                                                  -                 -            
+                                                                                                                                                                                        
+System               0         -                                           -                                                                             -                 -            
+========================================================================================================================================================================================
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+4 non-gated/non-generated clock tree(s) driving 294 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+========================================= Non-Gated/Non-Generated Clocks ==========================================
+Clock Tree ID     Driving Element          Drive Element Type     Fanout     Sample Instance                       
+-------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_0       u_internal_osc.OSC       OSCH                   89         u_vsb_status_led.clk_divider[25:0]    
+@KP:ckid0_1       serdes_rbc0              port                   51         u_uplink_rx.aligned_10b_word[9:0]     
+@KP:ckid0_2       osc_81m                  port                   103        u_tx_reset_sync.delay_counter[15:0]   
+@KP:ckid0_3       u_pll_downlink.CLKOS     vsb_pll_downlink       51         u_video_reset_sync.delay_counter[15:0]
+===================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+
+Summary of user generated gated clocks:
+0 user generated gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:10s; Memory used current: 262MB peak: 262MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:10s; Memory used current: 262MB peak: 263MB)
+
+WARNING - MF511 |Found issues with constraints. Please check constraint checker report "J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl1\opa_vsb_impl1_cck.rpt" .
+
+Finished constraint checker (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:10s; Memory used current: 262MB peak: 263MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:10s; Memory used current: 175MB peak: 263MB)
+
+Process took 0h:00m:14s realtime, 0h:00m:11s cputime
+# Sun Oct  4 11:48:54 2026
+
+###########################################################]
+# Sun Oct  4 11:48:57 2026
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: V-2023.09L-2
+Install: C:\lscc\diamond\3.14\synpbase
+OS: Windows 10 or later
+Hostname: OPSL80008034
+
+Implementation : impl1
+Synopsys Lattice Technology Mapper, Version map202309lat, Build 191R, Built Sep 17 2024 10:38:50, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 182MB peak: 182MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 184MB peak: 197MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 184MB peak: 197MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 198MB peak: 198MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 199MB peak: 201MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 253MB peak: 253MB)
+
+@N: BZ173 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_i2c_script_driver.v":75:8:75:11|ROM payload_byte[7:2] (in view: work.vsb_i2c_script_driver(verilog)) mapped in logic.
+@N: BZ173 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_i2c_script_driver.v":75:8:75:11|ROM command_byte[7:4] (in view: work.vsb_i2c_script_driver(verilog)) mapped in logic.
+@N: BZ173 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_i2c_script_driver.v":75:8:75:11|ROM payload_byte[7:2] (in view: work.vsb_i2c_script_driver(verilog)) mapped in logic.
+@N: MO106 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_i2c_script_driver.v":75:8:75:11|Found ROM payload_byte[7:2] (in view: work.vsb_i2c_script_driver(verilog)) with 16 words by 6 bits.
+@N: BZ173 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_i2c_script_driver.v":75:8:75:11|ROM command_byte[7:4] (in view: work.vsb_i2c_script_driver(verilog)) mapped in logic.
+@N: MO106 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_i2c_script_driver.v":75:8:75:11|Found ROM command_byte[7:4] (in view: work.vsb_i2c_script_driver(verilog)) with 16 words by 4 bits.
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net internal_osc_clk has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net clk_27m_buf has multiple drivers .
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 260MB peak: 260MB)
+
+@N: MO231 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_reset_sync.v":31:4:31:9|Found counter in view:work.vsb_reset_sync_2(verilog) instance delay_counter[15:0] 
+@N: MO231 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_reset_sync.v":31:4:31:9|Found counter in view:work.vsb_reset_sync_1(verilog) instance delay_counter[15:0] 
+@N: MO231 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_reset_sync.v":31:4:31:9|Found counter in view:work.vsb_reset_sync_0(verilog) instance delay_counter[15:0] 
+@N: BN362 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":128:4:128:9|Removing sequential instance rd_data[13:0] (in view: work.tx_elastic_fifo_16s_7s_128s(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: MF179 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":166:23:166:55|Found 8 by 8 bit equality operator ('==') rd_empty (in view: work.tx_elastic_fifo_16s_7s_128s(verilog))
+@N: MF179 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":170:22:171:74|Found 8 by 8 bit equality operator ('==') wr_full (in view: work.tx_elastic_fifo_16s_7s_128s(verilog))
+@N: MO231 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Found counter in view:work.vsb_i2c_script_driver(verilog) instance timer_counter[19:0] 
+@N: MO231 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_i2c_script_driver.v":108:4:108:9|Found counter in view:work.vsb_i2c_script_driver(verilog) instance script_index[4:0] 
+@N: MO231 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\board_status_led.v":61:4:61:9|Found counter in view:work.board_status_led(verilog) instance clk_divider[25:0] 
+@N: MF794 |RAM mem[13:0] required 15 registers during mapping 
+
+Starting factoring (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:15s; Memory used current: 262MB peak: 262MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:16s; Memory used current: 263MB peak: 263MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+NConnInternalConnection caching is on
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.N_72 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.N_75 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.N_87 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.N_88 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.N_89 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.N_90 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.N_91 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.N_92 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.N_93 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.N_94 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.N_95 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.N_96 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.N_97 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.N_98 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.N_99 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.N_100 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.N_101 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.N_102 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.N_103 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.N_104 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.N_105 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.N_106 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.N_107 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.N_108 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.N_109 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_uplink_rx.N_39 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_uplink_rx.N_40 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_uplink_rx.N_41 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_uplink_rx.N_42 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_uplink_rx.N_43 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_uplink_rx.N_44 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_uplink_rx.N_45 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_uplink_rx.N_46 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_uplink_rx.u_decoder_8b10b.N_1 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.N_35 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.N_36 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.N_37 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.N_38 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.N_39 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.N_40 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.N_41 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.N_42 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.N_43 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.N_44 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.N_45 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.N_46 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.N_47 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.N_48 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.N_49 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.N_68 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.N_69 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.N_70 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.N_71 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.N_72 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.N_73 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.N_74 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.N_75 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.N_76 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.N_77 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.N_78 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.N_79 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.N_80 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.N_81 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_rx_reset_sync.N_2 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_video_reset_sync.N_2 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_tx_reset_sync.N_2 has multiple drivers .
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:20s; CPU Time elapsed 0h:00m:17s; Memory used current: 263MB peak: 264MB)
+
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_fill_level has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net N_278 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_wr_will_advance_axb_0 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_wr_will_advance_axb_1 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_wr_will_advance_axb_2 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_wr_will_advance_axb_3 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_wr_will_advance_axb_4 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_wr_will_advance_axb_5 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_wr_will_advance_axb_6 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_wr_will_advance_axb_7 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net N_287 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_rd_will_advance_axb_0 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_rd_will_advance_axb_1 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_rd_will_advance_axb_2 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_rd_will_advance_axb_3 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_rd_will_advance_axb_4 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_rd_will_advance_axb_5 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_rd_will_advance_axb_6 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_rd_will_advance_axb_7 has multiple drivers .
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:21s; CPU Time elapsed 0h:00m:18s; Memory used current: 264MB peak: 264MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:21s; CPU Time elapsed 0h:00m:18s; Memory used current: 264MB peak: 264MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:22s; CPU Time elapsed 0h:00m:18s; Memory used current: 264MB peak: 264MB)
+
+@N: BN362 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":151:4:151:9|Removing sequential instance u_downlink_tx.u_tx_payload_mux.mux_byte_o[0] (in view: work.vsb_top(verilog)) because it does not drive other instances.
+@N: BN362 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":151:4:151:9|Removing sequential instance u_downlink_tx.u_tx_payload_mux.mux_byte_o[1] (in view: work.vsb_top(verilog)) because it does not drive other instances.
+@N: BN362 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":151:4:151:9|Removing sequential instance u_downlink_tx.u_tx_payload_mux.mux_byte_o[2] (in view: work.vsb_top(verilog)) because it does not drive other instances.
+@N: BN362 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":151:4:151:9|Removing sequential instance u_downlink_tx.u_tx_payload_mux.mux_byte_o[3] (in view: work.vsb_top(verilog)) because it does not drive other instances.
+@N: BN362 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":151:4:151:9|Removing sequential instance u_downlink_tx.u_tx_payload_mux.mux_byte_o[4] (in view: work.vsb_top(verilog)) because it does not drive other instances.
+@N: BN362 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":151:4:151:9|Removing sequential instance u_downlink_tx.u_tx_payload_mux.mux_byte_o[5] (in view: work.vsb_top(verilog)) because it does not drive other instances.
+@N: BN362 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":151:4:151:9|Removing sequential instance u_downlink_tx.u_tx_payload_mux.mux_byte_o[6] (in view: work.vsb_top(verilog)) because it does not drive other instances.
+@N: BN362 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":151:4:151:9|Removing sequential instance u_downlink_tx.u_tx_payload_mux.mux_byte_o[7] (in view: work.vsb_top(verilog)) because it does not drive other instances.
+@N: BN362 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\tx_payload_mux.v":151:4:151:9|Removing sequential instance u_downlink_tx.u_tx_payload_mux.mux_is_k_o (in view: work.vsb_top(verilog)) because it does not drive other instances.
+@N: FX211 |Packed ROM u_uplink_rx.u_decoder_8b10b.lut_kin_0[8:0] (10 input, 9 output) to Block SelectRAM 
+@N: FX211 |Packed ROM u_downlink_tx.u_encoder_8b10b.cw_rd_plus_0[20:0] (9 input, 21 output) to Block SelectRAM 
+@N: FX211 |Packed ROM u_uplink_rx.u_decoder_8b10b.lut_valid_0[2:0] (10 input, 3 output) to Block SelectRAM 
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_tx_reset_sync.delay_counter has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_video_reset_sync.delay_counter has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_rx_reset_sync.delay_counter has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.timer_counter has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net u_i2c_script_driver.script_index has multiple drivers .
+
+Finished preparing to map (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:19s; Memory used current: 265MB peak: 265MB)
+
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":149:4:149:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync1[6] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":149:4:149:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync1[5] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":138:4:138:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray_sync1[5] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":138:4:138:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray_sync1[4] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":138:4:138:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray_sync1[3] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":138:4:138:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray_sync1[2] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":138:4:138:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray_sync1[1] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":138:4:138:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray_sync1[0] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":149:4:149:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync1[4] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":149:4:149:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync1[3] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":149:4:149:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync1[2] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":149:4:149:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync1[1] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":149:4:149:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync1[0] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":138:4:138:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray_sync1[7] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":138:4:138:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray_sync1[6] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":149:4:149:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync1[7] (in view: work.vsb_top(verilog)).
+
+Finished technology mapping (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:19s; Memory used current: 269MB peak: 269MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:19s		     1.88ns		 196 /       302
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":149:4:149:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync1[6] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":149:4:149:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync1[5] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":138:4:138:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray_sync1[5] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":138:4:138:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray_sync1[4] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":138:4:138:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray_sync1[3] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":138:4:138:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray_sync1[2] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":138:4:138:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray_sync1[1] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":138:4:138:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray_sync1[0] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":149:4:149:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync1[4] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":149:4:149:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync1[3] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":149:4:149:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync1[2] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":149:4:149:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync1[1] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":149:4:149:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync1[0] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":138:4:138:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray_sync1[7] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":138:4:138:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray_sync1[6] (in view: work.vsb_top(verilog)).
+@N: FX1019 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\tx_elastic_fifo.v":149:4:149:9|Adding ASYNC_REG property on synchronizing instance u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync1[7] (in view: work.vsb_top(verilog)).
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:20s; Memory used current: 269MB peak: 270MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net N_1363 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net N_1365 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net N_1367 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net N_1369 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net N_1371 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net N_1373 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net N_1375 has multiple drivers .
+WARNING - BN161 :"j:\work\opsys-sense\opa\fpga design\vsb_mach\source\vsb_top.v":22:7:22:13|Net N_1377 has multiple drivers .
+
+Only the first 100 messages of id 'BN161' are reported. To see all messages use 'report_messages -log J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl1\synlog\opa_vsb_impl1_fpga_mapper.srr -id BN161' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN161} -count unlimited' in the Tcl shell.
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:25s; CPU Time elapsed 0h:00m:20s; Memory used current: 269MB peak: 270MB)
+
+
+Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:00m:26s; CPU Time elapsed 0h:00m:21s; Memory used current: 270MB peak: 270MB)
+
+
+Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:00m:26s; CPU Time elapsed 0h:00m:21s; Memory used current: 270MB peak: 270MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:26s; CPU Time elapsed 0h:00m:21s; Memory used current: 213MB peak: 270MB)
+
+Writing Analyst data base J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl1\synwork\opa_vsb_impl1_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:22s; Memory used current: 269MB peak: 270MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\impl1\opa_vsb_impl1.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:30s; CPU Time elapsed 0h:00m:23s; Memory used current: 277MB peak: 277MB)
+
+
+Finished Writing Netlists (Real Time elapsed 0h:00m:31s; CPU Time elapsed 0h:00m:23s; Memory used current: 277MB peak: 278MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:31s; CPU Time elapsed 0h:00m:24s; Memory used current: 275MB peak: 278MB)
+
+WARNING - MT246 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\i2c_vsb.v":91:8:91:16|Blackbox EFB is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+WARNING - MT246 :"j:\work\opsys-sense\opa\fpga design\vsb_mach_comp\vsb_pll_downlink.v":67:12:67:20|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@N: MT615 |Found clock internal_osc_clk with period 18.80ns 
+@N: MT615 |Found clock clk_81m with period 12.35ns 
+@N: MT615 |Found clock clk_27m_buf with period 37.04ns 
+@N: MT615 |Found clock serdes_rbc0 with period 12.35ns 
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Sun Oct  4 11:49:30 2026
+#
+
+
+Top view:               vsb_top
+Requested Frequency:    27.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    J:\work\Opsys-sense\OPA\FPGA design\vsb_mach_comp\opa_vsb.fdc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 1.884
+
+                     Requested     Estimated     Requested     Estimated                Clock        Clock           
+Starting Clock       Frequency     Frequency     Period        Period        Slack      Type         Group           
+---------------------------------------------------------------------------------------------------------------------
+clk_27m_buf          27.0 MHz      82.4 MHz      37.037        12.130        24.907     declared     group_19_6_2    
+clk_81m              81.0 MHz      104.6 MHz     12.346        9.563         2.783      declared     group_19_6_1    
+internal_osc_clk     53.2 MHz      89.8 MHz      18.797        11.140        7.657      declared     default_clkgroup
+serdes_rbc0          81.0 MHz      95.6 MHz      12.346        10.461        1.884      declared     default_clkgroup
+System               100.0 MHz     373.6 MHz     10.000        2.676         7.324      system       system_clkgroup 
+=====================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                              |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------------------------
+Starting          Ending            |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------------------------
+System            System            |  10.000      7.324   |  No paths    -      |  No paths    -      |  No paths    -    
+System            internal_osc_clk  |  18.797      17.053  |  No paths    -      |  No paths    -      |  No paths    -    
+internal_osc_clk  System            |  18.797      17.753  |  No paths    -      |  No paths    -      |  No paths    -    
+internal_osc_clk  internal_osc_clk  |  18.797      7.657   |  No paths    -      |  No paths    -      |  No paths    -    
+clk_81m           clk_81m           |  12.346      2.783   |  No paths    -      |  No paths    -      |  No paths    -    
+clk_81m           clk_27m_buf       |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
+clk_27m_buf       clk_81m           |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
+clk_27m_buf       clk_27m_buf       |  37.037      24.907  |  No paths    -      |  No paths    -      |  No paths    -    
+serdes_rbc0       serdes_rbc0       |  12.346      1.884   |  No paths    -      |  No paths    -      |  No paths    -    
+===========================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: clk_27m_buf
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                          Starting                                                     Arrival           
+Instance                                                                  Reference       Type        Pin     Net                      Time        Slack 
+                                                                          Clock                                                                          
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync2[7]     clk_27m_buf     FD1S3DX     Q       rd_ptr_gray_sync2[7]     1.188       24.907
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync2[6]     clk_27m_buf     FD1S3DX     Q       rd_ptr_gray_sync2[6]     1.180       24.915
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync2[5]     clk_27m_buf     FD1S3DX     Q       rd_ptr_gray_sync2[5]     1.148       24.947
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync2[4]     clk_27m_buf     FD1S3DX     Q       rd_ptr_gray_sync2[4]     1.108       24.987
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync2[3]     clk_27m_buf     FD1S3DX     Q       rd_ptr_gray_sync2[3]     1.180       26.108
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync2[2]     clk_27m_buf     FD1S3DX     Q       rd_ptr_gray_sync2[2]     1.148       26.140
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync2[1]     clk_27m_buf     FD1S3DX     Q       rd_ptr_gray_sync2[1]     1.108       26.180
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_bin[0]            clk_27m_buf     FD1S3DX     Q       wr_fill_level            1.108       27.197
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync2[0]     clk_27m_buf     FD1S3DX     Q       rd_ptr_gray_sync2[0]     1.044       27.261
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_bin[1]            clk_27m_buf     FD1S3DX     Q       wr_ptr_bin[1]            1.108       27.339
+=========================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                    Starting                                                               Required           
+Instance                                                            Reference       Type        Pin     Net                                Time         Slack 
+                                                                    Clock                                                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray[6]     clk_27m_buf     FD1S3DX     D       wr_ptr_gray_next[6]                37.126       24.907
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray[4]     clk_27m_buf     FD1S3DX     D       wr_ptr_gray_next[4]                37.126       24.986
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray[5]     clk_27m_buf     FD1S3DX     D       wr_ptr_gray_next[5]                37.126       24.986
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray[2]     clk_27m_buf     FD1S3DX     D       wr_ptr_gray_next[2]                37.126       25.129
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray[3]     clk_27m_buf     FD1S3DX     D       wr_ptr_gray_next[3]                37.126       25.129
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray[0]     clk_27m_buf     FD1S3DX     D       wr_ptr_gray_next[0]                37.126       25.271
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray[1]     clk_27m_buf     FD1S3DX     D       wr_ptr_gray_next[1]                37.126       25.271
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_bin[7]      clk_27m_buf     FD1S3DX     D       un1_wr_will_advance_s_7_0_S0       36.931       25.329
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_bin[5]      clk_27m_buf     FD1S3DX     D       un1_wr_will_advance_cry_5_0_S0     36.931       25.408
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_bin[6]      clk_27m_buf     FD1S3DX     D       un1_wr_will_advance_cry_5_0_S1     36.931       25.408
+==============================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      37.037
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         37.126
+
+    - Propagation time:                      12.219
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 24.907
+
+    Number of logic level(s):                14
+    Starting point:                          u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync2[7] / Q
+    Ending point:                            u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray[6] / D
+    The start point is clocked by            clk_27m_buf [rising] (rise=0.000 fall=18.518 period=37.037) on pin CK
+    The end   point is clocked by            clk_27m_buf [rising] (rise=0.000 fall=18.518 period=37.037) on pin CK
+
+Instance / Net                                                                                        Pin      Pin               Arrival      No. of    
+Name                                                                                     Type         Name     Dir     Delay     Time         Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_sync2[7]                    FD1S3DX      Q        Out     1.188     1.188 r      -         
+rd_ptr_gray_sync2[7]                                                                     Net          -        -       -         -            6         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.gray2bin_0\.un16_gray2bin_6_0_a2[4]     ORCALUT4     C        In      0.000     1.188 r      -         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.gray2bin_0\.un16_gray2bin_6_0_a2[4]     ORCALUT4     Z        Out     1.193     2.381 r      -         
+un16_gray2bin_6[4]                                                                       Net          -        -       -         -            4         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.gray2bin_0\.un31_gray2bin_9_0_a2[1]     ORCALUT4     B        In      0.000     2.381 r      -         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.gray2bin_0\.un31_gray2bin_9_0_a2[1]     ORCALUT4     Z        Out     1.017     3.397 r      -         
+un31_gray2bin_9[1]                                                                       Net          -        -       -         -            1         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_fill_level_cry_0_0                   CCU2D        C1       In      0.000     3.397 r      -         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_fill_level_cry_0_0                   CCU2D        COUT     Out     1.544     4.942 r      -         
+wr_fill_level_cry_0                                                                      Net          -        -       -         -            1         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_fill_level_cry_1_0                   CCU2D        CIN      In      0.000     4.942 r      -         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_fill_level_cry_1_0                   CCU2D        COUT     Out     0.143     5.085 r      -         
+wr_fill_level_cry_2                                                                      Net          -        -       -         -            1         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_fill_level_cry_3_0                   CCU2D        CIN      In      0.000     5.085 r      -         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_fill_level_cry_3_0                   CCU2D        COUT     Out     0.143     5.228 r      -         
+wr_fill_level_cry_4                                                                      Net          -        -       -         -            1         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_fill_level_cry_5_0                   CCU2D        CIN      In      0.000     5.228 r      -         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_fill_level_cry_5_0                   CCU2D        COUT     Out     0.143     5.370 r      -         
+wr_fill_level_cry_6                                                                      Net          -        -       -         -            1         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_fill_level_s_7_0                     CCU2D        CIN      In      0.000     5.370 r      -         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_fill_level_s_7_0                     CCU2D        S0       Out     1.549     6.919 r      -         
+wr_fill_level[7]                                                                         Net          -        -       -         -            1         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_will_advance                         ORCALUT4     D        In      0.000     6.919 r      -         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_will_advance                         ORCALUT4     Z        Out     1.089     8.008 f      -         
+wr_will_advance                                                                          Net          -        -       -         -            2         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_wr_will_advance_cry_0_0             CCU2D        B0       In      0.000     8.008 f      -         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_wr_will_advance_cry_0_0             CCU2D        COUT     Out     1.544     9.553 r      -         
+un1_wr_will_advance_cry_0                                                                Net          -        -       -         -            1         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_wr_will_advance_cry_1_0             CCU2D        CIN      In      0.000     9.553 r      -         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_wr_will_advance_cry_1_0             CCU2D        COUT     Out     0.143     9.695 r      -         
+un1_wr_will_advance_cry_2                                                                Net          -        -       -         -            1         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_wr_will_advance_cry_3_0             CCU2D        CIN      In      0.000     9.695 r      -         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_wr_will_advance_cry_3_0             CCU2D        COUT     Out     0.143     9.838 r      -         
+un1_wr_will_advance_cry_4                                                                Net          -        -       -         -            1         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_wr_will_advance_cry_5_0             CCU2D        CIN      In      0.000     9.838 r      -         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_wr_will_advance_cry_5_0             CCU2D        COUT     Out     0.143     9.981 r      -         
+un1_wr_will_advance_cry_6                                                                Net          -        -       -         -            1         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_wr_will_advance_s_7_0               CCU2D        CIN      In      0.000     9.981 r      -         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_wr_will_advance_s_7_0               CCU2D        S0       Out     1.621     11.602 r     -         
+un1_wr_will_advance_s_7_0_S0                                                             Net          -        -       -         -            2         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray_next[6]                     ORCALUT4     B        In      0.000     11.602 r     -         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray_next[6]                     ORCALUT4     Z        Out     0.617     12.219 r     -         
+wr_ptr_gray_next[6]                                                                      Net          -        -       -         -            1         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray[6]                          FD1S3DX      D        In      0.000     12.219 r     -         
+========================================================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: clk_81m
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                          Starting                                                   Arrival          
+Instance                                                                  Reference     Type        Pin     Net                      Time        Slack
+                                                                          Clock                                                                       
+------------------------------------------------------------------------------------------------------------------------------------------------------
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray[0]           clk_81m       FD1S3DX     Q       rd_ptr_gray[0]           1.044       2.783
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray[1]           clk_81m       FD1S3DX     Q       rd_ptr_gray[1]           1.044       2.783
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray_sync2[0]     clk_81m       FD1S3DX     Q       wr_ptr_gray_sync2[0]     0.972       2.855
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray_sync2[1]     clk_81m       FD1S3DX     Q       wr_ptr_gray_sync2[1]     0.972       2.855
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray[2]           clk_81m       FD1S3DX     Q       rd_ptr_gray[2]           1.044       2.926
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray[3]           clk_81m       FD1S3DX     Q       rd_ptr_gray[3]           1.044       2.926
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray[4]           clk_81m       FD1S3DX     Q       rd_ptr_gray[4]           1.044       2.926
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray[5]           clk_81m       FD1S3DX     Q       rd_ptr_gray[5]           1.044       2.926
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray_sync2[2]     clk_81m       FD1S3DX     Q       wr_ptr_gray_sync2[2]     0.972       2.998
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.wr_ptr_gray_sync2[3]     clk_81m       FD1S3DX     Q       wr_ptr_gray_sync2[3]     0.972       2.998
+======================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                    Starting                                                             Required          
+Instance                                                            Reference     Type        Pin     Net                                Time         Slack
+                                                                    Clock                                                                                  
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray[6]     clk_81m       FD1S3DX     D       rd_ptr_gray_next[6]                12.434       2.783
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray[4]     clk_81m       FD1S3DX     D       rd_ptr_gray_next[4]                12.434       2.862
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray[5]     clk_81m       FD1S3DX     D       rd_ptr_gray_next[5]                12.434       2.862
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray[2]     clk_81m       FD1S3DX     D       rd_ptr_gray_next[2]                12.434       3.004
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray[3]     clk_81m       FD1S3DX     D       rd_ptr_gray_next[3]                12.434       3.004
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray[0]     clk_81m       FD1S3DX     D       rd_ptr_gray_next[0]                12.434       3.147
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray[1]     clk_81m       FD1S3DX     D       rd_ptr_gray_next[1]                12.434       3.147
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_bin[7]      clk_81m       FD1S3DX     D       un1_rd_will_advance_s_7_0_S0       12.240       3.205
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_bin[5]      clk_81m       FD1S3DX     D       un1_rd_will_advance_cry_5_0_S0     12.240       3.284
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_bin[6]      clk_81m       FD1S3DX     D       un1_rd_will_advance_cry_5_0_S1     12.240       3.284
+===========================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      12.346
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         12.434
+
+    - Propagation time:                      9.652
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 2.783
+
+    Number of logic level(s):                10
+    Starting point:                          u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray[0] / Q
+    Ending point:                            u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray[6] / D
+    The start point is clocked by            clk_81m [rising] (rise=0.000 fall=6.173 period=12.346) on pin CK
+    The end   point is clocked by            clk_81m [rising] (rise=0.000 fall=6.173 period=12.346) on pin CK
+
+Instance / Net                                                                                Pin      Pin               Arrival     No. of    
+Name                                                                             Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------------
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray[0]                  FD1S3DX      Q        Out     1.044     1.044 r     -         
+rd_ptr_gray[0]                                                                   Net          -        -       -         -           2         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_empty_0_I_1_0                CCU2D        D1       In      0.000     1.044 r     -         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_empty_0_I_1_0                CCU2D        COUT     Out     1.544     2.588 r     -         
+rd_empty_0_data_tmp[0]                                                           Net          -        -       -         -           1         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_empty_0_I_9_0                CCU2D        CIN      In      0.000     2.588 r     -         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_empty_0_I_9_0                CCU2D        COUT     Out     0.143     2.731 r     -         
+rd_empty_0_data_tmp[2]                                                           Net          -        -       -         -           1         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_empty_0_I_21_0               CCU2D        CIN      In      0.000     2.731 r     -         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_empty_0_I_21_0               CCU2D        S1       Out     1.621     4.352 r     -         
+rd_empty_0_data_tmp[3]                                                           Net          -        -       -         -           2         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_will_advance                 ORCALUT4     B        In      0.000     4.352 r     -         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_will_advance                 ORCALUT4     Z        Out     1.089     5.441 r     -         
+rd_will_advance                                                                  Net          -        -       -         -           2         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_rd_will_advance_cry_0_0     CCU2D        B0       In      0.000     5.441 r     -         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_rd_will_advance_cry_0_0     CCU2D        COUT     Out     1.544     6.985 r     -         
+un1_rd_will_advance_cry_0                                                        Net          -        -       -         -           1         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_rd_will_advance_cry_1_0     CCU2D        CIN      In      0.000     6.985 r     -         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_rd_will_advance_cry_1_0     CCU2D        COUT     Out     0.143     7.128 r     -         
+un1_rd_will_advance_cry_2                                                        Net          -        -       -         -           1         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_rd_will_advance_cry_3_0     CCU2D        CIN      In      0.000     7.128 r     -         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_rd_will_advance_cry_3_0     CCU2D        COUT     Out     0.143     7.271 r     -         
+un1_rd_will_advance_cry_4                                                        Net          -        -       -         -           1         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_rd_will_advance_cry_5_0     CCU2D        CIN      In      0.000     7.271 r     -         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_rd_will_advance_cry_5_0     CCU2D        COUT     Out     0.143     7.414 r     -         
+un1_rd_will_advance_cry_6                                                        Net          -        -       -         -           1         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_rd_will_advance_s_7_0       CCU2D        CIN      In      0.000     7.414 r     -         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.un1_rd_will_advance_s_7_0       CCU2D        S0       Out     1.621     9.035 r     -         
+un1_rd_will_advance_s_7_0_S0                                                     Net          -        -       -         -           2         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_next[6]             ORCALUT4     B        In      0.000     9.035 r     -         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray_next[6]             ORCALUT4     Z        Out     0.617     9.652 r     -         
+rd_ptr_gray_next[6]                                                              Net          -        -       -         -           1         
+u_downlink_tx.u_tx_payload_mux.u_tx_elastic_fifo.rd_ptr_gray[6]                  FD1S3DX      D        In      0.000     9.652 r     -         
+===============================================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: internal_osc_clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                          Starting                                                       Arrival          
+Instance                                  Reference            Type        Pin     Net                   Time        Slack
+                                          Clock                                                                           
+--------------------------------------------------------------------------------------------------------------------------
+u_i2c_script_driver.timer_counter[9]      internal_osc_clk     FD1P3DX     Q       timer_counter[9]      1.044       7.657
+u_i2c_script_driver.timer_counter[10]     internal_osc_clk     FD1P3DX     Q       timer_counter[10]     1.044       7.657
+u_i2c_script_driver.timer_counter[11]     internal_osc_clk     FD1P3DX     Q       timer_counter[11]     1.044       7.657
+u_i2c_script_driver.timer_counter[5]      internal_osc_clk     FD1P3DX     Q       timer_counter[5]      1.108       7.665
+u_i2c_script_driver.timer_counter[7]      internal_osc_clk     FD1P3DX     Q       timer_counter[7]      1.108       7.665
+u_i2c_script_driver.timer_counter[4]      internal_osc_clk     FD1P3DX     Q       timer_counter[4]      1.044       7.729
+u_i2c_script_driver.timer_counter[16]     internal_osc_clk     FD1P3DX     Q       timer_counter[16]     1.108       8.618
+u_i2c_script_driver.timer_counter[17]     internal_osc_clk     FD1P3DX     Q       timer_counter[17]     1.108       8.618
+u_i2c_script_driver.timer_counter[18]     internal_osc_clk     FD1P3DX     Q       timer_counter[18]     1.108       8.618
+u_i2c_script_driver.timer_counter[6]      internal_osc_clk     FD1P3DX     Q       timer_counter[6]      1.108       8.682
+==========================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                          Starting                                                         Required          
+Instance                                  Reference            Type        Pin     Net                     Time         Slack
+                                          Clock                                                                              
+-----------------------------------------------------------------------------------------------------------------------------
+u_i2c_script_driver.timer_counter[19]     internal_osc_clk     FD1P3DX     D       timer_counter_s[19]     18.691       7.657
+u_i2c_script_driver.timer_counter[17]     internal_osc_clk     FD1P3DX     D       timer_counter_s[17]     18.691       7.800
+u_i2c_script_driver.timer_counter[18]     internal_osc_clk     FD1P3DX     D       timer_counter_s[18]     18.691       7.800
+u_i2c_script_driver.timer_counter[15]     internal_osc_clk     FD1P3DX     D       timer_counter_s[15]     18.691       7.942
+u_i2c_script_driver.timer_counter[16]     internal_osc_clk     FD1P3DX     D       timer_counter_s[16]     18.691       7.942
+u_i2c_script_driver.timer_counter[13]     internal_osc_clk     FD1P3DX     D       timer_counter_s[13]     18.691       8.085
+u_i2c_script_driver.timer_counter[14]     internal_osc_clk     FD1P3DX     D       timer_counter_s[14]     18.691       8.085
+u_i2c_script_driver.timer_counter[11]     internal_osc_clk     FD1P3DX     D       timer_counter_s[11]     18.691       8.228
+u_i2c_script_driver.timer_counter[12]     internal_osc_clk     FD1P3DX     D       timer_counter_s[12]     18.691       8.228
+u_i2c_script_driver.timer_counter[9]      internal_osc_clk     FD1P3DX     D       timer_counter_s[9]      18.691       8.371
+=============================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      18.797
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         18.691
+
+    - Propagation time:                      11.034
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 7.657
+
+    Number of logic level(s):                16
+    Starting point:                          u_i2c_script_driver.timer_counter[9] / Q
+    Ending point:                            u_i2c_script_driver.timer_counter[19] / D
+    The start point is clocked by            internal_osc_clk [rising] (rise=0.000 fall=9.398 period=18.797) on pin CK
+    The end   point is clocked by            internal_osc_clk [rising] (rise=0.000 fall=9.398 period=18.797) on pin CK
+
+Instance / Net                                                  Pin      Pin               Arrival      No. of    
+Name                                               Type         Name     Dir     Delay     Time         Fan Out(s)
+------------------------------------------------------------------------------------------------------------------
+u_i2c_script_driver.timer_counter[9]               FD1P3DX      Q        Out     1.044     1.044 r      -         
+timer_counter[9]                                   Net          -        -       -         -            2         
+u_i2c_script_driver.state_ns_i_o2_5[1]             ORCALUT4     A        In      0.000     1.044 r      -         
+u_i2c_script_driver.state_ns_i_o2_5[1]             ORCALUT4     Z        Out     1.089     2.133 f      -         
+un1_timer_counter_1lt13_5                          Net          -        -       -         -            2         
+u_i2c_script_driver.un1_timer_counter_1lto11       ORCALUT4     C        In      0.000     2.133 f      -         
+u_i2c_script_driver.un1_timer_counter_1lto11       ORCALUT4     Z        Out     1.017     3.149 f      -         
+un1_timer_counter_1lt13                            Net          -        -       -         -            1         
+u_i2c_script_driver.un1_timer_counter_1lto15       ORCALUT4     C        In      0.000     3.149 f      -         
+u_i2c_script_driver.un1_timer_counter_1lto15       ORCALUT4     Z        Out     1.089     4.238 f      -         
+un1_timer_counter_1lt19                            Net          -        -       -         -            2         
+u_i2c_script_driver.timer_counter_1_sqmuxa_1       ORCALUT4     D        In      0.000     4.238 f      -         
+u_i2c_script_driver.timer_counter_1_sqmuxa_1       ORCALUT4     Z        Out     1.089     5.327 f      -         
+timer_counter_1_sqmuxa_1                           Net          -        -       -         -            2         
+u_i2c_script_driver.un1_timer_counter_1_sqmuxa     ORCALUT4     C        In      0.000     5.327 f      -         
+u_i2c_script_driver.un1_timer_counter_1_sqmuxa     ORCALUT4     Z        Out     1.329     6.656 f      -         
+timer_counter                                      Net          -        -       -         -            21        
+u_i2c_script_driver.timer_counter_cry_0[0]         CCU2D        A1       In      0.000     6.656 f      -         
+u_i2c_script_driver.timer_counter_cry_0[0]         CCU2D        COUT     Out     1.544     8.200 r      -         
+timer_counter_cry[0]                               Net          -        -       -         -            1         
+u_i2c_script_driver.timer_counter_cry_0[1]         CCU2D        CIN      In      0.000     8.200 r      -         
+u_i2c_script_driver.timer_counter_cry_0[1]         CCU2D        COUT     Out     0.143     8.343 r      -         
+timer_counter_cry[2]                               Net          -        -       -         -            1         
+u_i2c_script_driver.timer_counter_cry_0[3]         CCU2D        CIN      In      0.000     8.343 r      -         
+u_i2c_script_driver.timer_counter_cry_0[3]         CCU2D        COUT     Out     0.143     8.486 r      -         
+timer_counter_cry[4]                               Net          -        -       -         -            1         
+u_i2c_script_driver.timer_counter_cry_0[5]         CCU2D        CIN      In      0.000     8.486 r      -         
+u_i2c_script_driver.timer_counter_cry_0[5]         CCU2D        COUT     Out     0.143     8.629 r      -         
+timer_counter_cry[6]                               Net          -        -       -         -            1         
+u_i2c_script_driver.timer_counter_cry_0[7]         CCU2D        CIN      In      0.000     8.629 r      -         
+u_i2c_script_driver.timer_counter_cry_0[7]         CCU2D        COUT     Out     0.143     8.771 r      -         
+timer_counter_cry[8]                               Net          -        -       -         -            1         
+u_i2c_script_driver.timer_counter_cry_0[9]         CCU2D        CIN      In      0.000     8.771 r      -         
+u_i2c_script_driver.timer_counter_cry_0[9]         CCU2D        COUT     Out     0.143     8.914 r      -         
+timer_counter_cry[10]                              Net          -        -       -         -            1         
+u_i2c_script_driver.timer_counter_cry_0[11]        CCU2D        CIN      In      0.000     8.914 r      -         
+u_i2c_script_driver.timer_counter_cry_0[11]        CCU2D        COUT     Out     0.143     9.057 r      -         
+timer_counter_cry[12]                              Net          -        -       -         -            1         
+u_i2c_script_driver.timer_counter_cry_0[13]        CCU2D        CIN      In      0.000     9.057 r      -         
+u_i2c_script_driver.timer_counter_cry_0[13]        CCU2D        COUT     Out     0.143     9.200 r      -         
+timer_counter_cry[14]                              Net          -        -       -         -            1         
+u_i2c_script_driver.timer_counter_cry_0[15]        CCU2D        CIN      In      0.000     9.200 r      -         
+u_i2c_script_driver.timer_counter_cry_0[15]        CCU2D        COUT     Out     0.143     9.343 r      -         
+timer_counter_cry[16]                              Net          -        -       -         -            1         
+u_i2c_script_driver.timer_counter_cry_0[17]        CCU2D        CIN      In      0.000     9.343 r      -         
+u_i2c_script_driver.timer_counter_cry_0[17]        CCU2D        COUT     Out     0.143     9.486 r      -         
+timer_counter_cry[18]                              Net          -        -       -         -            1         
+u_i2c_script_driver.timer_counter_s_0[19]          CCU2D        CIN      In      0.000     9.486 r      -         
+u_i2c_script_driver.timer_counter_s_0[19]          CCU2D        S0       Out     1.549     11.034 r     -         
+timer_counter_s[19]                                Net          -        -       -         -            1         
+u_i2c_script_driver.timer_counter[19]              FD1P3DX      D        In      0.000     11.034 r     -         
+==================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: serdes_rbc0
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                              Starting                                                Arrival          
+Instance                                      Reference       Type      Pin     Net                   Time        Slack
+                                              Clock                                                                    
+-----------------------------------------------------------------------------------------------------------------------
+u_uplink_rx.u_decoder_8b10b.lut_valid_0_0     serdes_rbc0     SP8KC     DO1     lut_valid_0_0_DO1     8.284       1.884
+u_uplink_rx.u_decoder_8b10b.lut_valid_0_0     serdes_rbc0     SP8KC     DO0     lut_valid_0_0_DO0     8.212       1.956
+u_uplink_rx.u_decoder_8b10b.lut_valid_0_0     serdes_rbc0     SP8KC     DO2     lut_valid_0_0_DO2     8.284       2.973
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_0       serdes_rbc0     SP8KC     DO0     lut_kin_0_0_DO0       8.212       4.028
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_0       serdes_rbc0     SP8KC     DO1     lut_kin_0_0_DO1       8.212       4.028
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_0       serdes_rbc0     SP8KC     DO2     lut_kin_0_0_DO2       8.212       4.028
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_0       serdes_rbc0     SP8KC     DO3     lut_kin_0_0_DO3       8.212       4.028
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_0       serdes_rbc0     SP8KC     DO4     lut_kin_0_0_DO4       8.212       4.028
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_0       serdes_rbc0     SP8KC     DO5     lut_kin_0_0_DO5       8.212       4.028
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_0       serdes_rbc0     SP8KC     DO6     lut_kin_0_0_DO6       8.212       4.028
+=======================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                  Starting                                                Required          
+Instance                                          Reference       Type        Pin     Net                 Time         Slack
+                                                  Clock                                                                     
+----------------------------------------------------------------------------------------------------------------------------
+u_uplink_rx.u_decoder_8b10b.disparity             serdes_rbc0     FD1P3DX     SP      N_6                 11.874       1.884
+u_uplink_rx.u_decoder_8b10b.code_err              serdes_rbc0     FD1S3DX     D       N_6_i               12.434       2.445
+u_uplink_rx.u_decoder_8b10b.disparity             serdes_rbc0     FD1P3DX     D       N_4_i               12.434       3.534
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_dreg[0]     serdes_rbc0     FD1S3DX     D       lut_kin_0_0_DO0     12.240       4.028
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_dreg[1]     serdes_rbc0     FD1S3DX     D       lut_kin_0_0_DO1     12.240       4.028
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_dreg[2]     serdes_rbc0     FD1S3DX     D       lut_kin_0_0_DO2     12.240       4.028
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_dreg[3]     serdes_rbc0     FD1S3DX     D       lut_kin_0_0_DO3     12.240       4.028
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_dreg[4]     serdes_rbc0     FD1S3DX     D       lut_kin_0_0_DO4     12.240       4.028
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_dreg[5]     serdes_rbc0     FD1S3DX     D       lut_kin_0_0_DO5     12.240       4.028
+u_uplink_rx.u_decoder_8b10b.lut_kin_0_dreg[6]     serdes_rbc0     FD1S3DX     D       lut_kin_0_0_DO6     12.240       4.028
+============================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      12.346
+    - Setup time:                            0.472
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         11.874
+
+    - Propagation time:                      9.990
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     1.884
+
+    Number of logic level(s):                2
+    Starting point:                          u_uplink_rx.u_decoder_8b10b.lut_valid_0_0 / DO1
+    Ending point:                            u_uplink_rx.u_decoder_8b10b.disparity / SP
+    The start point is clocked by            serdes_rbc0 [rising] (rise=0.000 fall=6.173 period=12.346) on pin CLK
+    The end   point is clocked by            serdes_rbc0 [rising] (rise=0.000 fall=6.173 period=12.346) on pin CK
+
+Instance / Net                                                       Pin      Pin               Arrival     No. of    
+Name                                                    Type         Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------
+u_uplink_rx.u_decoder_8b10b.lut_valid_0_0               SP8KC        DO1      Out     8.284     8.284 r     -         
+lut_valid_0_0_DO1                                       Net          -        -       -         -           2         
+u_uplink_rx.u_decoder_8b10b.disparity_2_sqmuxa_i_o2     ORCALUT4     C        In      0.000     8.284 r     -         
+u_uplink_rx.u_decoder_8b10b.disparity_2_sqmuxa_i_o2     ORCALUT4     Z        Out     1.089     9.373 f     -         
+N_9                                                     Net          -        -       -         -           2         
+u_uplink_rx.u_decoder_8b10b.disparity_2_sqmuxa_i_0      ORCALUT4     A        In      0.000     9.373 f     -         
+u_uplink_rx.u_decoder_8b10b.disparity_2_sqmuxa_i_0      ORCALUT4     Z        Out     0.617     9.990 f     -         
+N_6                                                     Net          -        -       -         -           1         
+u_uplink_rx.u_decoder_8b10b.disparity                   FD1P3DX      SP       In      0.000     9.990 f     -         
+======================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                             Starting                                                  Arrival           
+Instance                     Reference     Type        Pin          Net                Time        Slack 
+                             Clock                                                                       
+---------------------------------------------------------------------------------------------------------
+u_i2c_vsb.EFBInst_0          System        EFB         I2C1SCLO     i2c1_sclo          0.000       7.324 
+u_i2c_vsb.EFBInst_0          System        EFB         I2C1SDAO     i2c1_sdao          0.000       7.324 
+u_pll_downlink.PLLInst_0     System        EHXPLLJ     CLKOP        CLKOP              0.000       10.000
+u_i2c_vsb.EFBInst_0          System        EFB         WBACKO       wb_ack_i2c         0.000       17.052
+u_i2c_vsb.EFBInst_0          System        EFB         WBDATO0      wb_rdat_i2c[0]     0.000       18.691
+u_i2c_vsb.EFBInst_0          System        EFB         WBDATO1      wb_rdat_i2c[1]     0.000       18.691
+u_i2c_vsb.EFBInst_0          System        EFB         WBDATO2      wb_rdat_i2c[2]     0.000       18.691
+u_i2c_vsb.EFBInst_0          System        EFB         WBDATO3      wb_rdat_i2c[3]     0.000       18.691
+u_i2c_vsb.EFBInst_0          System        EFB         WBDATO4      wb_rdat_i2c[4]     0.000       18.691
+u_i2c_vsb.EFBInst_0          System        EFB         WBDATO5      wb_rdat_i2c[5]     0.000       18.691
+=========================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                          Starting                                             Required           
+Instance                                  Reference     Type        Pin          Net           Time         Slack 
+                                          Clock                                                                   
+------------------------------------------------------------------------------------------------------------------
+u_i2c_vsb.EFBInst_0                       System        EFB         I2C1SCLI     i2c1_scli     10.000       7.324 
+u_i2c_vsb.EFBInst_0                       System        EFB         I2C1SDAI     i2c1_sdai     10.000       7.324 
+u_pll_downlink.PLLInst_0                  System        EHXPLLJ     CLKFB        CLKOP         10.000       10.000
+u_i2c_script_driver.read_data_byte[0]     System        FD1P3DX     SP           N_163_i       18.325       17.052
+u_i2c_script_driver.read_data_byte[1]     System        FD1P3DX     SP           N_163_i       18.325       17.052
+u_i2c_script_driver.read_data_byte[2]     System        FD1P3DX     SP           N_163_i       18.325       17.052
+u_i2c_script_driver.read_data_byte[3]     System        FD1P3DX     SP           N_163_i       18.325       17.052
+u_i2c_script_driver.read_data_byte[4]     System        FD1P3DX     SP           N_163_i       18.325       17.052
+u_i2c_script_driver.read_data_byte[5]     System        FD1P3DX     SP           N_163_i       18.325       17.052
+u_i2c_script_driver.read_data_byte[6]     System        FD1P3DX     SP           N_163_i       18.325       17.052
+==================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    + Estimated clock delay at ending point: 0.000
+    = Required time:                         10.000
+
+    - Propagation time:                      2.676
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 7.324
+
+    Number of logic level(s):                1
+    Starting point:                          u_i2c_vsb.EFBInst_0 / I2C1SCLO
+    Ending point:                            u_i2c_vsb.EFBInst_0 / I2C1SCLI
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                   Pin          Pin               Arrival     No. of    
+Name                    Type     Name         Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------
+u_i2c_vsb.EFBInst_0     EFB      I2C1SCLO     Out     0.000     0.000 r     -         
+i2c1_sclo               Net      -            -       -         -           1         
+u_i2c_vsb.BB1_scl       BB       I            In      0.000     0.000 r     -         
+u_i2c_vsb.BB1_scl       BB       O            Out     2.676     2.676 r     -         
+i2c1_scli               Net      -            -       -         -           1         
+u_i2c_vsb.EFBInst_0     EFB      I2C1SCLI     In      0.000     2.676 r     -         
+======================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+
+Finished final timing analysis (Real Time elapsed 0h:00m:32s; CPU Time elapsed 0h:00m:25s; Memory used current: 276MB peak: 278MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:32s; CPU Time elapsed 0h:00m:25s; Memory used current: 276MB peak: 278MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo3lf_1300e-5
+
+Register bits: 302 of 10240 (3%)
+PIC Latch:       0
+I/O cells:       50
+Block Rams : 5 of 64 (7%)
+
+
+Details:
+BB:             2
+CCU2D:          76
+EFB:            1
+EHXPLLJ:        1
+FD1P3AX:        14
+FD1P3DX:        112
+FD1S3AX:        1
+FD1S3BX:        1
+FD1S3DX:        165
+GSR:            1
+IB:             29
+IFS1P3DX:       1
+INV:            7
+OB:             19
+OFS1P3DX:       8
+ORCALUT4:       191
+OSCH:           1
+PDPW8KC:        3
+PFUMX:          1
+PUR:            1
+SP8KC:          2
+VHI:            14
+VLO:            14
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:34s; CPU Time elapsed 0h:00m:25s; Memory used current: 134MB peak: 278MB)
+
+Process took 0h:00m:34s realtime, 0h:00m:26s cputime
+# Sun Oct  4 11:49:32 2026
+
+###########################################################]
+
+
+Synthesis exit by 0.
+Done: completed successfully
+
+************************************************************
+**  Translate Design                                      **
+************************************************************
+
+edif2ngd  -l "MachXO3LF" -d LCMXO3LF-1300E -path "J:/work/Opsys-sense/OPA/FPGA design/vsb_mach_comp/impl1" -path "J:/work/Opsys-sense/OPA/FPGA design/vsb_mach_comp"   "J:/work/Opsys-sense/OPA/FPGA design/vsb_mach_comp/impl1/opa_vsb_impl1.edi" "opa_vsb_impl1.ngo"   
+edif2ngd:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ASYNC_REG found - ignoring...
+WARNING - Unsupported property ADDR_WIDTH found - ignoring...
+WARNING - Unsupported property ADDR_WIDTH found - ignoring...
+Writing the design to opa_vsb_impl1.ngo...
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 13 MB
+
+
+ngdbuild  -a "MachXO3LF" -d LCMXO3LF-1300E  -p "C:/lscc/diamond/3.14/ispfpga/xo3c00f/data"  -p "J:/work/Opsys-sense/OPA/FPGA design/vsb_mach_comp/impl1" -p "J:/work/Opsys-sense/OPA/FPGA design/vsb_mach_comp"  "opa_vsb_impl1.ngo" "opa_vsb_impl1.ngd"  	
+ngdbuild:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Reading 'opa_vsb_impl1.ngo' ...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - logical net 'u_downlink_tx/u_tx_payload_mux/u_tx_elastic_fifo/mem_mem_0_0_DO5' has no load.
+WARNING - logical net 'u_downlink_tx/u_tx_payload_mux/u_tx_elastic_fifo/mem_mem_0_0_DO6' has no load.
+WARNING - logical net 'u_downlink_tx/u_tx_payload_mux/u_tx_elastic_fifo/mem_mem_0_0_DO7' has no load.
+WARNING - logical net 'u_downlink_tx/u_tx_payload_mux/u_tx_elastic_fifo/mem_mem_0_0_DO8' has no load.
+WARNING - logical net 'u_uplink_rx/u_decoder_8b10b/lut_valid_0_0_DO3' has no load.
+WARNING - logical net 'u_uplink_rx/u_decoder_8b10b/lut_valid_0_0_DO4' has no load.
+WARNING - logical net 'u_uplink_rx/u_decoder_8b10b/lut_valid_0_0_DO5' has no load.
+WARNING - logical net 'u_uplink_rx/u_decoder_8b10b/lut_valid_0_0_DO6' has no load.
+WARNING - logical net 'u_uplink_rx/u_decoder_8b10b/lut_valid_0_0_DO7' has no load.
+WARNING - logical net 'u_uplink_rx/u_decoder_8b10b/lut_valid_0_0_DO8' has no load.
+WARNING - logical net 'u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO0' has no load.
+WARNING - logical net 'u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO1' has no load.
+WARNING - logical net 'u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO2' has no load.
+WARNING - logical net 'u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO3' has no load.
+WARNING - logical net 'u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO4' has no load.
+WARNING - logical net 'u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO5' has no load.
+WARNING - logical net 'u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO6' has no load.
+WARNING - logical net 'u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO7' has no load.
+WARNING - logical net 'u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO8' has no load.
+WARNING - logical net 'u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO12' has no load.
+WARNING - logical net 'u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO13' has no load.
+WARNING - logical net 'u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO14' has no load.
+WARNING - logical net 'u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO15' has no load.
+WARNING - logical net 'u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO16' has no load.
+WARNING - logical net 'u_downlink_tx/u_encoder_8b10b/cw_rd_plus_0_1_DO17' has no load.
+WARNING - logical net 'u_internal_osc_SEDSTDBY' has no load.
+WARNING - DRC complete with 26 warnings.
+
+Design Results:
+    664 blocks expanded
+Complete the first expansion.
+Writing 'opa_vsb_impl1.ngd' ...
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 20 MB
+
+Done: completed successfully
+
+************************************************************
+**  Map Design                                            **
+************************************************************
+
+map -a "MachXO3LF" -p LCMXO3LF-1300E -t CSFBGA121 -s 5 -oc Industrial   "opa_vsb_impl1.ngd" -o "opa_vsb_impl1_map.ncd" -pr "opa_vsb_impl1.prf" -mp "opa_vsb_impl1.mrp" -lpf "J:/work/Opsys-sense/OPA/FPGA design/vsb_mach_comp/impl1/opa_vsb_impl1_synplify.lpf" -lpf "J:/work/Opsys-sense/OPA/FPGA design/vsb_mach_comp/opa_vsb.lpf"  -c 0           
+map:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: opa_vsb_impl1.ngd
+   Picdevice="LCMXO3LF-1300E"
+
+   Pictype="CSFBGA121"
+
+   Picspeed=5
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO3LF-1300ECSFBGA121, Performance used: 5.
+
+WARNING - Pref conflicts. Ignoring FREQUENCY NET "internal_osc_clk" 53.200000 MHz ;
+   Keeping FREQUENCY NET "internal_osc_clk" 53.200000 MHz ;
+.
+WARNING - Pref conflicts. Ignoring FREQUENCY PORT "osc_81m" 81.000000 MHz ;
+   Keeping FREQUENCY PORT "osc_81m" 81.000000 MHz ;
+.
+WARNING - Pref conflicts. Ignoring FREQUENCY NET "clk_27m_buf" 27.000000 MHz ;
+   Keeping FREQUENCY NET "clk_27m_buf" 27.000000 MHz ;
+.
+WARNING - Pref conflicts. Ignoring FREQUENCY PORT "serdes_rbc0" 81.000000 MHz ;
+   Keeping FREQUENCY PORT "serdes_rbc0" 81.000000 MHz ;
+.
+Loading device for application map from file 'xo3c1300.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.17.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+2 CCU2 constant inputs absorbed.
+
+WARNING - Using local reset signal 'hw_reset_n_c' to infer global GSR net.
+
+
+
+Design Summary:
+   Number of registers:    302 out of  1583 (19%)
+      PFU registers:          293 out of  1280 (23%)
+      PIO registers:            9 out of   303 (3%)
+   Number of SLICEs:       181 out of   640 (28%)
+      SLICEs as Logic/ROM:    181 out of   640 (28%)
+      SLICEs as RAM:            0 out of   480 (0%)
+      SLICEs as Carry:         76 out of   640 (12%)
+   Number of LUT4s:        351 out of  1280 (27%)
+      Number used as logic LUTs:        199
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      152
+      Number used as shift registers:     0
+   Number of PIO sites used: 50 + 4(JTAG) out of 101 (53%)
+   Number of block RAMs:  5 out of 7 (71%)
+   Number of GSRs:        1 out of 1 (100%)
+   EFB used :        Yes
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : Yes
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  1 out of 1 (100%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  6
+     Net internal_osc_clk: 51 loads, 51 rising, 0 falling (Driver: u_internal_osc )
+     Net serdes_rbc0_c: 37 loads, 37 rising, 0 falling (Driver: PIO serdes_rbc0 )
+     Net u_i2c_vsb/i2c1_scli: 1 loads, 1 rising, 0 falling (Driver: PIO i2c_scl )
+     Net osc_81m_c: 62 loads, 62 rising, 0 falling (Driver: PIO osc_81m )
+     Net clk_27m_buf: 28 loads, 28 rising, 0 falling (Driver: u_pll_downlink/PLLInst_0 )
+     Net dec_llc_27m_c: 1 loads, 1 rising, 0 falling (Driver: PIO dec_llc_27m )
+   Number of Clock Enables:  18
+     Net u_uplink_rx.local_gpo4: 8 loads, 0 LSLICEs
+     Net u_i2c_script_driver/un21_0_o3: 1 loads, 1 LSLICEs
+     Net u_i2c_script_driver/i2c_init_done13: 5 loads, 5 LSLICEs
+     Net u_i2c_script_driver/N_176_i: 1 loads, 1 LSLICEs
+     Net u_i2c_script_driver/N_178_i: 1 loads, 1 LSLICEs
+     Net u_i2c_script_driver/N_226_i: 11 loads, 11 LSLICEs
+     Net u_i2c_script_driver/N_158_i: 1 loads, 1 LSLICEs
+     Net u_i2c_script_driver/N_163_i: 4 loads, 4 LSLICEs
+     Net u_i2c_script_driver/script_indexe: 3 loads, 3 LSLICEs
+     Net u_i2c_script_driver/N_225_i: 1 loads, 1 LSLICEs
+     Net u_uplink_rx/u_decoder_8b10b/N_6: 1 loads, 1 LSLICEs
+     Net u_downlink_tx/u_tx_payload_mux/u_tx_elastic_fifo/rd_will_advance_o: 7 loads, 7 LSLICEs
+     Net u_downlink_tx/u_tx_payload_mux/u_tx_elastic_fifo/wr_will_advance: 1 loads, 0 LSLICEs
+     Net u_downlink_tx/u_tx_payload_mux/mux_state_ns[0]: 7 loads, 7 LSLICEs
+     Net u_downlink_tx/u_tx_payload_mux/un1_pop_outstanding_0_sqmuxa_0: 1 loads, 1 LSLICEs
+     Net u_rx_reset_sync/delay_counter_1_sqmuxa_i: 9 loads, 9 LSLICEs
+     Net u_video_reset_sync/delay_counter_1_sqmuxa_i: 9 loads, 9 LSLICEs
+     Net u_tx_reset_sync/delay_counter_1_sqmuxa_i: 9 loads, 9 LSLICEs
+   Number of local set/reset loads for net hw_reset_n_c merged into GSR:  108
+   Number of LSRs:  6
+     Net hw_reset_n_c: 1 loads, 0 LSLICEs
+     Net hw_reset_n_c_i: 1 loads, 0 LSLICEs
+     Net pll_dl_locked: 22 loads, 22 LSLICEs
+     Net tx_reset_n: 40 loads, 40 LSLICEs
+     Net video_reset_n: 16 loads, 16 LSLICEs
+     Net u_rx_reset_sync/rx_reset_n: 24 loads, 15 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net tx_reset_n: 41 loads
+     Net u_rx_reset_sync/rx_reset_n: 24 loads
+     Net pll_dl_locked: 23 loads
+     Net u_downlink_tx/u_tx_payload_mux/u_tx_elastic_fifo/rd_will_advance_o: 21 loads
+     Net u_i2c_script_driver/timer_counter: 21 loads
+     Net u_rx_reset_sync/sync_reg[1]: 18 loads
+     Net u_tx_reset_sync/sync_reg[1]: 18 loads
+     Net u_video_reset_sync/sync_reg[1]: 18 loads
+     Net video_reset_n: 17 loads
+     Net u_downlink_tx/u_tx_payload_mux/mux_state[0]: 13 loads
+WARNING - In "LOCATE COMP "i2c_scl" SITE "A5" ;": Current SYS_CONFIG setting prohibits pin "A5" to be used as user IO. This preference has been disabled.
+WARNING - In "LOCATE COMP "i2c_sda" SITE "B5" ;": Current SYS_CONFIG setting prohibits pin "B5" to be used as user IO. This preference has been disabled.
+ 
+
+   Number of warnings:  7
+   Number of errors:    0
+
+
+
+Total CPU Time: 2 secs  
+Total REAL Time: 6 secs  
+Peak Memory Usage: 46 MB
+
+Dumping design to file opa_vsb_impl1_map.ncd.
+Done: completed successfully
+
+************************************************************
+**  Map Trace                                             **
+************************************************************
+
+trce -f "opa_vsb_impl1.mt" -o "opa_vsb_impl1.tw1" "opa_vsb_impl1_map.ncd" "opa_vsb_impl1.prf"
+trce:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file opa_vsb_impl1_map.ncd.
+Design name: vsb_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3LF-1300E
+Package:     CSFBGA121
+Performance: 5
+Loading device for application trce from file 'xo3c1300.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.17.
+Performance Hardware Data Status:   Final          Version 37.5.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.14.0.75.2
+Sun Oct 04 11:50:00 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o opa_vsb_impl1.tw1 -gui -msgset J:/work/Opsys-sense/OPA/FPGA design/vsb_mach_comp/promote.xml opa_vsb_impl1_map.ncd opa_vsb_impl1.prf 
+Design file:     opa_vsb_impl1_map.ncd
+Preference file: opa_vsb_impl1.prf
+Device,speed:    LCMXO3LF-1300E,5
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 14240 paths, 6 nets, and 1558 connections (91.59% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.14.0.75.2
+Sun Oct 04 11:50:00 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o opa_vsb_impl1.tw1 -gui -msgset J:/work/Opsys-sense/OPA/FPGA design/vsb_mach_comp/promote.xml opa_vsb_impl1_map.ncd opa_vsb_impl1.prf 
+Design file:     opa_vsb_impl1_map.ncd
+Preference file: opa_vsb_impl1.prf
+Device,speed:    LCMXO3LF-1300E,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 14240 paths, 6 nets, and 1558 connections (91.59% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 1 secs 
+Total REAL Time: 2 secs 
+Peak Memory Usage: 51 MB
+
+Done: completed successfully
 
 ************************************************************
 **  Place & Route Design                                  **
@@ -12,7 +1774,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "opa_vsb_impl1_map.ncd"
-Sun Oct 04 11:28:08 2026
+Sun Oct 04 11:50:02 2026
 
 PAR: Place And Route Diamond (64-bit) 3.14.0.75.2.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset "J:/work/Opsys-sense/OPA/FPGA design/vsb_mach_comp/promote.xml" -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 opa_vsb_impl1_map.ncd opa_vsb_impl1.dir/5_1.ncd opa_vsb_impl1.prf
@@ -73,12 +1835,12 @@ The following 5 signals are selected to use the secondary clock routing resource
 Signal hw_reset_n_c is selected as Global Set/Reset.
 Starting Placer Phase 0.
 ..........
-Finished Placer Phase 0.  REAL time: 3 secs 
+Finished Placer Phase 0.  REAL time: 2 secs 
 
 Starting Placer Phase 1.
 ..................
 Placer score = 80960.
-Finished Placer Phase 1.  REAL time: 11 secs 
+Finished Placer Phase 1.  REAL time: 10 secs 
 
 Starting Placer Phase 2.
 .
@@ -140,7 +1902,7 @@ Starting router resource preassignment
 
 Completed router resource preassignment. Real time: 14 secs 
 
-Start NBR router at 11:28:22 10/04/26
+Start NBR router at 11:50:16 10/04/26
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -155,15 +1917,15 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 11:28:22 10/04/26
+Start NBR special constraint process at 11:50:16 10/04/26
 
-Start NBR section for initial routing at 11:28:22 10/04/26
+Start NBR section for initial routing at 11:50:16 10/04/26
 Level 1, iteration 1
 0(0.00%) conflict; 1127(66.26%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 2.923ns/0.000ns; real time: 15 secs 
+Estimated worst slack/total negative slack<setup>: 2.923ns/0.000ns; real time: 14 secs 
 Level 2, iteration 1
 0(0.00%) conflict; 1124(66.08%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 3.297ns/0.000ns; real time: 15 secs 
+Estimated worst slack/total negative slack<setup>: 3.297ns/0.000ns; real time: 14 secs 
 Level 3, iteration 1
 2(0.00%) conflicts; 1080(63.49%) untouched conns; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 3.578ns/0.000ns; real time: 15 secs 
@@ -174,7 +1936,7 @@ Estimated worst slack/total negative slack<setup>: 3.578ns/0.000ns; real time: 1
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 11:28:23 10/04/26
+Start NBR section for normal routing at 11:50:17 10/04/26
 Level 1, iteration 1
 2(0.00%) conflicts; 44(2.59%) untouched conns; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 3.578ns/0.000ns; real time: 15 secs 
@@ -186,7 +1948,7 @@ Level 4, iteration 2
 Estimated worst slack/total negative slack<setup>: 3.578ns/0.000ns; real time: 15 secs 
 Level 4, iteration 3
 5(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 3.288ns/0.000ns; real time: 15 secs 
+Estimated worst slack/total negative slack<setup>: 3.288ns/0.000ns; real time: 16 secs 
 Level 4, iteration 4
 2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 3.288ns/0.000ns; real time: 16 secs 
@@ -200,14 +1962,14 @@ Level 4, iteration 7
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 3.288ns/0.000ns; real time: 16 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 11:28:24 10/04/26
+Start NBR section for setup/hold timing optimization with effort level 3 at 11:50:18 10/04/26
 
-Start NBR section for re-routing at 11:28:24 10/04/26
+Start NBR section for re-routing at 11:50:18 10/04/26
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 3.288ns/0.000ns; real time: 16 secs 
 
-Start NBR section for post-routing at 11:28:24 10/04/26
+Start NBR section for post-routing at 11:50:18 10/04/26
 
 End NBR router with 0 unrouted connection
 
@@ -222,8 +1984,8 @@ Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored
 
 
 
-Total CPU time 15 secs 
-Total REAL time: 17 secs 
+Total CPU time 16 secs 
+Total REAL time: 18 secs 
 Completely routed.
 End of route.  1701 routed (100.00%); 0 unrouted.
 
@@ -242,7 +2004,7 @@ PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.299
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 15 secs 
+Total CPU  time to completion: 16 secs 
 Total REAL time to completion: 18 secs 
 
 par done!
@@ -285,7 +2047,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.14.0.75.2
-Sun Oct 04 11:28:28 2026
+Sun Oct 04 11:50:22 2026
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -318,7 +2080,7 @@ Constraints cover 14240 paths, 6 nets, and 1558 connections (91.59% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.14.0.75.2
-Sun Oct 04 11:28:29 2026
+Sun Oct 04 11:50:23 2026
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -362,7 +2124,7 @@ Cumulative negative slack: 0 (0+0)
 --------------------------------------------------------------------------------
 
 Total CPU Time: 1 secs 
-Total REAL Time: 2 secs 
+Total REAL Time: 3 secs 
 Peak Memory Usage: 52 MB
 
 Done: completed successfully
